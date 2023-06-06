@@ -1,0 +1,38 @@
+.img-slider{
+  margin: 5px;
+  /* margin-top: 5rem; */
+  /* z-index: -1; */
+  /* position: relative; */
+}
+.before-foot{
+  background-color: black;
+  color: azure;
+  padding: 10px;
+}
+.before-foot li{
+  text-decoration: none;
+  text-align: center;
+  font-size: xx-large;
+}
+.books{
+  background-color:rgb(251, 253, 253);
+  margin: 3px;
+  padding: 5px;
+  /* border-radius: 10px; */
+  border: 3px solid black;
+  border-right: none;
+  border-left: none;
+  margin-top: 20px;
+}
+.thumbnail  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.thumbnail img{
+  width: 100%;
+}
+
+

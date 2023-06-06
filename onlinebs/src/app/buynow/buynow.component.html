@@ -1,0 +1,31 @@
+<div class="book-details">
+  <div class="thumbnail">
+    <img [src]=finalproduct.thumbnail>
+  </div>
+  <div class="book-details-2">
+    <div class="title">
+      <a href="">{{finalproduct.title}}</a>
+    </div>
+    <div class="description">
+      {{finalproduct.description}}
+    </div>
+    <div class="detail">
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab repellat inventore ex fugit quis est voluptas,
+        quaerat odit laborum a, suscipit distinctio animi adipisci laboriosam, molestiae nesciunt excepturi aperiam.
+        Sequi!</h2>
+    </div>
+    <div class="price">
+      <!-- {{finalproduct.price|currency:'INR'}} -->
+    </div>
+    <div class="shop">
+      <div class="buy-now">
+        <a routerLink="/buynow/">{{finalproduct.buynow}}</a>
+      </div>
+      <div class="add">
+        <a href="">{{finalproduct.add}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-footer></app-footer> -->

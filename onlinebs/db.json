@@ -1,0 +1,281 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "namevalue": "sreeGanesh",
+      "emailvalue": "sreeganesh288@gmail.com",
+      "mobilevalue": 7904190846,
+      "passwordvalue": "Sree@2001",
+      "confirmpasswordvalue": "Sree@2001",
+      "id": 2
+    },
+    {
+      "namevalue": "sree",
+      "emailvalue": "sreeganesh2023@gmail.com",
+      "mobilevalue": 7904190846,
+      "passwordvalue": "Sree@2001",
+      "confirmpasswordvalue": "Sree@2001",
+      "id": 3
+    },
+    {
+      "namevalue": "brindha",
+      "emailvalue": "brindha@gmail.com",
+      "mobilevalue": 7358857508,
+      "passwordvalue": "Brindha@22",
+      "confirmpasswordvalue": "Brindha@22",
+      "id": 5
+    },
+    {
+      "namevalue": null,
+      "emailvalue": null,
+      "mobilevalue": null,
+      "passwordvalue": null,
+      "confirmpasswordvalue": null,
+      "id": 6
+    }
+  ],
+  "author": [
+    {
+      "name": "Arundhati Roy",
+      "authorpic": "../../assets/author/1.jpg"
+    },
+    {
+      "name": "Stephen Coonts",
+      "authorpic": "../../assets/author/2.jpg"
+    },
+    {
+      "name": "William Wordsworth",
+      "authorpic": "../../assets/author/3.jpg"
+    },
+    {
+      "name": "Stephen King",
+      "authorpic": "../../assets/author/4.jpg"
+    },
+    {
+      "name": "John Green",
+      "authorpic": "../../assets/author/5.jpg"
+    },
+    {
+      "name": "GILLIAN FLYNN",
+      "authorpic": "../../assets/author/6.jpg"
+    },
+    {
+      "name": "GAYLE FORMAN",
+      "authorpic": "../../assets/author/7.jpg"
+    },
+    {
+      "name": "ERICH SEGAL",
+      "authorpic": "../../assets/author/8.jpg"
+    },
+    {
+      "name": "SYLVIA PLATH",
+      "authorpic": "../../assets/author/9.jpg"
+    },
+    {
+      "name": "SHASHI THAROOR",
+      "authorpic": "../../assets/author/10.jpg"
+    },
+    {
+      "name": "PAULO COELHO",
+      "authorpic": "../../assets/author/11.jpg"
+    },
+    {
+      "name": "ROBIN SHARMA",
+      "authorpic": "../../assets/author/12.jpg"
+    },
+    {
+      "name": "R.K. NARAYAN",
+      "authorpic": "../../assets/author/13.jpg"
+    },
+    {
+      "name": "VIKRAM SETH",
+      "authorpic": "../../assets/author/14.jpg"
+    },
+    {
+      "name": "AMITAV GHOSH",
+      "authorpic": "../../assets/author/15.jpg"
+    },
+    {
+      "name": "SIR ARTHUR CONAN DOYLE",
+      "authorpic": "../../assets/author/16.jpg"
+    },
+    {
+      "name": "Dr. SEUSS",
+      "authorpic": "../../assets/author/17.jpg"
+    },
+    {
+      "name": "SIDNEY SHELDON",
+      "authorpic": "../../assets/author/18.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "A Game of Thrones",
+      "description": "George R. R. Martin",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy1.jpg",
+      "images": "home-img/logo.png"
+    },
+    {
+      "id": 2,
+      "title": "The Fellowship of the Ring ",
+      "description": "J. R. R. Tolkien",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy2.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Lion,TW & TW",
+      "description": " C. S. Lewis",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy3.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Colour of Magic",
+      "description": "Terry Pratchett",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy4.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/4/1.jpg",
+        "https://i.dummyjson.com/data/products/4/2.jpg",
+        "https://i.dummyjson.com/data/products/4/3.jpg",
+        "https://i.dummyjson.com/data/products/4/4.jpg",
+        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Assassin’s Apprentice",
+      "description": "Robin Hobb",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy5.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Lies of Locke Lamora",
+      "description": "Scott Lynch",
+      "price": 599,
+      "rating": 4.09,
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy6.jpg",
+      "add": "Add to cart",
+      "buynow": "Buy Now"
+    },
+    {
+      "id": 7,
+      "title": "The Name of the Wind",
+      "description": "Patrick Rothfuss",
+      "price": 999,
+      "rating": 4.09,
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy7.jpg",
+      "add": "Add to cart",
+      "buynow": "Buy Now"
+    },
+    {
+      "id": 8,
+      "title": "Dragonflight",
+      "description": "Anne McCaffrey",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy8.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Eye of the World",
+      "description": "Robert Jordan",
+      "price": 1499,
+      "rating": 4.09,
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy9.jpg",
+      "add": "Add to cart",
+      "buynow": "Buy Now"
+    },
+    {
+      "id": 10,
+      "title": "Throne of Glass",
+      "description": "Sarah J.Maas",
+      "price": 650,
+      "rating": 4.09,
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy10.jpg",
+      "add": "Add to cart",
+      "buynow": "Buy Now"
+    }
+  ]
+}

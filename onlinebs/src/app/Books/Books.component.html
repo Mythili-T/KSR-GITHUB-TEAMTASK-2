@@ -1,0 +1,51 @@
+<!-- {{products|json}} -->
+<!-- <h3>Product</h3>
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Brand Name</th>
+    <th>Showcase</th>
+    <th>Rating</th>
+    <th>Brand</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let eachData of products">
+      <td>{{eachData.id}}</td>
+      <td><a routerLink="/product/{{eachData.title}}">{{eachData.title}}</a></td>
+      <td><img [src]=eachData.thumbnail/></td>
+      <td id="rating"><p>{{eachData.rating}}</p></td>
+      <td>{{eachData.brand}}</td>
+      <td>{{eachData.description}}</td>
+    </tr>
+  </tbody>
+</table>
+<div> -->
+<div class="slide">
+  <h1>Top Fantasy Books</h1>
+  <div class="books" *ngFor="let eachData of products">
+    <div class="thumbnail">
+      <img
+        [src]="eachData.thumbnail"
+        routerLink="/product/{{ eachData.title }}"
+      />
+    </div>
+    <div class="title">
+      <a routerLink="/product/{{ eachData.title }}">{{ eachData.title }}</a>
+    </div>
+    <div class="description">
+      {{ eachData.description }}
+    </div>
+    <div class="price">
+      {{ eachData.price | currency : "INR" }}
+    </div>
+  </div>
+</div>
+<!-- <div class="img-slider">
+  <ng-image-slider
+    [images]="imgCollection"
+    #nav
+    [imageSize]="{ width: '300px', height: 300 }">
+  </ng-image-slider>
+</div> -->
+<!-- <app-footer></app-footer> -->

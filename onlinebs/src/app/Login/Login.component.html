@@ -1,0 +1,36 @@
+<div class="back">
+  <div class="login-form">
+    <h1>login</h1>
+    <form [formGroup]="regform" (ngSubmit)="onLogin()">
+      <div class="user-name">
+        <input type="text" placeholder="Username or Email" #name formControlName="namevalue"
+        pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$" />
+        <div *ngIf="regform.controls['namevalue'].dirty" class="alert">
+          <p *ngIf="regform.controls['namevalue'].errors?.['required']">User name should not be Empty</p>
+          <p *ngIf="regform.controls['namevalue'].errors?.['pattern']">Enter proper Name</p>
+        </div>
+      </div>
+      <div class="password">
+        <input type="password" placeholder="Password" #password formControlName="passwordvalue"
+          pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+        <div *ngIf="regform.controls['passwordvalue'].dirty" class="alert">
+          <p *ngIf="regform.controls['passwordvalue'].errors?.['required']">Password should not be Empty</p>
+          <p *ngIf="regform.controls['passwordvalue'].errors?.['pattern']">Password Must Contain
+            1Caps(A)-Num(1)-Symbol(@)</p>
+        </div>
+        </div>
+        <div class="login-box">
+          <button>Login</button>
+        </div>
+        <div class="register">
+          <a href="" routerLink="/register">Not a User? <a href="">Register</a></a>
+        </div>
+        <div class="forget-password">
+          <a href="">Forget Password?</a>
+          <a routerLink="/admin">admin</a>
+          <a routerLink="/admin2">admin2</a>
+        </div>
+    </form>
+  </div>
+</div>
+  <app-footer></app-footer>

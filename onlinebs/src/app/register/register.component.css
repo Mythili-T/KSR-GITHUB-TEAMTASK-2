@@ -1,0 +1,91 @@
+.back {
+  display: flex;
+  /* background-image: url(../../assets/slideimg10.jpg) */
+  background-image: url(../../assets/register-bac.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* filter: blur(2px); */
+  /* -webkit-filter: blur(8px); */
+  margin-top: 0%;
+  margin-bottom: 0%;
+  overflow: none;
+}
+
+.login-form {
+  text-align: center;
+  margin: 5%;
+  /* padding: 7%; */
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3%;
+  box-shadow: 0px 8px 8px 0px rgb(31, 37, 39);
+  /* border: 5px solid  #090909; */
+  /* border-left: 2px solid  rgb(250, 247, 247); */
+  border-radius: 10px;
+  /* background-image: url(../../assets/register-bac2.jpg); */
+  background-size: cover;
+  /* background-image: url(../../assets/slideimg10.jpg) ; */
+  background-color: rgb(221, 234, 236);
+  /* background-image: url(../../assets/blur-img.jpg) */
+}
+
+.user-name,
+.password,
+.login-box,
+.mobile,
+.mail,
+.confirm-password {
+  padding: 20px 0px 20px 0px;
+}
+
+.user-name input,
+.password input,
+.mobile input,
+.mail input,
+.confirm-password input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 3px solid black;
+  font-size: x-large;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.login-box button {
+  width: 45%;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-size: x-large;
+}
+
+.register a,
+.forget-password a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.register,
+.forget-password {
+  padding: 10px;
+
+}
+.alert p{
+  color: red;
+  font-weight: bold;
+}
+.alert{
+  display: flex;
+  position: absolute;
+}

@@ -1,0 +1,64 @@
+
+<div class="nevigation-bar-1">
+  <div class="logo">
+    <img src="../assets/home-img/logo.png" alt="" />
+    <div class="title">
+      <h1>Online <span style="margin-left: 5px"> Book Store</span></h1>
+    </div>
+  </div>
+  <form class="search-bar">
+    <input type="text" placeholder="Search by Title,Author,Publisher or ISBN" name="search" style="text-align: center;"/>
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <div class="home">
+    <i class="fa-solid fa-house" routerLink="home"></i>
+    <li routerLink="home">Home</li>
+  </div>
+  <div class="books">
+    <i class="fa-solid fa-book-open" routerLink="books"></i>
+    <li routerLink="books">Books</li>
+    <div class="drop-down">
+      <a href="">Fantasy</a><br>
+      <a href="">Fiction</a><br>
+      <a href="">Romance</a><br>
+      <a href="">Crime</a><br>
+      <a href="">Horror</a><br>
+      <a href="">Fairy tales</a><br>
+    </div>
+  </div>
+  <div class="books">
+    <i class="fa-solid fa-people-group" routerLink="author"></i>
+    <li routerLink="author">Author</li>
+    <div class="drop-down">
+      <a href="">J.K.Rowling</a><br>
+      <a href="">George Orwell</a><br>
+      <a href="">Mark Twain</a><br>
+      <a href="">Lewis Carroll</a><br>
+      <a href="">Ayn Rand</a><br>
+      <a href="">Dr.Seuss</a><br>
+    </div>
+  </div>
+  <div class="contactus">
+    <i class="fa-solid fa-id-card" routerLink="contactus">
+    </i>
+    <li routerLink="contactus">Contactus</li>
+  </div>
+
+  <div class="my-acc">
+    <i class="fa-solid fa-user" routerLink="login"></i>
+    <li routerLink="login" *ngIf="!userLogin">Login</li>
+    <li routerLink="login" (click)="logOut()" *ngIf="userLogin"> Logout</li>
+  </div>
+  <!-- <div class="cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <li>My Cart</li>
+  </div> -->
+</div>
+<!-- <div class="title-title">
+ <h1> Online book store</h1>
+</div> -->
+
+
+<router-outlet></router-outlet>
+
+

@@ -1,0 +1,194 @@
+.nevigation-bar-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  position: relative;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+  background-color: black;
+  /* width: 100%; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.title {
+  padding-left: 20px;
+}
+.title h1{
+/* padding-top: 5px; */
+margin-top: 0px;
+
+}
+
+.title.logo,
+img {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+.title span {
+  font-weight: 400;
+  color: gainsboro;
+}
+
+.nevigation-bar-1,
+li {
+  list-style: none;
+  font-size: larger;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo,
+h1 {
+  margin-top: 8px;
+  margin-left: 5px;
+  display: inline-flex;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.search-bar {
+  margin-left: -40px;
+}
+
+.search-bar input {
+  width: 360px;
+  height: 45px;
+  border-radius: 20px;
+  /* padding: 3px; */
+  border: 3px solid orangered;
+  margin-top: 10px;
+}
+
+.search-bar button {
+  width: 60px;
+  height: 40px;
+  color: white;
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.home i {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.home:hover {
+  color: orangered;
+}
+
+.books i {
+  padding-left: 15px;
+  padding-top: 8px;
+}
+
+.books {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.books:hover {
+  color: orangered;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: solid 2px orangered;
+  padding: 0px 40px 10px 40px;
+  z-index: 10;
+  border-radius: 10px;
+  margin-left: -50px;
+  font-size: x-large;
+}
+
+.drop-down a {
+  text-decoration: none;
+  color: white;
+}
+
+.drop-down a:hover {
+  color: orangered;
+}
+
+.books:hover .drop-down {
+  color: orangered;
+  display: block;
+}
+
+.author i {
+  padding-left: 15px;
+  padding-top: 8px;
+}
+
+.author {
+  cursor: pointer;
+}
+
+.author:hover {
+  color: orangered;
+}
+
+.contactus i {
+  padding-left: 40px;
+  padding-top: 8px;
+}
+
+.contactus {
+  cursor: pointer;
+}
+
+.contactus:hover {
+  color: orangered;
+}
+
+.my-acc i {
+  padding-left: 20px;
+  padding-top: 8px;
+}
+
+.my-acc {
+  cursor: pointer;
+}
+
+.my-acc:hover {
+  color: orangered;
+}
+
+.cart i {
+  padding-left: 25px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover {
+  color: orangered;
+}
+/* .title-title h1{
+  text-align: center;
+
+  color:white;
+ padding-left: 600px;
+}
+.title-title{
+  background-color: black;
+
+} */

@@ -1,0 +1,50 @@
+
+.thumbnail {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.thumbnail img {
+  width: 150px;
+  height: 125px;
+  border-radius: 10px;
+}
+
+.books {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  padding-left: 10px;
+  margin: 20px;
+  cursor: pointer;
+  border-bottom: 5px soli orangered;
+}
+
+.books:hover {
+  transform: scale(1.1)
+}
+
+/* .img-slider{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+} */
+
+
+.title,
+.description {
+  color: black;
+  text-align: center;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+
+
+
+
