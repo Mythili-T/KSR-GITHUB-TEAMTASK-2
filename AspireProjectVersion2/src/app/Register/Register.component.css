@@ -1,0 +1,326 @@
+*{
+  margin:0;
+  padding:0;
+  /* font-family: "Poppins", sans-serif; */
+
+}
+.reg-dia{
+  display:flex;
+  height:100vh;
+
+  justify-content: center;
+  align-items: center;
+
+}
+#image-reg{
+  height: 80px;
+  width:60px;
+  padding-top: 15px;
+  list-style-type: none;
+
+
+  }.title-reg{
+      display: flex;
+      margin-left: 60px;
+  }
+
+  .title-reg p{
+  font-family: 'Smooch', cursive;
+  padding-top: 10px;
+  }
+
+.container-reg{
+  max-width:800px;
+  width:40%;
+  padding:15px 100px;
+  border-radius: 5px;
+background-color: rgb(252, 251, 251);
+border:1px solid rgb(183, 183, 183);
+}
+
+.container-reg form .user{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+.user .box input{
+  height:40px;
+  width:180px;
+  border-radius: 5px;
+  border:1px solid #bfbfbf;;
+  outline: none;
+  padding-left: 10px;
+
+}
+
+#address-type{
+  width:103%;
+  height:45px;
+  border-radius: 5px;
+  border:2px solid #ccc;
+  outline: none;
+
+}
+.buttons-reg {
+  /* background-color: #064308; */
+  border-radius: 15px;
+  /* color: white; */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin-left: 120px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /* cursor: pointer; */
+}
+.button-reg{
+  display: flex;
+}
+.accReg{
+  margin-top:30px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(70, 70, 245);
+  font-size: 14px;
+}
+.accReg:hover{
+  color:rgb(16, 13, 195);
+}
+.policy a{
+  text-decoration: none;
+  color:rgb(125, 125, 213);
+  font-size: 15px;
+}
+.policy{
+  display: flex;
+  padding-top: 5px;
+  margin-top: 20px;
+  font-size: 15px;
+
+}
+#tic{
+margin-top: 6px;
+margin-right: 6px;
+cursor: pointer;
+
+}
+
+.error{
+  color:rgb(6, 5, 5);
+}
+form .field{
+  width: 250px;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -3px;
+  }
+  40%, 60%{
+    margin-left: 3px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input{
+
+  height: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+
+  transition: all 0.2s ease;
+}
+/* form .field input:focus{
+  border-color: #dc3545;
+} */
+/* form .field.valid input{
+  border-color: #5372F0;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 14px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 6px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  color: #dc3545;
+  padding-left: 150px;
+  padding-top: 30px;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #5372F0;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 14px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 10px;
+  width:250px;
+  display: block;
+}
+form #email_error,#confirmPass_error,#createPass_error,#mobile_error,#lname_error,#fname_error{
+  color: #dc3545;
+  font-size: 14px;
+} */
+
+/* form .field .fname_icon_error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #5372F0;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+} */
+form input[type="submit"]{
+  height: 40px;
+  width: 30%;
+  margin:20px 0px 10px 100px;
+  /* color: #fff; */
+
+  border: none;
+  /* background: #5372F0; */
+  border: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.final{
+  display: flex;
+}
+#create{
+  margin-top: 30px;
+  text-decoration: none;
+
+}
+#create a:hover{
+  color: bisque;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 400px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin-top:-400px;
+  border: 1px solid #888;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  font-family: 'Work Sans', sans-serif;
+align-items: center;
+justify-content: center;
+}
+
+.popup-content img{
+border-radius: 50%;
+height: 40px;
+width: 40px;
+margin-top: -12px;
+padding-left: 5px;
+}
+.register-div{
+display: flex;
+justify-content: center;
+}
+.register-div p{
+text-align: center;
+}
+
+.ok-button {
+border: 1px solid #161717;
+padding: 5px 10px;
+text-decoration: none;
+font-size: 12px;
+cursor: pointer;
+text-align: center;
+}
+.pop-buttons{
+text-align: center;
+}
+
+.error-box{
+  border :1px solid red;
+}
+input .ng-invalid{
+  border :1px solid red;
+  }
+  input .ng-valid{
+  border:1px solid green;
+  }
+.error
+{
+  font-size: 13px;
+  color: crimson;
+}
+.nametype{
+  margin-top: 12px;
+}
+.error i{
+  padding: 7px 0px 0 6px;
+}
+.error-error
+{
+  position: relative;
+
+}
+.error-icon{
+  position: absolute;
+  top:-32px;
+  left:145px;
+}

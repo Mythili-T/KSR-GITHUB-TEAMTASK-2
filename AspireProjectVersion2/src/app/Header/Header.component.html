@@ -1,0 +1,79 @@
+<header >
+  <div  class="navbars">
+          <div  class="navbar">
+              <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content" id="content-active">
+                  <div class="navi">
+                      <div class="logo">
+                          <li><a routerLink="#"><img src="../assets/images/ketti1-removebg-preview.png"  id="image"/></a></li>
+                          <li class="list1"><p>Kettimelam</p> </li>
+                         <div class="main">
+                          <input type="search" placeholder="Type to search">
+                          <a href="#"><i class="fa fa-search icon-search" style="font-size: 16px;"></i></a>
+                          </div>
+                      </div>
+                  </div>                        <ul class="links">
+                    <li class="active-btn active"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                    <li class="active-btn"><a routerLink="shop" routerLinkActive="active" class="desktop-link">Shop</a>
+                      <input type="checkbox" id="show-services">
+                      <label for="show-services" >Shop</label>
+                      <ul>
+                        <li><a routerLink="/cater">Catering</a></li>
+                        <li><a routerLink="/studio">Studio</a></li>
+                        <li><a routerLink="/weddings">Weddings</a>
+                        <!-- <ul><li >
+                          <input type="checkbox" id="show-features">
+
+                            <li><a routerLink="traditional">Traditional</a></li>
+                            <li><a routerLink="royal">Royal</a></li>
+                            <li><a routerLink="vintage">Vintage</a></li>
+                            <li><a routerLink="beach">Beach</a></li>
+                            <li><a routerLink="destination">Desination</a></li>
+
+
+                       </ul> -->
+                        </li>
+
+
+                      </ul>
+                  </li>
+
+
+                    <li class="active-btn"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+
+                    <div class="login">   <button class="home-login" id="login-btn">
+                      <a  *ngIf="!loginService.isLoggedin" routerLink="/login"  >Login</a>
+                      <div *ngIf="loginService.isLoggedin"  class="loggedin">
+                      <div>
+                        <!-- {{email.firstname}} -->
+                       </div>
+                      <a (click)="onLogout()" routerLink="/home">Logout</a>
+                      </div>
+
+
+                    </button>
+                    </div>
+                      <div class="cart"><span>{{totalitem}}</span><a routerLink="/cart"><img src="../assets/images/cart.png"></a></div>
+                </ul>
+                  </div>
+                <!--<form action="#" class="search-box">
+                  <input type="text" placeholder="Type Something to Search..." required>
+                  <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>-->
+              </nav>
+            </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+

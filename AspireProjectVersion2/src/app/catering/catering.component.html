@@ -1,0 +1,61 @@
+<app-Header></app-Header>
+<div class="photo-wal" [ngStyle]="{backgroundImage:'url(assets/images/catback.jpg)'}">
+  <div class="photo">
+      <img src="assets/images/cat12.jpg">
+      <div class="photoTitle">
+          <h2>Caterings</h2>
+          <p>Bookings available</p>
+      </div>
+  </div>
+</div>
+<br><br><br><br><br>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div *ngIf="cater">
+<div class="products-card">
+  <div class="events1">
+
+<div class=""*ngFor="let items of cater">
+<div class="products-grid">
+  <div class="eventlist">
+    <a routerLink="/studio/{{items.id}}">
+
+    <div class="eventname"><div class="image">
+      <img class="image-img"  [src]="items.image" alt="Bricks">
+
+    </div>
+
+    </div>
+    <div class="name">
+      <h6> {{items.title}}</h6>
+      <p> {{items.titleDescription}}</p>
+    </div>
+            <div class="name-price-sell">
+            <p id="name-price-per">{{items.discount}}</p>
+            <p class="model-price-one">&#8377;</p>
+            <p id="name-originalPrice">{{items.price}}</p>
+            </div>
+            <div class="name-price">
+            <p id="name-currency"><span id="dot-invisible">.</span>{{items.mrp}}</p>
+            <p id="name-strikes">{{items.originalPrice}}</p>
+            </div>
+
+    <div class="button-item">
+        <div class="button1">
+            <a routerLink="/cart" class="buttons-add" (click)="addtocart(items)">Add to cart</a>
+        </div>
+        <!-- <div class="button2">
+            <a routerLink="orderNow.html" class="buttons-order">Order Now</a>
+        </div> -->
+    </div>
+    </a>
+</div></div></div>
+</div>
+</div>
+<router-outlet></router-outlet>
+</div>
+<app-Footer></app-Footer>

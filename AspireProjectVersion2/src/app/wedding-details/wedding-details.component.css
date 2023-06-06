@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+text-decoration: none;
+box-sizing: border-box;
+
+}
+.wedding-box-one{
+  margin-top: 100px;
+  /* background-color: rgb(243, 242, 242); */
+}
+.productImg{
+  border: 1px solid gray;
+  padding: 10px;
+  height: 530px;
+}
+.wed-details-flex{
+  display: grid;
+  padding-right: 40px;
+
+}
+.wedding-products-detail{
+  border: 1px solid black;
+  background-color: #fff;
+  display: flex;
+  margin: 0 100px 0 100px;
+  padding: 40px 100px 40px 100px;
+}
+.wedding-details-img{
+  height: 410px;
+  width: 400px;
+  padding-bottom: 10px;
+}
+#title h2{
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  padding: 10px 0 5px 0px;
+  font-weight: bold;
+
+}
+.wed-gallery{
+  height: 100px;
+  width: 100px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+/* price */
+
+#price-per{
+  font-size: 35px;
+  color: crimson;
+  padding-right: 10px;
+}
+#name-price-per{
+font-size: 26px;
+color: crimson;
+padding: 8px 10px 0px 0px;
+
+}
+.model-price-one{
+padding:8px 3px 0 3px;
+color: black;
+font-size: 18px;
+}
+.name-price{
+display:flex;
+
+}
+#name-originalPrice{
+font-size: 32px;
+color: black;
+}
+.name-price-sell{
+display: flex;
+padding-top: 10px;
+}
+#name-currency{
+font-size: 14px;
+color: rgb(108, 108, 108);
+}
+#name-strikes{
+padding-left: 3px;
+font-size: 14px;
+color: rgb(108, 108, 108);
+text-decoration: line-through;
+}
+
+/* ratings */
+.ratings{
+  background-color: rgb(48, 111, 48);
+  color: rgb(244, 244, 244);
+  border-radius: 5px;
+  border: 1px solid rgb(44, 103, 44);
+  padding: 2px 4px 2px 4px;
+}
+.checked {
+  color: rgb(234, 231, 228);
+  padding-left: 3px;
+}
+/* bank offers */
+.bankoffers{
+  font-size: 14px;
+  padding-top: 5px;
+}
+.bankoffers h5{
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+.bankoffers span{
+  font-weight: 600;
+  padding-right: 5px;
+}
+.bankoffers p{
+padding-right: 5px;
+}
+.bankoffers a{
+  color: rgb(47, 47, 204);
+cursor: pointer;
+}
+.bank1,.bank2,.bank3{
+  display: flex;
+}
+.bank3{
+  padding-bottom: 6px;
+}
+
+
+/* specification */
+.specification{
+  display: flex;
+}
+.freeDelivery, .topBrand, .secure{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 12px;
+  background-color: rgb(227, 229, 231);
+  border-radius: 20px;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 13px;
+}
+.fa-solid{
+  font-size: 20px;
+}
+
+/* button */
+
+.button{
+  background-color: #064308;
+  border-radius: 10px;
+  display:flex;
+
+  cursor: pointer;
+}
+/* .button-item{
+  position: relative;
+  top:-150px;
+  left: 250px;
+} */
+
+.button:hover{
+  background: #479c4a;
+
+}
+
+.button{
+
+  height: 40px;
+  width: 180px;
+  margin-top: 5px;
+}
+
+.buttons-add {
+
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    cursor: pointer;
+  }
+
+  .buttons-order {
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+    cursor: pointer;
+  }
+.description-detail h5{
+  padding-top: 10px;
+}
+
+.product-special h6{
+  padding-top: 15px;
+}
