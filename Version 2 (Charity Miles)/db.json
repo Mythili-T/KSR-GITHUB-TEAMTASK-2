@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "uname": "priya",
+      "emailid": "priya25@gmail.com",
+      "mobileno": "9813426789",
+      "pass": "Priya@123",
+      "cpass": "Priya@123",
+      "id": 1
+    }
+  ]
+}
