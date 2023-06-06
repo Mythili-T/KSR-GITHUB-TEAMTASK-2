@@ -1,0 +1,101 @@
+<app-Header></app-Header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <div class="wedding-box-one">
+  <div class="wedding-products-detail">
+    <div class="wed-details-flex">
+        <div class="productImg">
+          <img class="wedding-details-img" [src]="finalProduct.image" alt="">
+          <div class="image-gallery">
+           <img class="wed-gallery" [src]="finalProduct.image1" alt="">
+           <img class="wed-gallery" [src]="finalProduct.image2" alt="">
+           <img class="wed-gallery" [src]="finalProduct.image3" alt="">
+           <img class="wed-gallery" [src]="finalProduct.image4" alt="">
+
+          </div>
+          <div class="product-special">
+            <h6>Note</h6>
+            <p>After checkout you will recieve call from our team for installation service.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="wed-details-flex">
+        <div id="title">
+           <h2> {{finalProduct.title}} - {{finalProduct.titleExtend}}</h2>
+           <button class="ratings">{{finalProduct.ratings}}<span class="fa fa-star checked"></span></button>
+
+
+
+           <div class="name-price-sell">
+            <p id="name-price-per">{{finalProduct.discount}}</p>
+            <p class="model-price-one">&#8377;</p>
+            <p id="name-originalPrice">{{finalProduct.price | currency:'INR':'': '1.0-0'}}</p>
+            </div>
+            <div class="name-price">
+            <p id="name-currency">{{finalProduct.mrp}}</p>
+            <p id="name-strikes"> {{finalProduct.originalPrice}}</p>
+            </div>
+            <div class="button-item">
+              <div class="button">
+                  <a routerLink="/cart" class="buttons-add" (click)="addtocart(finalProduct)">Add to cart</a>
+
+                </div>
+              <div class="button">
+                  <a routerLink="#" class="buttons-order">Order Now</a>
+              </div>
+          </div>
+            <div class="bankoffers">
+              <h5>Available Offers</h5>
+             <div class="bank1"> <p><span>Bank Offer</span>Flat ₹1250 Discount on HDFC Bank Credit Card on orders of ₹15,000 and above</p><a>T&C</a></div>
+              <div class="bank2"><p><span>Bank Offer</span>Flat ₹4000 Discount on HDFC Bank Credit Card on orders of ₹50,000 and above</p><a>T&C</a></div>
+              <div class="bank3"><p><span>Bank Offer</span>10% off on Federal Debit Card Transactions, up to ₹300, on orders of above ₹2,000</p><a>T&C</a></div>
+
+
+            </div><hr>
+
+            <div class="specification">
+              <div class="freeDelivery"><i class="fa-solid fa-truck"></i><p>Free<br>Delivery</p></div>
+              <div class="topBrand"><i class="fa-solid fa-trophy"></i><p>Best<br>Quality</p></div>
+              <div class="secure"><i class="fa-solid fa-lock"></i><p>Secure<br> Transaction</p></div>
+
+            </div><hr>
+
+      <div class="description-detail">
+        <h5>Highlights</h5>
+          <li class="description">{{finalProduct.description1}}</li>
+          <li class="description">{{finalProduct.description2}}</li>
+          <li class="description">{{finalProduct.description3}}</li>
+          <li class="description">{{finalProduct.description4}}</li>
+          <li class="description">{{finalProduct.description5}}</li>
+
+        </div>
+
+
+</div>
+
+      </div>
+
+
+
+        <!-- <div class="description-detail">
+          <li class="description">{{finalProduct.description1}}</li>
+          <li class="description">{{finalProduct.description2}}</li>
+          <li class="description">{{finalProduct.description3}}</li>
+          <li class="description">{{finalProduct.description4}}</li>
+          <li class="description">{{finalProduct.description5}}</li>
+          <li class="description">{{finalProduct.description6}}</li>
+
+        </div> -->
+
+
+
+</div></div>
+
+<router-outlet></router-outlet>
+<app-Footer></app-Footer>

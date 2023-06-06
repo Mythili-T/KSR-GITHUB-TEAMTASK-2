@@ -1,0 +1,149 @@
+/* -----------------------------------------------------------footer part*/
+*{
+  margin: 0;
+}
+footer {
+  width: 100%;
+  padding: 100px 40px 0px 90px;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  font-size: 13px;
+  line-height: 20px;
+  color:#fff;
+  margin-top: 60px;
+}
+.foot-title{
+  display: flex;
+
+}
+
+.foot-title img{
+  height: 40px;
+  width: 40px;
+}
+
+#foot-show{
+  display: inline-block;
+  position: relative;
+  color:#f1f3f4 ;
+
+}
+.footconten{
+  width: 25%;
+  padding-right: 35px;
+}
+#foot-show:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 15px;
+  background-color:
+#f1f3f4;
+color:#f1f3f4 ;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+#foot-show:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.footertitle {
+  font-family: 'Smooch', cursive;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.footercontainer {
+  width: 95%;
+  display: flex;
+  flex-wrap: nowrap;
+
+
+}
+
+.footcontent {
+  padding-left: 10px;
+  flex: 15%;
+}
+
+#footconten{
+  top:-10px;
+  position: relative;
+}
+
+.footcontent a {
+  text-decoration: none;
+  color:#fff;
+  padding-left: 15px;
+
+}
+
+.footcontent h3 {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+
+
+form {
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.maillogo {
+  display: flex;
+}
+
+form .fa-solid {
+  font-size: 45px;
+  padding-right: 5px;
+}
+
+form input {
+  height: 40px;
+  width: 260px;
+  padding: 10px 0 8px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+#typehere {
+  height: 60px;
+  width: 310px;
+  border-radius: 8px;
+  outline: none;
+  padding: 5px 0 0 8px;
+}
+#mailsubmit {
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.media  .fa-brands {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+hr {
+  margin-right: 80px;
+}
+
+#copyright {
+  text-align: center;
+  padding: 15px 0 5px 0;
+  font-size: 15px;
+}

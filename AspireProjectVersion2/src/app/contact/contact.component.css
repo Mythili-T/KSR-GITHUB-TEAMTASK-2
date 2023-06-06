@@ -1,0 +1,141 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+.contact{
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: fit-content;
+}
+.conbox{
+  display: flex;
+  border: 2px solid rgba(230, 229, 226, 0.708);
+  justify-content: center;
+  margin: auto;
+  margin: 0 20px 0 20px;
+}
+.contact-bg{
+
+height: 600px;
+
+
+  background-size: cover;
+
+  /* position: relative; */
+
+}
+/* contact-icons */
+
+
+.contact-us{
+  height: 700px;
+  width: 45%;
+  /* border: 1px solid red; */
+  position: absolute;
+
+}
+.location-icon {
+  border: 2px solid black;
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+  border-radius: 50%;
+}
+.location-icon i{
+  padding-left: 5px;
+}
+.contact-page{
+  display: flex;
+padding-top: 15px;
+justify-content: center;
+margin: auto;
+
+}
+.contact-title, .connect-us{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+#location-icon{
+  margin-left: 100px;
+}
+#phone-icon{
+margin-left: 90px;
+}
+#mail-icon{
+  margin-left: 110px;
+}
+ #mail-icon i{
+  padding-left: 3px;
+}
+
+.contact-des{
+  text-align: -webkit-center;
+  padding: 5px 25px 0 60px ;
+}
+
+
+/* contact-form */
+form .field .input-area{
+  height: 45px;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+form .field #input-message{
+  height: 65px;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 12px;
+  font-size: 14px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  transition: all 0.2s ease;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 14px;
+
+}
+.nametype {
+  text-align: left;
+  padding-left: 172px;
+}
+
+
+form button[type="submit"]{
+  height: 40px;
+  width: 30%;
+  margin:20px 0px 10px 240px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  background: #5372F0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.1);
+  transition: all 0.3s ease;
+}
+
+.bg-img,.contact-bg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.contact-bg{
+  height: 600px;
+  width: 100%;
+
+}
+

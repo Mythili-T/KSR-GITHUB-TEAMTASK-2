@@ -1,0 +1,149 @@
+  <div class="reg-dia">
+    <div class="container-reg">
+        <div class="title-reg">
+            <img src="assets/images/ketti1-removebg-preview.png" id="image-reg">
+            <p id="title-reg" style="font-size:55px;">Kettimelam</p>
+        </div>
+        <form [formGroup]="RegisterForms" (submit)="submitForm()">
+
+            <div class="user">
+
+                <div class="box">
+                    <div class="field fname">
+                      <div class="input-area">
+                        <p class="nametype">First Name</p>
+                        <input type="text" id="firstName" placeholder="First Name" name="firstname" formControlName="firstname">
+                        <div class="error-error" *ngIf="RegisterForms.controls['firstname'].dirty">
+                        <p class="error" *ngIf="RegisterForms.controls['firstname'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>First Name can't be blank</p>
+                        <p class="error" *ngIf="RegisterForms.controls['firstname'].errors?.['pattern']"><i class="error error-icon fas fa-exclamation-circle"></i>Enter your First Name</p>
+                        <p class="error" *ngIf="RegisterForms.controls['firstname'].errors?.['UsernameValidator']"><i class="error error-icon fas fa-exclamation-circle"></i>No Space is Allowed</p>
+
+                      </div>
+                      </div>
+                    </div></div>
+
+                    <div class="box">
+                    <div class="field lname">
+                      <div class="input-area">
+                        <p class="nametype">Last Name</p>
+                        <input type="text" id="lastName" placeholder="Last Name" name="lastname" formControlName="lastname">
+                        <div class="error-error" *ngIf="RegisterForms.controls['lastname'].dirty">
+                        <p class="error" *ngIf="RegisterForms.controls['lastname'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>Last Name can't be blank</p>
+                        <p class="error" *ngIf="RegisterForms.controls['lastname'].errors?.['pattern']"><i class="error error-icon fas fa-exclamation-circle"></i>Enter your Last Name</p>
+                        <p class="error" *ngIf="RegisterForms.controls['lastname'].errors?.['UsernameValidator']"><i class="error error-icon fas fa-exclamation-circle"></i>No Space is Allowed</p>
+
+                          </div>
+                      </div>
+                    </div>
+                </div></div><br>
+
+              <div class="user">
+
+        <div class="box">
+            <div class="field email">
+              <div class="input-area">
+                <p class="nametype">Email id</p>
+                <input type="text" placeholder="Email id" id="email" name="email" formControlName="email">
+                <div class="error-error" *ngIf="RegisterForms.controls['email'].dirty">
+                  <p class="error" *ngIf="RegisterForms.controls['email'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>Email id can't be blank</p>
+                        <p class="error" *ngIf="RegisterForms.controls['email'].errors?.['pattern']"><i class="error error-icon fas fa-exclamation-circle"></i>Enter valid Email id</p>
+                        <br>
+                        </div>
+              </div>
+            </div></div>
+
+            <div class="box">
+            <div class="field mobile">
+              <div class="input-area">
+                <p class="nametype">Mobile Number</p>
+                <input type="text" placeholder="Mobile Number" id="mobile" name="mobilenumber" formControlName="mobilenumber" autocomplete="off" maxlength="10">
+                <div class="error-error" *ngIf="RegisterForms.controls['mobilenumber'].dirty">
+                  <p class="error" *ngIf="RegisterForms.controls['mobilenumber'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>Mobile Number can't be blank</p>
+                        <p class="error" *ngIf="RegisterForms.controls['mobilenumber'].errors?.['pattern']"><i class="error error-icon fas fa-exclamation-circle"></i>Enter valid Mobile Number</p>
+                        <br>
+                        </div>
+              </div>
+            </div>
+        </div></div><br>
+
+
+
+            <div class="user">
+
+                <div class="box">
+                    <div class="field create">
+                      <div class="input-area">
+                        <p class="nametype">Create Password</p>
+                        <input type="password" name="create" placeholder="create password" id="createPassword" formControlName="create" minlength="8">
+                        <div class="error-error" *ngIf="RegisterForms.controls['create'].dirty">
+                          <p class="error" *ngIf="RegisterForms.controls['create'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>Please enter password</p>
+                          <p class="error" *ngIf="RegisterForms.controls['create'].errors?.['pattern']">Create strong password</p>
+
+                <br></div>
+                      </div>
+                    </div></div>
+
+                    <div class="box">
+                    <div class="field confirm">
+                      <div class="input-area">
+                        <p class="nametype">Confirm Password</p>
+                        <input type="password" placeholder="confirm password" id="confirmPassword" name="confirm" formControlName="confirm">
+                        <div class="error-error" *ngIf="RegisterForms.controls['confirm'].dirty">
+                          <p  class="error" *ngIf="RegisterForms.controls['confirm'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i>please re-enter password</p>
+                          <p class="error" *ngIf="RegisterForms.controls['confirm'].errors?.['confirmedValidator']">please enter correct password</p>
+
+
+                        <br></div>
+                      </div>
+                   </div>
+                </div></div><br>
+
+
+
+            <div class="policy">
+                <input type="checkbox" id="tic" name="tick" name="policy" formControlName="policy" >
+                <label for="tick">I agree to your <a href="#" >Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+
+
+            <div class="error-error" *ngIf="RegisterForms.controls['policy'].touched">
+            <p  class="error" *ngIf="RegisterForms.controls['policy'].errors?.['required']"><i class="error error-icon fas fa-exclamation-circle"></i></p></div>
+</div>
+
+<div class="button-reg">
+    <a routerLink="/login" class="accReg">Already have an account?</a>
+    <button type="submit" class="btn btn-primary buttons-reg" value="Register"  [disabled]="!RegisterForms.valid">Register</button>
+</div>
+
+</form>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

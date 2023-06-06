@@ -1,0 +1,52 @@
+<app-AdminHeader></app-AdminHeader>
+
+<div class="display-user-details">
+  <div class="reg-user">
+    <div class="view-user-title"><h4>PRODUCTS</h4></div>
+    <div class="search-container">
+      <form action="#">
+        <input type="text" placeholder="Search.." name="search" [(ngModel)]="title" (ngModelChange)="Search()">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div><br>
+  <hr>
+<table>
+  <tr>
+    <th>S.No</th>
+    <th>IMAGE</th>
+    <th>TITLE</th>
+    <th>TITLE EXTENT</th>
+    <th>ORIGINAL PRICE</th>
+    <th>DISCOUNT</th>
+    <th>MARKET PRICE</th>
+
+  </tr>
+  <tr *ngFor="let admin of data let i = index">
+    <td>{{i+1}}</td>
+    <td><img style="width:50px;height:50px" src="{{admin.image}}"></td>
+    <td>{{admin.title}}</td>
+    <td>{{admin.titleExtend}}</td>
+    <td>{{admin.originalPrice}}</td>
+    <td>{{admin.discount}}</td>
+    <td>{{admin.price}}</td>
+
+
+
+  </tr>
+  <h4 class="admin-products-list">Studio Works</h4>
+  <tr *ngFor="let adminstudio of datastudio let i = index">
+    <td>{{i+1}}</td>
+    <td><img style="width:50px;height:50px" src="{{adminstudio.image}}"></td>
+    <td>{{adminstudio.title}}</td>
+    <td>{{adminstudio.titleExtend}}</td>
+    <td>{{adminstudio.originalPrice}}</td>
+    <td>{{adminstudio.discount}}</td>
+    <td>{{adminstudio.price}}</td>
+
+
+
+  </tr>
+</table>
+</div>
+

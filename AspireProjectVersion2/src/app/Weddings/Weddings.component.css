@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.destination-wal{
+  background-color: blanchedalmond;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  margin: 0;
+  text-align: center;
+}
+.beach img{
+  height: 120px;
+  width:120px;
+  border-radius: 50%;
+  margin-top: 125px;
+  border:1px solid black;
+  box-shadow: 0px -10px 30px rgb(59, 59, 59);
+  }
+  .beachTitle h2{
+  font-size: 32px;
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(10, 10, 10);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .beachTitle p{
+  text-align: center;}
+  .beachposter{
+    border:2px solid rgb(226, 188, 18);
+    background-color: white;
+    height: 80px;
+    width:80px;
+    border-radius: 70px;
+    margin:100px 0 0 60px;
+    display: flex;
+  }
+  .beachposter img{
+    height: 90px;
+    width: 65;
+    padding: 15px 20px;
+  }
+  .beachposter pre{
+  font-family: 'Catamaran', sans-serif;
+
+    font-size: 60px;
+    padding:15px;
+  }
+.beach{
+position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+
+
+}
+  .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .beach:hover{
+    transform: rotateY(180deg);
+  }
+  .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    transform: rotateY(180deg);
+  }
+
+  /*---------------------------------------------------------- search bar */
+
+
+
+
+  input {
+    color: #0f0f0f;
+
+    font-size:2px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+  }
+
+  #cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 550px;
+    padding: 10px;
+    justify-content:center;
+    margin:auto;
+    background-color: #ff7575;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #b7b5b5eb;
+    transform: scale(0.6);
+  }
+
+  form {
+    height: 50px;
+  }
+
+  .td input[type="text"] {
+    width: 100%;
+    font-size: 35px;
+    outline: none;
+    padding-left: 15px;
+  }
+
+.td  input[type="text"]::placeholder {
+    color: #0704047e;
+    font-size:30px;
+  }
+
+.td{
+  display: flex;
+
+}
+.td i{
+  font-size: 40px;
+  color: #0704047e;
+  padding:10px 20px 0 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+  /*-----------------------product card---------------------------*/
+
+
+
+
+    .events1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-left: 150px;
+      margin-right: 90px;
+
+
+    }
+
+    @media(max-width:1200px) {
+
+      .events1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+
+    @media(max-width:900px) {
+
+      .events1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .beachposter pre{
+        font-size: 40px;
+        padding:25px
+      }
+
+    }
+    @media(max-width:600px) {
+
+      .events1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .beachposter pre{
+        font-size: 30px;
+        padding:30px;
+      }
+
+    }
+
+    .eventlist {
+      border: 1px solid rgb(183, 176, 176);
+      margin: 25px 0 0px 0;
+      height: 370px;
+      width: 270px;
+      position: relative;
+
+    }
+
+
+
+    .image-img {
+      width: 100%;
+      height: 200px;
+      cursor: pointer;
+      position: block;
+    }
+
+    .eventlist:hover {
+      transform: scale(1.03);
+    }
+/* product details */
+
+    .name h6{
+      line-height: 20px;
+      Color: black;
+      font-size: 16px;
+      text-align: center;
+    }
+    .name p{
+      padding-top: 3px;
+      line-height: 20px;
+      Color: black;
+      font-size: 16px;
+      text-align: center;
+    }
+
+
+    .button1,.button2{
+      background-color: #064308;
+      border-radius: 10px;
+      padding: 12px 18px;
+      display:flex;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+    .button2:hover{
+      background: #479c4a;
+    }
+    .button1:hover{
+      background: #479c4a;
+
+    }
+
+    .button1,.button2{
+
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 5px;
+}
+    .button-item{
+      display:flex;
+      text-align: center;
+    }
+    .buttons-add {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color:#fff;
+        cursor: pointer;
+
+      }
+
+      .buttons-order {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color:#fff;
+        cursor: pointer;
+
+      }
+    /* product price Content */
+
+
+    #price-per{
+      font-size: 30px;
+      color: crimson;
+      padding-right: 10px;
+    }
+    #name-price-per{
+    font-size: 26px;
+    color: crimson;
+    padding: 0 10px 0px 0px;
+
+    }
+    .model-price-one{
+    padding-top: 3px;
+    color: black;
+    }
+    .name-price{
+    display:flex;
+    justify-content: center;
+
+    }
+    #name-originalPrice{
+    font-size: 26px;
+    color: black;
+    }
+    .name-price-sell{
+    display: flex;
+    justify-content: center;
+    }
+    #name-currency{
+    font-size: 14px;
+    padding-left: 10px;
+    color: rgb(108, 108, 108);
+    }
+    #name-strikes{
+    padding-left: 3px;
+    font-size: 14px;
+    color: rgb(108, 108, 108);
+    text-decoration: line-through;
+    }
+    #dot-invisible{
+      color: #fff;
+    }
+
+/* pagination */
+.pagination{
+  justify-content: center;
+  margin-top: 70px;
+  font-size: 24px;
+}

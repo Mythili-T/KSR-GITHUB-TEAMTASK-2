@@ -1,0 +1,85 @@
+<app-Header></app-Header>
+    <div class="destination-wal"  [ngStyle]="{backgroundImage:'url(assets/images/tradiwal1.jpg)'}" >
+      <div class="beach">
+        <div class="front"> <img src="assets/images/destiwal.jfif"></div>
+        <div class="back"><img src="assets/images/ketti.jpg"></div>
+      </div>
+          <div class="beachTitle">
+              <h2> Weddings</h2>
+              <p>Available design</p>
+          </div>
+
+  </div>
+  <br><br><br><br><br>
+
+
+<!-- Search box -->
+<!-- <div id="cover">
+  <form method="get" action="">
+
+      <div class="td">
+      <input type="text" placeholder="Search your weddings"  name="firstname" [(ngModel)]="title" (ngModelChange)="Search()" [(ngModel)]="titleDescription">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+  </form>
+</div><br><br><br><br> -->
+
+  <!--contents of wedding-->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div *ngIf="weddings">
+<div class="products-card" >
+  <div class="events1">
+
+<div *ngFor="let items of weddings| paginate:{itemsPerPage:12,currentPage:p};">
+<div class="products-grid">
+  <div class="eventlist">
+    <a routerLink="/weddings/{{items.id}}">
+    <div class="eventname"><div class="image">
+       <img class="image-img"  [src]="items.image" alt="Bricks">
+
+    </div>
+
+    </div>
+    <div class="name">
+      <h6> {{items.title}}</h6>
+      <p> {{items.titleDescription}}</p>
+    </div>
+            <div class="name-price-sell">
+            <p id="name-price-per">{{items.discount}}</p>
+            <p class="model-price-one">&#8377;</p>
+            <p id="name-originalPrice">{{items.price | currency:'INR':'': '1.0-0'}}</p>
+            </div>
+            <div class="name-price">
+            <p id="name-currency"><span id="dot-invisible">.</span>{{items.mrp}}</p>
+            <p id="name-strikes">{{items.originalPrice}}</p>
+            </div>
+
+    <div class="button-item">
+        <div class="button1">
+            <a routerLink="/cart" class="buttons-add" (click)="addtocart(items)">Add to cart</a>
+        </div>
+        <!-- <div class="button2">
+            <a routerLink="orderNow.html" class="buttons-order">Order Now</a>
+        </div> -->
+    </div>
+    </a>
+</div></div></div>
+</div>
+</div>
+<div class="pagination">
+  <pagination-controls (pageChange)="p = $event" (click)="loadData()"></pagination-controls>
+</div>
+<router-outlet></router-outlet>
+</div>
+
+<app-Footer></app-Footer>
+
+
