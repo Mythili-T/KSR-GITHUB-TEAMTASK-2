@@ -1,0 +1,234 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "firstname": "Hari",
+      "Phoneno": "9489922628",
+      "email": "harigokul476@gmail.com",
+      "password": "Hapo@2229",
+      "confirm": "Hapo@2229",
+      "id": 1
+    },
+    {
+      "firstname": "Arunkumar",
+      "Phoneno": "9597374379",
+      "email": "ajayarun348@gmail.com",
+      "password": "Arun@123",
+      "confirm": "Arun@123",
+      "id": 2
+    },
+    {
+      "firstname": "Padmavathi",
+      "Phoneno": "8667200676",
+      "email": "padmavathi348@gmail.com",
+      "password": "Padma@123",
+      "confirm": "Padma@123",
+      "id": 3
+    },
+    {
+      "firstname": "naruto",
+      "Phoneno": "9597374379",
+      "email": "naruto123@gmail.com",
+      "password": "Naruto@123",
+      "confirm": "Naruto@123",
+      "id": 4
+    },
+    {
+      "firstname": "Poornima",
+      "Phoneno": "8220446508",
+      "email": "poornima@gmail.com",
+      "password": "Poorni@2001",
+      "confirm": "Poorni@2001",
+      "id": 5
+    }
+  ],
+  "product": [
+    {
+      "Price": "120000",
+      "ProductName": "FAT BOY",
+      "ProductImage": "https://cdn.dealerspike.com/imglib/products/harley-showroom/2019/softail-fat-boy-107/flfb-vivid-black-right-853x435.png"
+    },
+    {
+      "Price": "800000",
+      "ProductName": "FAT BOB",
+      "ProductImage": "https://i0.wp.com/www.lifeontwowheelsride.com/wp-content/uploads/2020/04/2020-Harley-Davidson-Fat-Bob-114.png?fit=891%2C533&ssl=1"
+    },
+    {
+      "Price": "705000",
+      "ProductName": "SPORTSTER S",
+      "ProductImage": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Harley-Davidson-Sportster-S-070120221318.jpg&w=386&h=256&q=75&c=1"
+    },
+    {
+      "Price": "470000",
+      "ProductName": "HERITAGE CLASSIC",
+      "ProductImage": "https://cdn.shopify.com/s/files/1/1175/7670/products/HARLEY-DAVIDSON_HERITAGE_CLASSIC_2022_4_1024x.png?v=1643258322"
+    },
+    {
+      "Price": "502000",
+      "ProductName": "IRON 883",
+      "ProductImage": "https://imgd.aeplcdn.com/476x268/bw/models/harleydavidson-iron-883-standard20200613230206.jpg"
+    },
+    {
+      "Price": "6800000",
+      "ProductName": "FORTY EIGHT",
+      "ProductImage": "https://imgd.aeplcdn.com/476x268/bw/models/harleydavidson-forty-eight-standard20200614200811.jpg"
+    },
+    {
+      "Price": "6800000",
+      "ProductName": "NIGHTSTER",
+      "ProductImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDAHgTd_B0uDCAiml-d3QeWEs_AfFKxwIGw&usqp=CAU"
+    },
+    {
+      "Price": "9800000",
+      "ProductName": "ROAD KING",
+      "ProductImage": "https://cdp.azureedge.net/products/USA/HD/2022/MC/TOUR/ROAD_KING/50/MIDNIGHT_CRIMSON/2000000001_480px.jpg"
+    },
+    {
+      "Price": "10800000",
+      "ProductName": "PAN AMERICA 1250",
+      "ProductImage": "https://gumlet.assettype.com/evoindia%2F2021-04%2Fd4b5c22c-1cfc-49f8-9358-4f7980b77e3f%2FP90321762_highRes_bmw_r_1250_gs_cosmic__1_.jpg?auto=format%2Ccompress&format=webp&w=376&dpr=2.6"
+    }
+  ],
+  "productDescription": [
+    {
+      "ProductName": "FAT BOB",
+      "Price": "800000 USD",
+      "MainImage": "https://psmfirestorm.blob.core.windows.net/crs-images/374703/original.jpg",
+      "ImageWallpaper": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2023/2023-fat-bob-114/story/fat-bob-mid-tall-hero-desktop.jpg.jpg?impolicy=myresize&rw=1700",
+      "Image1": "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2023/2023-fat-bob-114/story/2023-fat-bob-b-roll-tall-hero-desktop.jpg",
+      "Image2": "https://cdn.autoportal.com/img/news/14332/main/39cc0f5b9ba143208c4ab34a8abbc10b/main_cropped.jpg",
+      "Image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPr84nPrFUe9XptW2Yva_pt5OU0vBbRDpPg&usqp=CAU",
+      "Image4": "https://autocdn.co.uk/cdn-cgi/imagedelivery/JC4X6oe6GKVO4ZI4xd1Czg/0adc1e52-40f8-41a8-de58-94cf13f11500/mediumnew",
+      "id": "1"
+    },
+    {
+      "ProductName": "FAT BOY",
+      "Price": "69,980 USD",
+      "MainImage": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20210714041521_HDSportster.jpg",
+      "ImageWallpaper": "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "Image1": "https://www.totalmotorcycle.com/wp-content/uploads/2023/01/2023-Harley-Davidson-Fat-Boy-114e.jpg",
+      "Image2": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_ANNIVERSARY/50/HEIRLOOM_RED_FADE/2000000003.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20150706123848_Rayo.jpg&w=700&q=90&c=1",
+      "id": "2"
+    },
+    {
+      "ProductName": "SPORTSTER S",
+      "Price": "69,980 USD",
+      "MainImage": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20210714041521_HDSportster.jpg",
+      "ImageWallpaper": "https://4kwallpapers.com/images/walls/thumbs_3t/5959.jpg",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_ANNIVERSARY/50/HEIRLOOM_RED_FADE/2000000003.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20150706123848_Rayo.jpg&w=700&q=90&c=1",
+      "id": "3"
+    },
+    {
+      "ProductName": "HERITAGE CLASSIC",
+      "Price": "89,980 USD",
+      "MainImage": "https://images4.alphacoders.com/854/thumbbig-854847.webp",
+      "ImageWallpaper": "https://c4.wallpaperflare.com/wallpaper/1010/387/625/motorcycles-harley-davidson-wallpaper-preview.jpg",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_ANNIVERSARY/50/HEIRLOOM_RED_FADE/2000000003.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://w0.peakpx.com/wallpaper/531/140/HD-wallpaper-harley-davidson-softail-heritage-cla.jpg",
+      "id": "4"
+    },
+    {
+      "ProductName": "FORTY EIGHT",
+      "Price": "49,980 USD",
+      "MainImage": "https://images4.alphacoders.com/854/thumbbig-854847.webp",
+      "ImageWallpaper": "https://wallpapercave.com/dwp1x/wp3075639.jpg",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://wallpapercave.com/dwp1x/wp3075642.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://wallpapercave.com/dwp1x/ohtEFNr.jpg",
+      "id": "5"
+    },
+    {
+      "ProductName": "IRON 883",
+      "Price": "59,980 USD",
+      "MainImage": "https://c4.wallpaperflare.com/wallpaper/865/1012/928/harley-davidson-harley-davidson-sportster-harley-davidson-iron-883-wallpaper-preview.jpg",
+      "ImageWallpaper": "https://c4.wallpaperflare.com/wallpaper/696/546/369/harley-davidson-harley-davidson-sportster-harley-davidson-iron-883-wallpaper-preview.jpg",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://c4.wallpaperflare.com/wallpaper/812/904/878/black-harley-davidson-iron-883-bike-year-2016-wallpaper-preview.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://c4.wallpaperflare.com/wallpaper/152/907/742/harley-davidson-iron-883-4k-desktop-wallpaper-preview.jpg",
+      "id": "6"
+    },
+    {
+      "ProductName": "NIGHTSTER",
+      "Price": "59,980 USD",
+      "MainImage": "https://wallpapercave.com/dwp1x/wp11309042.jpg",
+      "ImageWallpaper": "https://wallpapercave.com/dwp1x/wp11309031.jpg",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://c4.wallpaperflare.com/wallpaper/812/904/878/black-harley-davidson-iron-883-bike-year-2016-wallpaper-preview.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg",
+      "id": "7"
+    },
+    {
+      "ProductName": "ROAD KING",
+      "Price": "109,980 USD",
+      "MainImage": "https://cdp.azureedge.net/products/USA/HD/2022/MC/TOUR/ROAD_KING/50/MIDNIGHT_CRIMSON/2000000001_480px.jpg",
+      "ImageWallpaper": "https://images.alphacoders.com/142/thumbbig-142703.webp",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://c4.wallpaperflare.com/wallpaper/812/904/878/black-harley-davidson-iron-883-bike-year-2016-wallpaper-preview.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg",
+      "id": "8"
+    },
+    {
+      "ProductName": "PAN AMERICA 1250",
+      "Price": "119,980 USD",
+      "MainImage": "https://gumlet.assettype.com/evoindia%2F2021-04%2Fd4b5c22c-1cfc-49f8-9358-4f7980b77e3f%2FP90321762_highRes_bmw_r_1250_gs_cosmic__1_.jpg?auto=format%2Ccompress&format=webp&w=376&dpr=2.6",
+      "ImageWallpaper": "https://images.alphacoders.com/142/thumbbig-142703.webp",
+      "Image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuM5lhCj0hJ8HWZ59307IJ_UMnbDJkxIOt4Q&usqp=CAU",
+      "Image2": "https://c4.wallpaperflare.com/wallpaper/812/904/878/black-harley-davidson-iron-883-bike-year-2016-wallpaper-preview.jpg",
+      "Image3": "https://cdp.azureedge.net/products/USA/HD/2023/MC/SOFTAIL/FAT_BOY_114/50/VIVID_BLACK/2000000011.jpg",
+      "Image4": "https://wallpapercave.com/dwp1x/wp11138313.jpg",
+      "id": "9"
+    }
+  ],
+  "Appereal" : [
+    {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "260 USD ",
+    "gender":"women"
+  },
+  {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "320 USD ",
+    "gender":"women"
+  },
+  {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/womens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700 ",
+    "ProductName": " Product 1",
+    "Price": "372 USD ",
+    "gender":"women"
+  } 
+],
+"ApperealMen":[
+  {
+    "MainImage": "https://www.harley-davidson.com/content/dam/h-d/images/promo-images/2023/hero-card/2-up/mens-new-arrivals-hc-2-up.jpg?impolicy=myresize&rw=700",
+    "ProductName": " Product 1",
+    "Price": "372 USD ",
+    "gender":"men"
+  }
+]
+}
