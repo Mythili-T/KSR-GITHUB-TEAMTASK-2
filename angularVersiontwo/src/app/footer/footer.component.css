@@ -1,0 +1,124 @@
+/* Default styles for the footer */
+.footer {
+  margin-top: 2%;
+  padding-top: 2%;
+  display: flex;
+  position: relative;
+  background-color: rgb(51, 147, 237);
+  border-radius: 25px;
+  justify-content: space-evenly;
+  box-shadow: 0px -7px 8px -1px rgb(7, 59, 118);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links i {
+  margin-top: 15%;
+}
+
+.links a {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: black;
+  padding-left: 5%;
+}
+
+.links i:hover {
+  padding-left: 5%;
+}
+
+.foot-media img {
+  margin-top: 30%;
+}
+
+.foot-about h2 {
+  border-bottom: 2px solid rgb(63, 179, 190);
+}
+
+.foot-about h2:hover {
+  color: rgb(63, 179, 190);
+}
+
+.foot-services h2 {
+  border-bottom: 2px solid rgb(63, 179, 190);
+}
+
+.foot-services h2:hover {
+  color: rgb(63, 179, 190);
+}
+
+.foot-media h2 {
+  border-bottom: 2px solid rgb(63, 179, 190);
+}
+
+.foot-media h2:hover {
+  color: rgb(63, 179, 190);
+}
+
+.foot-links h2 {
+  border-bottom: 2px solid rgb(63, 179, 190);
+}
+
+.foot-links h2:hover {
+  color: rgb(63, 179, 190);
+}
+
+.foot-media a {
+  padding-left: 5%;
+}
+
+.copyRight {
+  background-color: rgb(198, 198, 198);
+  padding-top: 2px;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyRight p {
+  padding-left: 1%;
+  margin-top: 6px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .foot-about,
+  .foot-links,
+  .foot-services,
+  .foot-media {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .links i {
+    margin-top: 5%;
+  }
+
+  .foot-media img {
+    margin-top: 20%;
+  }
+
+  .copyRight p {
+    margin-top: 2px;
+  }
+}
+
+/* Additional styles for even smaller screens */
+@media screen and (max-width: 480px) {
+  .links i {
+    margin-top: 0;
+  }
+
+  .foot-media img {
+    margin-top: 10%;
+  }
+}

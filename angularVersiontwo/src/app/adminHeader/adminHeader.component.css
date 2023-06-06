@@ -1,0 +1,21 @@
+.head{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 2%;
+  background-color: rgb(51, 147, 237);
+ }
+
+ .returnHome button{
+   padding: 5% 10% 5% 10%;
+   border-radius: 15px;
+   border: none;
+   /* font-family: 'Times New Roman', Times, serif; */
+   font-size: 20px;
+   font-weight: bold;
+ }
+ h1{
+  margin-left: 5%;
+ }
+ .returnHome button:hover{
+   color: red;
+ }

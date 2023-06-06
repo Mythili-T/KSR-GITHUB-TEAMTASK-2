@@ -1,0 +1,138 @@
+*{
+  overflow-x: hidden;
+}
+.pic{
+  /* background-color: aquamarine; */
+  /* margin: 1%; */
+  margin-top: 2%;
+  border-radius: 10%;
+}
+.pic img{
+  margin-left: 28%;
+}
+.x{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.x .y1{
+  /* background-color: bisque; */
+  margin: 3%;
+  padding: 2%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.15);
+
+}
+.y1 img{
+  margin-bottom: 5%;
+  margin-left: 40%;
+}
+.y1 p{
+  text-align: center;
+}
+.y1 h2{
+  text-align: center;
+}
+.s{
+  text-align: center;
+  margin-top:5% ;
+}
+.s p{
+  font-size: 18px;
+}
+h2:hover{
+ color: red;
+}
+p:hover{
+  color: blue;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+.form{
+  background-color: rgb(51, 147, 237);
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.15);
+
+}
+input{
+  padding-right: 30%;
+  padding-left: 2%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-left: 2% ;
+  margin-top: 2%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.1);
+  border: 0.05px solid #333;
+
+}
+input::placeholder{
+  font-size: 15px;
+  color: black;
+}
+textarea{
+  margin-left: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  padding-left: 2%;
+  border: 0.1px solid black;
+}
+textarea::placeholder{
+  color: black;
+  font-size: 15px;
+}
+button{
+  margin-left: 43%;
+  padding: 1.5% 3% 1.5% 3%;
+  margin-top: 3%;
+  border-radius: 25px;
+  border: none;
+  font-weight: bolder;
+
+}
+button:hover{
+  background-color: #333;
+  color: white;
+}
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .x {
+    flex-direction: column;
+  }
+}
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .pic img {
+    margin-left: 10%;
+  }
+
+  .y1 img {
+    margin-left: 30%;
+  }
+
+  .form {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  input,textarea {
+    padding-right: 10%;
+  }
+
+  button {
+    margin-left: 35%;
+  }
+}

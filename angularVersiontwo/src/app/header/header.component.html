@@ -1,0 +1,27 @@
+<header>
+  <div class="header">
+    <img src="../assets/Images/Screenshot (160).png" alt="" />
+    <div class="navbar">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <!-- <a routerLink="about" routerLinkActive="active">About</a> -->
+      <div class="dropdown">
+        <a routerLink="/service" routerLinkActive="active">
+          Service
+        </a>
+        <div class="dropdown-content">
+          <a routerLink="/service/engineer" routerLinkActive="active">Engineering</a>
+          <a routerLink="/service/arts"routerLinkActive="active">Arts & Science </a>
+          <a routerLink="/service/medical"routerLinkActive="active">Medical</a>
+          <a routerLink="/service/agri" routerLinkActive="active">Agriculture</a>
+        </div>
+      </div>
+      <a routerLink="/contactUs" routerLinkActive="active">Contact</a>
+      <a routerLink="/login" routerLinkActive="active" (click)="service.login()" *ngIf="!success">
+        Login
+      </a>
+      <a routerLink="/myaccount" style="cursor: pointer;" *ngIf="success" routerLinkActive="active"> Account</a>
+      <a style="cursor: pointer;" (click)="logout()" *ngIf="success"> Logout</a>
+
+    </div>
+  </div>
+</header>

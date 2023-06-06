@@ -1,0 +1,33 @@
+.grid{
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.gridFirst {
+  margin-top: 36%;
+}
+.gridFirst button{
+  padding: 5% 30% 5% 30%;
+  background-color: rgb(51, 147, 237);
+  border-radius: 10px;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 1px solid  #151515;
+}
+.gridFirst a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.gridSecond{
+  margin-top: 2%;
+}
+
+#button{
+  background-color: #ecf2f6;
+  border: 1px solid black;
+
+}
+#button a
+{
+  color: red;
+}

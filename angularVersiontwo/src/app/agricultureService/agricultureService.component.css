@@ -1,0 +1,126 @@
+*{
+
+  font-family: 'Times New Roman', Times, serif;
+  /* scroll-behavior: smooth; */
+}
+.grid{
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns:   80%;
+}
+.engineering-content{
+  margin-left: 3%;
+  margin-left: 20%;
+}
+.engineering-content h1
+{
+  margin-top: 1%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+  /* border: 0.2px solid black; */
+  box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.2);
+}
+.engineering-content h1:hover{
+background-color: rgb(249, 249, 237);
+  color:  blue;
+}
+
+/* .description-content p{
+  margin-top: 7%;
+} */
+p{
+  line-height: 30px;
+}
+.description{
+  display: grid;
+  grid-template-columns: 40% 55%;
+}
+.description .description-img{
+  margin-right: 15%;
+  margin-top: 5%;
+}
+.description .description-img img{
+  border-radius: 80px;
+}
+.description p{
+ text-align: justify;
+ /* line-height: 30px; */
+}
+.loandetails-content p {
+  text-align: justify;
+  /* line-height: 30px; */
+}
+h2{
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+h2:hover{
+  color: blue;
+}
+
+.loandetails-content{
+   display: grid;
+   grid-template-columns: 40% 60%;
+}
+.loantypes{
+  /* border-left: 2px solid black; */
+  box-shadow:  -1px -1px 5px 1px rgba(45, 102, 234, 0.75);
+  padding-left: 5%;
+  /* margin-bottom: 3%; */
+  margin-top: 2%;
+}
+.interest-content{
+  margin-top: 1%;
+  line-height: 25px;
+  padding-right: 3%;
+  /* border-right: 2px solid black; */
+  box-shadow: -1px 2px 5px 3px rgba(216, 112, 15, 0.893);
+}
+.loan-interest{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.loan{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.loan-content{
+  margin-top: 1%;
+  padding-top: 5%;
+  line-height: 20px;
+  /* border-left: 2px solid black; */
+  box-shadow:  -1px -1px 5px 1px rgba(205, 26, 26, 0.75);
+  padding-left: 5%;
+}
+.loan-apply{
+  /* display: flex; */
+  text-align: center;
+}
+.loan-apply p{
+  margin-top: 3%;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.loan-apply span{
+  /* padding-top: 6%; */
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+}
+.loan-apply button{
+/* position: relative; */
+  padding: 1.5% 5% 1.5% 5%;
+  font-weight: bolder;
+  border: none;
+  margin-bottom: 2% ;
+  box-shadow: 0px 6px 10px 1px  rgb(51, 147, 237);
+}
+.loan-apply button:hover{
+  /* color: red; */
+  background-color: rgb(178, 188, 241);
+  border-radius: 25px;
+}
+
