@@ -1,0 +1,113 @@
+/* .body{
+  background-color: rgb(88, 129, 190);
+  padding: 80px;
+} */
+.container{
+  background-color:white;
+  border-radius: 20px;
+}
+.main {
+  /* border-style: inset; */
+  align-items: center;
+  display:  grid;
+  /* justify-content: space-between; */
+  width: 100%;
+  /* position: fixed; */
+
+
+}
+
+.logo {
+  margin-top: 2px;
+ margin-right:20%;
+
+}
+
+/* #home {
+  background-color: #000000;
+  background-size: cover;
+} */
+
+
+.navbar {
+  overflow: hidden;
+  /* background-color: rgb(231, 40, 40); */
+  margin-right: 0;
+}
+
+.navbar i {
+  padding-right: 10px;
+}
+
+
+.navbar a {
+  float: left;
+  font-weight: 800;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+.navbar a:hover{
+  background-color: #fff;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+
+
+.submenu ul li{
+ list-style:none;
+
+}
+
+.submenu{
+  display: none;
+  /* position: sticky; */
+  z-index: 10000;
+}
+
+#carDropdown:hover .submenu{
+       display: block;
+}
+
+.navbar a,
+.subnav>.subnavbtn {
+  font-size: 25px;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  /* background-color: orange; */
+  transition: all 0.4s linear;
+  z-index: 100000000000000;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgba(242, 237, 237, 0.825);
+  width: 100%;
+  z-index: 100000000000;
+}
+
+.navbar ul li{
+  display: inline;
+}
+
+.main {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: inline-flex;
+  justify-content: space-around;
+  position: relative;
+}

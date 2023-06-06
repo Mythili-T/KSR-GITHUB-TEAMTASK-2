@@ -1,0 +1,46 @@
+<app-header></app-header>
+<body>
+  <div class="whole-content">
+<div class="left-content">
+  <i class="fa-solid fa-user"></i>
+  <h2>{{getlogged.username|titlecase}}</h2>
+  <h5 style="font-size: 30px;margin-top:30%;padding:10px;font-family: poppins;">Orders Settings</h5>
+  <mat-form-field appearance="fill" style="width: 90%;margin-top: 10px;color: green;margin-left: 20px;">
+    <mat-label>Status</mat-label>
+    <input matInput placeholder="">{{acceptdetails.status}}
+  </mat-form-field>
+  <h5 style="font-size: 30px;margin-top:20%;padding:10px;font-family: poppins;">Service Settings</h5>
+  <mat-form-field appearance="fill" style="width: 90%;margin-top: 10px;color: green;margin-left: 20px;">
+    <mat-label>Status</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</div>
+<div class="right-content">
+  <h5>Profile Settings</h5>
+  <p>
+
+    <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="">{{getlogged.username}}
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="">{{getlogged.email}}
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
+      <mat-label>Phone Number</mat-label>
+      <input matInput placeholder="">{{acceptdetails.mobile}}
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
+      <mat-label>Payment</mat-label>
+      <input matInput placeholder="">{{payment.amount}}
+      <button mat-button color="primary" style="margin-left: 30px;">Pay</button>
+    </mat-form-field>
+
+  </p>
+
+</div>
+</div>
+</body>
+

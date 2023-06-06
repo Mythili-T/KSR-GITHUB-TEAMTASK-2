@@ -1,0 +1,132 @@
+/* .grid-three-columns1 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.company1 {
+  width: 99%;
+  height: 300px;
+  border-radius: 7px;
+  background-color: #e4eef5;
+  margin-left: 0;
+}
+
+
+.companyLogo1 h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.companyLogo1 p a {
+  font-size: 20px;
+  color: #171515;
+  margin-left: 30%;
+
+  margin-bottom: 10%;
+  text-decoration: none;
+}
+
+.companyLogo1 p a:hover{
+  color: white;
+} */
+
+footer{
+  margin-top: 10%;
+  background-color: rgb(122, 171, 245);
+  padding: 10px;
+}
+.footer .companyLogo1 {
+   margin-left: 46%;
+
+}
+.footer .companyLogo1 h2{
+  font-size: 26px;
+  font-family: poppins;
+font-weight: 100;
+padding-top: 10px;
+}
+.footer .companyLogo1 h5{
+  margin-left: 7%;
+  font-size: 10px;
+
+}
+.underline::after{
+  content: " ";
+  width:94%;
+  height: 2px;
+  border: none;
+  border-top: 1px dotted rgb(65, 63, 64);
+  margin-top:1%;
+  margin-left:-43%;
+  position: absolute;
+}
+.footer .grid-columns{
+  display: grid;
+  grid-template-columns:30% 50%;
+}
+.about{
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.grid-columns h2{
+  margin-left: 30%;
+  font-family: poppins;
+  font-weight: 600;
+}
+.grid-columns p{
+  padding: 10px 0;
+  line-height: 1.7;
+  font-family: poppins;
+  font-size: 15px;
+ text-align:center;
+}
+.links{
+ margin-top: 28px;
+ padding: 0 10px;
+ margin-left: 150px;
+}
+.links h2{
+  margin-left: 28%;
+}
+.links a{
+  text-decoration: none;
+  color: black;
+  font-family: poppins;
+  margin-top: 10%;
+  font-size: 15px;
+}
+.contents{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.content-1{
+  display: grid;
+}
+.content-2{
+  display: grid;
+}
+.content-3{
+  display: grid;
+}
+.contact-links p i{
+   padding: 0 10px;
+   margin-left: 10px;
+   font-size: 20px;
+}
+.underline1::after{
+  content: " ";
+  width:90%;
+  height:2px;
+  bottom:50%;
+  border:none;
+  border-top:1px dotted rgb(214, 8, 180);
+  margin-top:18%;
+  top: 190%;
+  margin-left:-40%;
+  position:absolute;
+}

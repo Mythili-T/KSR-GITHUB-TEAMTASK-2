@@ -1,0 +1,132 @@
+<app-header></app-header>
+
+
+<br>
+<br>
+<div class="filters">
+  <div class="searchtext">
+       <label>Search&nbsp;&nbsp;</label>
+       <input type="text" [(ngModel)]="searchValue">
+       <!-- <input type="text" *ngIf="searchValue!=''" >you search&nbsp;&nbsp;{{searchValue}} -->
+       <h5 clas="text" *ngIf="searchValue!=''">you search&nbsp;&nbsp;"{{searchValue}}"</h5>
+  </div>
+
+
+
+<div class="container" *ngFor="let p of cars | filterCar:searchValue">
+  <div class="gallery">
+    <div class="name-container" [ngStyle]="{'background-color':p.name===''? '#fff':'RGB(214, 80, 118)',
+    'margin-top.%':30,
+  'padding.px':10,
+'border-radius.px':5,
+'cursor':'pointer',
+'color':'white'}">
+            <div class="" [ngStyle]="{
+              'font-size.px':18,
+              'font-weight':500
+            }">{{p.name}}</div>
+    </div>
+
+          <div class="item-1">
+              <img [src]="p.image">
+          </div>
+          <div class="item-2">
+              <img [src]="p.left">
+          </div>
+          <div class="item-3">
+               <img [src]="p.right">
+          </div>
+  </div>
+</div>
+<app-images></app-images>
+
+<div class="headline">Rolls-Royce News</div>
+  <div class="groups">
+    <div class="containers">
+      <div class="box-top">
+          <img src="../../assets/news1.jpg">
+      </div>
+      <div class="box-bottom">
+      <h1>Car News That Mattered This Week (Oct 17-21): New Nissan X-Trail Confirmed For India, Skoda Kushaq Anniversary Edition Launched,
+        Volvo XC40 Recharge Roll Out, And More</h1>
+      <P>The big takeaway this week was Nissan's global SUV showcase, followed by news of luxury EVs, and upcoming models spied under camouflage.
+        </P>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="box-top">
+        <img src="../../assets/new2.webp" id="image">
+      </div>
+      <div class="box-bottom">
+        <h1>Car News That Mattered This Week (Oct 17-21): New Nissan X-Trail Confirmed For India, Skoda Kushaq Anniversary Edition Launched, Volvo XC40 Recharge Roll Out, And More</h1>
+        <P>Nissan has revealed its ambitions for new models in India, including the X-Trail, Qashqai, and Juke. The first two will go through market feasibility testing in the coming months, with the X-Trail taking precedence over the Qashqai for launch, while the small SUV Juke was just showcased for now.</P>
+      </div>
+    </div>
+    <div class="containers">
+      <div class="box-top">
+        <img src="../../assets/new3.webp" >
+      </div>
+      <div class="box-bottom">
+        <h1>Six Times Indian Celebrities Were Involved In Luxury Car Tax Evasion Cases</h1>
+        <P>Tamil actor Vijay breathed a sigh of relief when the Madras High Court (HC) waived off a Rs 1 lakh fine that was slapped on him recently. The veteran actor had appealed in 2012 for an exemption from a Rs 40 lakh entry tax for his Rolls Royce Ghost, but the court has ordered him to pay the amount.</P>
+      </div>
+    </div>
+  </div>
+
+
+<div class="headline" id="reviews">Rolls-Royce Reviews</div>
+  <div class="car-container">
+      <div class="box">
+        <!-- <img src="../../assets/ghost.avif" width="100%" height="130px" > -->
+        <!-- <h3>Rolls-royce Ghost</h3> -->
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Good At This Price</span><br>
+        <p>I have bought this car about 1 month ago and this car is great. The comfort level is so good.</p>
+        <h4 class="review2">By Leroy Chirappanath<br>
+        <small>On: Mar 01, 2023 | 169 Views</small></h4>
+      </div>
+
+    <div class="box">
+
+     <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>This Car Is Amazing, All</span><br>
+      <p>This car is amazing, all looking good. This would give a Royal feeling, that's very amazing. Engine power is too efficient. </p>
+      <h4 class="review1">By Surya<br>
+      <small>On: Jan 28, 2023 | 159 Views</small></h4>
+    </div>
+
+    <div class="box">
+
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>A RIDE IN THE GHOST</span><br>
+      <p>About 3 years ago, I was there in Mumbai. Suddenly one day, I was surprised to see that my uncle bought this super perfect car. The ride was a memorable one! And really, all its functions and everything is so much carefully designed that it feels like you're royal. #GHOST!</p>
+      <h4  class="review3">By Ratna Nath<br>
+      <small>On: Jan 19, 2023 | 324 Views</small></h4>
+    </div>
+  </div>
+</div>
+
+
+
+
+<app-footer></app-footer>
+
+

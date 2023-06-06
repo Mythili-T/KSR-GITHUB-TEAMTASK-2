@@ -1,0 +1,86 @@
+<app-header></app-header>
+<div class="container">
+  <form action="" [formGroup]="serviceForm" >
+   <div class="row">
+           <div class="col-25">
+                 <label>Customer Id</label>
+           </div>
+           <div class="col-75">
+                <input type="number" placeholder="Enter valid customer id" formControlName="custId">
+          </div>
+          <div class="validateError" *ngIf="serviceForm.controls['custId'].dirty">
+            <p class="error" *ngIf="serviceForm.controls['custId'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>CustomerId can't be blank</p>
+          </div>
+          <br>
+   </div>
+   <div class="row">
+       <div class="col-25">
+        <label>Vehicle Number</label>
+       </div>
+       <div class="col-75">
+        <input type="text" placeholder="Enter Vehicle number" formControlName="vehicleNumber">
+       </div>
+  </div><br>
+    <div class="row">
+      <div class="col-25">
+         <label>Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" placeholder="Enter your email" id="validateEmail" formControlName="email" name="email" >
+      </div>
+      <div class="validateError" *ngIf="serviceForm.controls['email'].dirty">
+        <p class="error" *ngIf="serviceForm.controls['email'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
+        <p class="error" *ngIf="serviceForm.controls['email'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-25">
+         <label>Mileage</label>
+      </div>
+      <div class="col-75">
+        <input type="number" placeholder="Enter Mileage" formControlName="mileage">
+      </div>
+    </div>
+        <br>
+<div class="row">
+  <div class="col-25">
+    <label>Last Service Period</label>
+  </div><br>
+  <div class="col-75">
+    <input type="radio" value="6 Month" name="name" id="btn1" >
+    <span>6 Month</span><br>
+    <input type="radio" value="1 Year" name="name" id="btn2">
+    <span>1 Year</span>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-25">
+    <label>Branch</label>
+   </div>
+   <div class="col-75">
+    <input type="text" placeholder="Enter Branch" formControlName="branch">
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+    <label id="service">Service</label>
+  </div>
+  <div class="col-75">
+        <select id="services" formControlName="service" style="width: 75%;" placeholder="Enter service" >
+          <option value="Maintanence Package">Maintanence Package</option>
+          <option value="Light and Accessories">Light and Accessories</option>
+          <option value="Exhaust System">Exhaust System</option>
+          <option value="Oil Change">Oil Change</option>
+          <option value="Brakes and Brakes Repair">Brakes and Brakes Repair</option>
+          <option value="New Tire and Tire Repair">New Tire and Tire Repair</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="col-75" style="margin-top: 30px;">
+      <button type="submit" style="text-decoration: none;margin-top: 30px;margin-left: 20%;width: 100px;height: 40px;color: white;font-size: 15px;font-weight: 500;background-color: rgb(71, 71, 183);border-radius: 5px;" (click)="submit()" [disabled]="serviceForm.invalid">Submit</button>
+      <a routerLink="/Service"><button type="submit" style="text-decoration: none;margin-top: 30px;margin-left: 40%; width: 100px;height: 40px;color: white;font-size: 15px;font-weight: 500;background-color: rgb(71, 71, 183);border-radius: 5px;">Cancel</button></a>
+
+   </div>
+  </div>
+  </form>
+</div>
+<app-footer></app-footer>

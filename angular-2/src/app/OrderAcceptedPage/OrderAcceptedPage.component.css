@@ -1,0 +1,171 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+width: 40%;
+height: 120vh;
+
+border: none;
+box-shadow: -1px -1px 14px 2px rgba(129, 123, 123, 0.75);
+background: transparent;
+margin-left:25%;
+
+}
+
+
+
+h1{
+margin: 0;
+margin-left:20%;
+margin-top: 5%;
+font-size: 28px;
+font-family: poppins;
+color: rgb(16, 15, 15);
+font-weight: 200;
+letter-spacing: 3px;
+padding: 10px 0;
+}
+.btn{
+  display: grid;
+  position: relative;
+  width: 70%;
+}
+button{
+width: 15%;
+height: 50px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-decoration: none;
+border-radius: 2px;
+border: none;
+box-shadow: -1px -1px 14px 2px rgba(129, 123, 123, 0.75);
+background: transparent;
+border-radius: 30px;
+cursor: pointer;
+color: rgb(21, 21, 21);
+margin-left: 20px;
+position: absolute;
+
+}
+.butt2{
+  margin-left:42%;
+  }
+.butt3{
+
+  margin-left:83%;
+
+  }
+
+a{
+text-decoration: none;
+color: rgb(20, 19, 19);
+font-size: 15px;
+}
+.input-group{
+font-size: 30px;
+margin-top: 40px;
+margin-left: 10%;
+color: rgb(9, 9, 9);
+
+}
+.input-group input{
+width:70%;
+height: 50px;
+padding: 10px;
+margin: 20px;
+border-bottom:5px 3px rgb(48, 47, 47);
+
+outline: none;
+background:transparent;
+font-size: 15px;
+color: rgb(23, 22, 22);
+}
+.input-group input:hover{
+cursor: pointer;
+border-bottom: 2px solid rgb(93, 91, 91);
+color: rgb(13, 12, 12);
+}
+.inputs1 input{
+width: 60%;
+height: 70px;
+}
+.inputs select{
+width: 60%;
+height: 50px;
+margin: 20px;
+padding: 9px;
+border-bottom:1px solid rgb(214, 205, 205);
+
+outline: none;
+background:transparent;
+font-size: 15px;
+color: rgb(7, 7, 7);
+}
+.inputs select:hover{
+cursor: pointer;
+}
+#icon:hover{
+transform: translateX(15px);
+
+}
+input[type=submit]{
+  width: 20%;
+   margin-left: 35%;
+    background-color: rgb(63, 63, 244);
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  input[type=submit]:hover{
+    background-color: rgb(165, 165, 217);
+  } */
+  h1{
+    margin: 0;
+    margin-left:20%;
+    margin-top: 1%;
+    font-size: 18px;
+    font-family: poppins;
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    }
+.input-group{
+
+  margin-left: 50px;
+  height: 200px;
+  color: rgb(9, 9, 9);
+}
+.input-group .inputs select{
+  width: 61%;
+  height: 20px;
+  margin: 20px;
+  border-bottom:1px solid rgb(214, 205, 205);
+  outline: none;
+  background:transparent;
+  font-size: 15px;
+  color: rgb(7, 7, 7);
+  }
+ .inputs .inputs1 input{
+    width: 57%;
+    height: 30px;
+    padding: 9px;
+    }
+    .input-group input{
+      width:59%;
+      height: 20px;
+      margin-left: 19px;
+
+      border-bottom:5px 3px rgb(48, 47, 47);
+
+      outline: none;
+      background:transparent;
+      font-size: 15px;
+      color: rgb(23, 22, 22);
+      margin-top: 9px;
+      padding: 4px;
+      }

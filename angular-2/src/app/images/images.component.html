@@ -1,0 +1,153 @@
+<app-header></app-header>
+<div class="totalcontent">
+
+<div class="headline" style="margin-top: 13%;margin: 20px;">
+ <button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="Images">Images</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="News">News</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="Reviews">Reviews</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'grey',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/About" fragment="popup">Back</a></button>
+</div>
+
+<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Images">Images</h2>
+
+<div class="main-body">
+
+<mat-form-field>
+<mat-label>Filter</mat-label>
+<input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+</mat-form-field>
+
+
+<div class="table-container">
+   <div class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" matSort>
+
+<!-- ID Column -->
+<ng-container matColumnDef="id">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+  <td mat-cell *matCellDef="let row"> {{row.id}}</td>
+</ng-container>
+<ng-container matColumnDef="Model">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header> Model</th>
+  <td mat-cell *matCellDef="let row"> {{row.Model}}</td>
+</ng-container>
+
+<ng-container matColumnDef="imageUrl">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header> imageUrl</th>
+  <td mat-cell *matCellDef="let row"><img [src]="row.imageUrl" style="width:200px;height: 150px;margin-top: 20px;"/> </td>
+</ng-container>
+<ng-container matColumnDef="StartingPrice">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header> StartingPrice</th>
+  <td mat-cell *matCellDef="let row"> {{row.StartingPrice}}</td>
+</ng-container>
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+<!-- Row shown when there is no matching data. -->
+<tr class="mat-row" *matNoDataRow>
+  <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+</tr>
+</table>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+   </div>
+</div>
+</div>
+</div>
+
+
+<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="News">News</h2>
+<div class="reviews" >
+ <mat-card class="example-card" *ngFor="let item of news">
+  <mat-card-header>
+
+    <mat-card-title>{{item.name}}</mat-card-title>
+
+  </mat-card-header>
+  <img
+  mat-card-image src="{{item.imageUrl}}">
+  <mat-card-content>
+    <p>
+      {{item.content}}
+    </p>
+  </mat-card-content>
+
+</mat-card>
+</div>
+
+
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator>
+
+<div class="news">
+  <h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Reviews">Reviews</h2>
+  <div class="News-content"style="margin-left: 50px;">
+
+    <mat-card class="example-card" *ngFor="let item of reviews">
+      <div class="stars" style="color: orange;margin-left: 20px;">
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+    </div>
+     <mat-card-header>
+
+       <mat-card-title>{{item.title}}</mat-card-title>
+
+     </mat-card-header>
+
+     <mat-card-content>
+
+       <p>
+        {{item.parah}}
+
+       </p>
+       <h5>{{item.name}}</h5>
+       <h5>{{item.views}}</h5>
+     </mat-card-content>
+
+   </mat-card>
+
+</div>
+<app-footer></app-footer>

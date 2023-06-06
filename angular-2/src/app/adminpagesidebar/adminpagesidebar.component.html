@@ -1,0 +1,65 @@
+
+<body>
+
+       <input type="checkbox" id="toggle">
+       <label class="side-toggle" for="toggle"><i class="fa-solid fa-bars"></i></label>
+
+  <div class="whole">
+    <div class="sidebar">
+
+         <div class="logo" >
+           <img src="../../assets/Rolls Royce Logo.png" width="140px"  height="80px" style="margin-top: -40px; margin-left: -20px; " />
+         </div>
+
+
+      <div class="side-menu">
+        <i class="fa-solid fa-user"></i>
+        <a routerLink="/users" id="logout">User</a>
+      </div>
+      <div class="side-menu">
+        <i class="fa-sharp fa-solid fa-truck-fast"></i>
+        <a routerLink="/orderdetails">Orders</a>
+
+      </div>
+      <div class="side-menu">
+        <i class="fa-sharp fa-solid fa-gears"></i>
+
+        <a routerLink="/servicedetails">Service Details</a>
+
+      </div>
+      <div class="side-menu">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <a routerLink="/loginnew" id="logout">Logout</a>
+
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="card-total1">
+           <h3>Users Count</h3>
+           <p style="font-size: 18px;">{{getLogin.length}}</p>
+           <div class="img">
+            <i class="fa-solid fa-user" id="c1"></i>
+           </div>
+
+        </div>
+        <div class="card-total2">
+          <h3>Total Orders</h3>
+          <p style="font-size: 18px;">{{orders.length}}</p>
+          <div class="img">
+           <i class="fa-sharp fa-solid fa-truck-fast" id="c2"></i>
+          </div>
+          </div>
+        <div class="card-total3">
+          <h3>Service Booking</h3>
+          <p style="font-size: 18px;">{{service.length}}</p>
+          <div class="img">
+          <i class="fa-sharp fa-solid fa-gears" id="c3"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
