@@ -1,0 +1,70 @@
+{
+  "addEmp": [],
+  "empLogin": [
+    {
+      "userId": "Swetha101",
+      "password": "Swetha@123"
+    },
+    {
+      "userId": "Asha102",
+      "password": "Asha@626"
+    }
+  ],
+  "adminLogin": [
+    {
+      "userId": "Swetha",
+      "password": "Swetha@admin"
+    }
+  ],
+  "resume": [
+    {}
+  ],
+  "JavaDeveloper": [],
+  "UIDeveloper": [
+    {
+      "username": "Swetha S",
+      "mobile": "9842413031",
+      "mail": "swethasuresh626@gmail.com",
+      "role": "UI Developer",
+      "id": 1
+    }
+  ],
+  "AutomationTester": [],
+  "TechnicalLead": [],
+  "leaveForm": [
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "deptname": "Testing",
+      "mobile": "9842413031",
+      "leaveDate": "2023-06-06",
+      "returnDate": "2023-06-08",
+      "reason": "Function",
+      "id": 1
+    },
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "deptname": "Testing",
+      "mobile": "9842413031",
+      "leaveDate": "2023-05-22",
+      "returnDate": "2023-05-24",
+      "reason": "family Problem",
+      "id": 2
+    }
+  ],
+  "WorkForm": [
+    {
+      "taskname": "Backend Implementation",
+      "owner": "Swetha",
+      "time": "12hr",
+      "id": 1
+    },
+    {
+      "taskname": "Loginpage Design",
+      "owner": "Asha",
+      "time": "10hr",
+      "id": 2
+    }
+  ]
+}

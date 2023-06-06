@@ -1,0 +1,139 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.picture img{
+  display: block;
+  width: 100px; height: 100px;
+  object-fit: cover;
+  border:4px solid #726a95;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+h2{
+  margin-top: 0%;
+  text-align: center;
+  color:crimson;
+
+}
+.top {
+  width: 100%;
+  margin: 0;
+  height: 80px;
+  background: gray;
+  top: 0;
+
+}
+
+.side-bar {
+  position: fixed;
+  list-style-type: none;
+  left: -250px;
+  top: 0%;
+  width: 250px;
+  height: 100%;
+  background: #D2DAFF;
+}
+
+.side-bar a {
+  display: block;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  width: 140px;
+  height: 20px;
+  padding: 20px;
+  margin-top: 10px;
+
+}
+
+.side-bar a:hover {
+
+  background-color: #293462;
+  color: white;
+}
+
+#check {
+  display: none;
+}
+
+label #bar,
+#cancel {
+  position: absolute;
+  cursor: pointer;
+}
+
+label #bar {
+  left: 40px;
+  top: 50px;
+  font-size: 190%;
+  color: white;
+}
+
+label #cancel {
+  z-index: 111;
+  left: -200px;
+  top: 2%;
+  font-size: 150%;
+  color: #182747;
+}
+
+
+label #cancel:hover {
+  color: #425F57;
+}
+
+#check:checked~.side-bar {
+  left: 0px;
+}
+
+#check:checked~label #cancel {
+  left: 220px;
+}
+
+.DropDown {
+  list-style-type: none;
+  display: flex;
+  top: 5px;
+
+}
+
+.DropDown a {
+  display: block;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding: 10px 50px;
+  margin-top: 15px;
+  margin-left: 100px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+
+.More-Content {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.DropDown li:nth-child(5):hover .More-Content {
+  display: inline-block;
+  padding: 0px;
+}
+
+.DropDown li a:hover {
+  background-color: #293462;
+  color: white;
+
+}
+.dd {
+  margin-left: 250px;
+}
+.active{
+  background-color:#293462;
+  color: white;
+
+}

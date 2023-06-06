@@ -1,0 +1,46 @@
+.dark{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+   top: 0;
+   margin-left: 200px;
+
+}
+.proName{
+  text-align: center;
+  color: burlywood;
+  font-size: larger;
+}
+
+.moduleName{
+  margin-left: 20%;
+  color: cornflowerblue;
+  font-size: larger;
+  font-family: sans-serif;
+}
+table,
+th,
+td,
+tr {
+border: 20px solid transparent;
+border-radius: 5px;
+text-align: center;
+padding: 0px;
+/* margin-left: 50px; */
+
+}
+td,
+th {
+border: 1px solid #DFD3C3;
+border-collapse: separate;
+padding: 10px;
+}
+.top{
+background-color:rgba(248, 215, 173, 0.5) ;
+}
+
+
+.bottom {
+background-color: rgba(243, 240, 240, 0.5);
+}
+

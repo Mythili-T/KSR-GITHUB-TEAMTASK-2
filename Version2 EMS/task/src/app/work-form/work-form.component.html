@@ -1,0 +1,45 @@
+<div class="mat-dialog-title">
+  <h1>Create Task</h1>
+</div>
+<div class="row">
+<div class="mat-dialog-content">
+  <form [formGroup]="taskForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Task Name</mat-label>
+    <input matInput formControlName="taskname" pattern="^[A-Z][a-z]*[' ']*[A-Z][a-z]*[' ']*[A-Z]*$">
+  </mat-form-field>
+    <div *ngIf="taskForm.controls['taskname'].invalid&&taskForm.controls['taskname'].touched">
+      <small *ngIf="taskForm.controls['taskname'].errors?.['required']">Please enter Taskname</small>
+      <small *ngIf="taskForm.controls['taskname'].errors?.['pattern']">First letter should be capital</small>
+    </div>
+
+  <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Owner</mat-label>
+    <input matInput formControlName="owner" pattern="^[A-Z][a-z]*[' ']*[A-Z]*[' ']*[A-Z]*$">
+  </mat-form-field>
+  <div *ngIf="taskForm.controls['owner'].invalid&&taskForm.controls['owner'].touched">
+    <small *ngIf="taskForm.controls['owner'].errors?.['required']">Please enter Ownername</small>
+    <small *ngIf="taskForm.controls['owner'].errors?.['pattern']">First letter should be capital</small>
+    <small *ngIf="taskForm.controls['owner'].errors?.['minlength']">Owner Name should be atleast 3 letter</small>
+  </div>
+  <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Estimated time</mat-label>
+    <input matInput formControlName="time" pattern="^[1-9][0-9]{0,1}[h][r]$">
+  </mat-form-field>
+  <div *ngIf="taskForm.controls['time'].invalid&&taskForm.controls['owner'].touched">
+    <small *ngIf="taskForm.controls['time'].errors?.['required']">Please enter Estimated Time</small>
+    <small *ngIf="taskForm.controls['time'].errors?.['pattern']">Enter valid time</small>
+  </div>
+  </form>
+</div>
+</div>
+
+<div class="mat-dialog-action">
+  
+  <button mat-raised-button color="warn">Close</button>
+  <button mat-raised-button  [disabled]="taskForm.invalid"color="primmary" (click)="task()">Assign</button>
+</div>
+
+

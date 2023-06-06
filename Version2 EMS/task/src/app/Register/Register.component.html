@@ -1,0 +1,73 @@
+<app-Header></app-Header>
+<div class="content">
+
+  <div class="slide">
+    <h2>Want To Join As {{recRole}} ?</h2>
+  <br>
+  <h1>We're Hiring</h1>
+    <img src="../../assets/Images/sign-up.avif" width="250px">
+  </div>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>Register Here</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form class="form" [formGroup]="regForm">
+      <!-- <form  class="form" [formGroup]="loginForm" (ngSubmit)="submit()"> -->
+        <label >Full Name </label>
+        <input type="text" formControlName="username" class="form-content" pattern="^[A-Z][a-z]*[' ']*[A-Z]*[' ']*[A-Z]*$">
+        <!-- <div class="form-border"></div> -->
+
+
+        <div *ngIf="regForm.controls['username'].invalid&&regForm.controls['username'].touched">
+          <small *ngIf="regForm.controls['username'].errors?.['required']">Please enter username</small>
+          <small *ngIf="regForm.controls['username'].errors?.['minlength']">User name should be atleast 3 letters</small>
+          <small *ngIf="regForm.controls['username'].errors?.['pattern']">First letter should be capital</small>
+
+
+          <br>
+
+        </div>
+<br>
+
+        <label>Mobile Number </label>
+        <input type="text" formControlName="mobile" class="form-content"  pattern="^[6789][0-9]{9}$" >
+
+        <!-- <div class="form-border"></div> -->
+
+        <div *ngIf="regForm.controls['mobile'].invalid&&regForm.controls['mobile'].touched">
+        <small *ngIf="regForm.controls['mobile'].errors?.['required']">Please enter mobile number</small>
+        <!-- <small *ngIf="regForm.controls['mobile'].errors?.['maxlength']">Password should be 10 letters</small> -->
+        <small *ngIf="regForm.controls['mobile'].errors?.['pattern']">Enter Valid Mobile Number</small>
+        </div>
+<br>
+        <label>Email ID</label>
+        <input type="text" formControlName="mail" class="form-content" pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$">
+        <div *ngIf="regForm.controls['mail'].invalid&&regForm.controls['mail'].touched">
+          <small *ngIf="regForm.controls['mail'].errors?.['required']">Please enter Mail ID</small>
+          <small *ngIf="regForm.controls['mail'].errors?.['pattern']">Enter Valid Mail ID</small>
+          </div>
+        <br>
+        <!-- <label>Role: {{recRole}} </label>
+        <p>{{recRole}}</p> -->
+        
+        <label>Upload Resume</label>
+        <input type="file" formControlName="upload"  class="form-content">
+        <br>
+
+        <button  class="btn" id="submit-btn"[disabled]="status" (click)="register()">Register</button>
+        <br>
+        <a routerLink="/Openings">Back</a>
+
+      </form>
+      <div class="side">
+
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<app-Footer></app-Footer>

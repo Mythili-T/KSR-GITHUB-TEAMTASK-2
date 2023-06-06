@@ -1,0 +1,57 @@
+<div class="image">
+  <div class="content">
+    <div class="side">
+      <img src="../../assets/Images/sign.avif" width="250">
+    </div>
+      <div id="card">
+        <div id="card-content">
+          <div id="card-title">
+            <h2>Change Password</h2>
+            <div class="underline-title"></div>
+          </div>
+
+          <form  class="form" [formGroup]="passForm">
+            <label style="padding-top:13px">Current Password </label>
+            <input type="text" formControlName="currentPassword" class="form-content">
+            <div class="form-border"></div>
+
+
+            <div *ngIf="passForm.controls['currentPassword'].invalid&&passForm.controls['currentPassword'].touched">
+              <small *ngIf="passForm.controls['currentPassword'].errors?.['required']">current password is required</small>
+              <small *ngIf="passForm.controls['currentPassword'].errors?.['minlength']">User name should be atleast 6 letters</small>
+
+              <br>
+
+            </div>
+            <label style="padding-top:13px">Change Password </label>
+            <input type="text" formControlName="changePassword" class="form-content">
+            <div class="form-border"></div>
+
+             <div *ngIf="passForm.controls['changePassword'].invalid&&passForm.controls['changePassword'].touched">
+            <small *ngIf="passForm.controls['changePassword'].errors?.['required']">password is required</small>
+            <small *ngIf="passForm.controls['changePassword'].errors?.['minlength']">Password should be atleast 6 letters</small>
+            </div>
+
+            <label style="padding-top:22px">Confirm Password </label>
+            <input type="password" formControlName="confirmPassword" class="form-content" >
+            <div class="form-border"></div>
+
+            <div *ngIf="passForm.controls['confirmPassword'].invalid&&passForm.controls['confirmPassword'].touched">
+              <small *ngIf="passForm.controls['confirmPassword'].errors?.['required']">confirm password is required</small>
+              <small *ngIf="passForm.controls['confirmPassword'].errors?.['minlength']">Password should be atleast 6 letters</small>
+            </div>
+
+            <div *ngIf="passForm.errors?.['passwordMismatchError']&& passForm.controls['confirmPassword'].touched">
+              <small>Password Mismatch</small>
+            </div>
+
+
+            <button  class="btn" [disabled]="status" (click)="change()" id="submit-btn">Change</button>
+          </form>
+
+       </div>
+      </div>
+
+  </div>
+
+</div>

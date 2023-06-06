@@ -1,0 +1,309 @@
+<app-Emp_Header></app-Emp_Header>
+<div class="dark">
+<div class="proName">
+            <h2>Project Name: Employee Management Portal</h2>
+        </div>
+        <div class="moduleName">
+            <h4>Module 01: Login Page</h4>
+        </div>
+        <form [formGroup]="workForm">
+        <table>
+            <tr class="top">
+                <td>Task ID</td>
+                <td>Task Name</td>
+                <td>Owner</td>
+                <td>Status</td>
+                <td style="width: 10%;">Estimated Hours</td>
+                <td style="width: 14%;">Total Spent Hours</td>
+                <td>Module Status</td>
+                <td>Update Status</td>
+
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-001</td>
+                <td>UI Implementation</td>
+                <td>Swetha</td>
+                <td>
+
+                    <select class="box" formControlName="status">
+                      <option disabled selected>Status</option>
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                    <small *ngIf="workForm.controls['status'].errors?.['required']"></small>
+                    </div>
+                </td>
+                <td> 5 hr </td>
+                <td>
+                    <input formControlName="totalTime" class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                    <div *ngIf="workForm.controls['totalTime'].invalid&&workForm.controls['totalTime'].touched">
+                      <small *ngIf="workForm.controls['totalTime'].errors?.['required']"></small>
+                    </div>
+
+                </td>
+
+                <td >
+                    <textarea formControlName="text"></textarea>
+                    <div *ngIf="workForm.controls['text'].invalid&&workForm.controls['text'].touched">
+                      <small *ngIf="workForm.controls['text'].errors?.['required']"></small>
+                      </div>
+
+                </td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-002</td>
+                <td>Backend Implementation</td>
+                <td>Swetha</td>
+                <td>
+                   <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>12 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input  type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-003</td>
+                <td>API Wiring</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>10 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m"style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-004</td>
+                <td>Table Creation for DB</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>15 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-005</td>
+                <td>Analysis</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>20 hr </td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+
+<!-- <form [formGroup]="workForm">
+        <div class="moduleName">
+            <h4>Module 02: Employee Page</h4>
+            <h5 style="text-align: left;">SubTask 02.1: Attendance Module</h5>
+        </div>
+
+        <table>
+            <tr class="top">
+                <td>Task ID</td>
+                <td>Task Name</td>
+                <td>Owner</td>
+                <td>Status</td>
+                <td style="width: 10%;">Estimated Hours</td>
+                <td style="width: 14%;">Total Spent Hours</td>
+                <td>Module Status</td>
+                <td>Update Status</td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-001</td>
+                <td>UI Implementation</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>10 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-002</td>
+                <td>Backend Implementation</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td> 18 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m"style="width: 80px;">
+                </td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-003</td>
+                <td>API Wiring</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td> 20 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-004</td>
+                <td>Table Creation for DB</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>20 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-005</td>
+                <td>Analysis</td>
+                <td>Swetha</td>
+                <td>
+                  <select class="box" formControlName="status">
+                    <option disabled selected>Status</option>
+                      <option value="Not Started">Not Started</option>
+                      <option value="In-Progress">In-Progress</option>
+                      <option value="Completed">Completed</option>
+                  </select>
+                  <div *ngIf="workForm.controls['status'].invalid&&workForm.controls['status'].touched">
+                  <small *ngIf="workForm.controls['status'].errors?.['required']">Required</small>
+                  </div>
+                </td>
+                <td>32 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="width: 80px;">
+                </td>
+
+                <td><textarea></textarea></td>
+                <td>
+                  <input type="button" type="submit" value="Submit" [disabled]="workForm.invalid" (click)="send()">
+              </td>
+
+            </tr>
+
+
+          </table>
+          </form>
+          </div>
+ -->

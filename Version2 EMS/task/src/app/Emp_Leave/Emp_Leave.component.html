@@ -1,0 +1,75 @@
+<app-Emp_Header></app-Emp_Header>
+<div class="content">
+    <h2>Apply For Leave</h2>
+    <form class="form" [formGroup]="leaveForm">
+        <label>Employee Name</label>
+        <input type="text" formControlName="username" placeholder="enter full name" id="username" style="text-align: center;" pattern="^[A-Z][a-z]*[' ']*[A-Z]*[' ']*[A-Z]*$">
+        <div *ngIf="leaveForm.controls['username'].dirty || leaveForm.controls['username'].touched">
+          <small *ngIf="leaveForm.controls['username'].errors?.['touched']">Please enter username</small>
+          <small *ngIf="leaveForm.controls['username'].errors?.['required']">Please enter username</small>
+          <small *ngIf="leaveForm.controls['username'].errors?.['minlength']">User name should be atleast 3 letters</small>
+          <small *ngIf="leaveForm.controls['username'].errors?.['pattern']">First letter should be capital</small>
+        </div>
+        <br>
+        <label>Team Leader Name</label>
+        <input type="text" formControlName="tlname" placeholder="enter your TL name" id="leadname" style="text-align: center;">
+        <div *ngIf="leaveForm.controls['tlname'].invalid&&leaveForm.controls['tlname'].touched">
+          <small *ngIf="leaveForm.controls['tlname'].errors?.['required']">Please enter TL Name</small>
+          <small *ngIf="leaveForm.controls['tlname'].errors?.['minlength']">TL name should be atleast 3 letters</small>
+          <small *ngIf="leaveForm.controls['tlname'].errors?.['pattern']">First letter should be capital</small>
+          <br>
+        </div>
+  
+        <br>
+        <label>Department</label>
+        <input type="text" formControlName="deptname" placeholder="enter dept" id="deptname" style="text-align: center;" onkeyup="deptValid()">
+        <div *ngIf="leaveForm.controls['deptname'].invalid&&leaveForm.controls['deptname'].touched">
+          <small *ngIf="leaveForm.controls['deptname'].errors?.['required']">Please enter TL Name</small>
+          <small *ngIf="leaveForm.controls['deptname'].errors?.['minlength']">TL name should be atleast 3 letters</small>
+          <small *ngIf="leaveForm.controls['deptname'].errors?.['pattern']">First letter should be capital</small>
+          <br>
+        </div>
+        <br>
+        <label>Contact Number</label>
+        <input type="text"  formControlName="mobile" placeholder="enter mobile number" id="usernum" style="text-align: center;"  pattern="^[6789][0-9]{9}$">
+        <div *ngIf="leaveForm.controls['mobile'].invalid&&leaveForm.controls['mobile'].touched">
+          <small *ngIf="leaveForm.controls['mobile'].errors?.['required']">Please enter mobile number</small>
+          <small *ngIf="leaveForm.controls['mobile'].errors?.['pattern']">Enter Valid Mobile Number</small>
+          </div>
+        <br>
+        <label>Leave Date</label>
+        <input formControlName="leaveDate" type="date" id="startDate" style="text-align: center;" >
+        <br>
+        <label>Return Date</label>
+        <input formControlName="returnDate" type="date" id="endDate" style="text-align: center;">
+        <br>
+         <label>Reason for Leave</label><br>
+        <div class="reasons">
+        <div class="left">
+            <input formControlName="reason" type="radio" name="reason" id="reason" value="Vacation">
+            <label>Vacation</label><br>
+            <input formControlName="reason" type="radio" name="reason" id="reason" value="Sick">
+            <label>Sick</label><br>
+
+            <div class="other" (change)="others()">
+              <input  type="radio" formControlName="reason"  name="reason" id="reason1">
+              <label>Others</label>
+              <input type="text" formControlName="reason" name="reason" *ngIf="status" placeholder="reason for leave">
+            </div>
+
+
+        </div>
+        <div class="right">
+            <input formControlName="reason" type="radio" name="reason" id="reason" value="Doctor Appointment">
+            <label>Doctor Appointment</label><br>
+            <input formControlName="reason" type="radio" name="reason" id="reason" value="Function">
+            <label>Function</label><br>
+        </div>
+        </div>
+        <br>
+    <div class="btn">
+      <button type="submit"[disabled]="leaveForm.invalid" (click)="sub()">Submit</button>
+    </div>
+
+    </form>
+    </div>

@@ -1,0 +1,20 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+h1 {
+    background: -webkit-linear-gradient(#D8D9CF, #9F8772, #665A48);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+    background-image: url(../../assets/Images/H2.jpg);
+    background-repeat: no-repeat;
+}
+

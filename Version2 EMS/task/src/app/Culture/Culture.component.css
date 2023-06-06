@@ -1,0 +1,46 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+
+}
+
+.grid {
+
+  margin-right: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  height: 550px;
+
+}
+
+.col {
+  margin-top: 10%;
+  margin-left: 2%;
+  height: 200px;
+  background-color:#E5F9DB;
+  border-radius: 15px;
+
+}
+.dark{
+  background:url(../../assets/Images/cul.jpg);
+
+  background-size: cover;
+}
+.col h2 {
+  text-align: center;
+
+  color:#537188;
+}
+.col p{
+  color:black;
+  margin-left: 15px;
+
+}
+.col:hover{
+  transform: scale(1.1);
+}
+
