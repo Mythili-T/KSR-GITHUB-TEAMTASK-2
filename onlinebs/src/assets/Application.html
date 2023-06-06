@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Passions+Conflict&display=swap"
+        rel="stylesheet"> -->
+    <title>Online Book Store</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo-container">
+                <a href="E:\Application\Online Book Store\Application.html"> <img src="logo.png" id="logo" alt=""></a>
+                <h1>Online <samp>Book Store</samp> </h1>
+            </div>
+            <i class="fa-solid fa-magnifying-glass"></i> <input type="text"
+                placeholder="Search by Title,Author,Publisher or ISBN " id="search">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+            <ul class="nevigation">
+
+
+                <li> <a href="E:\Application\Online Book Store\Application.html"> Home </a></li>
+
+                <li> <a href="E:\Application\Online Book Store\Books.html"> Books </a>
+                    <div class="submenu">
+                        <ul>
+
+                            <li> <a href="E:\Application\Online Book Store\fantacy.html"> Fantasy </a>
+                            </li>
+
+                            <li> <a href=""> Historical Fiction </a> </li>
+
+                            <li> <a href=""> Horror </a> </li>
+
+                            <li> <a href=""> Literary Fiction </a> </li>
+
+                            <li> <a href=""> Romance </a> </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li> <a href="#author"> Author's </a>
+                    <div class="submenu">
+                        <ul>
+
+                            <li> <a href=""> Mark Twain </a> </li>
+
+                            <li> <a href=""> Kazi Nasrul Islam </a> </li>
+
+                            <li> <a href=""> George Orwell </a> </li>
+
+                            <li> <a href=""> Lewis Wallace </a> </li>
+
+                            <li> <a href=""> Oliver Goldsmith </a> </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li> <a href="E:\Application\online Book store 2\ContactUs.html"> Contact </a></li>
+
+
+                <li> <a href="E:\Application\Login page\loginpage.html">Login </a></li>
+
+            </ul>
+        </div>
+    </div>
+     </div>
+    
+    <div class="imgslide">
+        <div class="image-slide">
+            <img src="slideimg1.jpg" id="image-slide">
+            <img src="slideimg6.jpg" id="image-slide">
+            <img src="slideimg4.jpg" id="image-slide">
+            <img src="slideimg7.jpg" id="image-slide">
+            <img src="slideimg5.jpg" id="image-slide">
+            <img src="slideimg9.jpg" id="image-slide">
+            <img src="slideimg2.jpg" id="image-slide">
+            <img src="slideimg10.jpg" id="image-slide">
+            <img src="slideimg3.jpg" id="image-slide">
+            <img src="slideimg8.jpg" id="image-slide">
+
+        </div>
+    </div>
+    <script>
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 3500);
+            var x;
+            const img = document.querySelectorAll("#image-slide");
+            for (x = 0; x < img.length; x++) {
+                img[x].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > img.length) { indexValue = 1 }
+            img[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    </script>
+    <div class="buttons">
+        
+        <img class="slidebuttonleft" id="slidebuttonleft" src="buttonleft.jpg" alt="">
+        <img class="slidebuttonright" id="slidebuttonright" src="buttonright.jpg" alt="">
+    </div>
+
+    <div class="grid-container" id="grid-container">
+
+        <div class="grid" id="grid">
+
+            <div class="grid-item-1">
+
+                <img src="fantasy1.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">A Game of Thrones <br> by George R. R. Martin</p><br>
+                <p id="buy-now"> Add to cart </p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy2.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">The Fellowship of the Ring <br> by J. R. R. Tolkien</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy3.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">The Lion,TW & TW <br> by C. S. Lewis</p><br>
+                <p id="buy-now">Add to cart </p>
+                <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+                <img src="fantasy4.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">The Colour of Magic<br> by Terry Pratchett</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy5.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">Assassin’s Apprentice <br> by Robin Hobb</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy6.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name"> The Lies of Locke Lamora<br> by Scott Lynch</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy7.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name">The Name of the Wind <br> by Patrick Rothfuss</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy8.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name"> Dragonflight <br> by Anne McCaffrey</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+            <div class="grid-item-1">
+
+                <img src="fantasy9.jpg" alt="" id="fantasyimg"><br>
+                <p id="book-name"> The Eye of the World <br> by Robert Jordan</p><br>
+                <p id="buy-now">Add to cart</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <h4>₹330.00</h4>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div class="center-tag">
+        <!-- <li><a href="E:\Application\Login page\loginpage.html">EXPLORE</a></li> -->
+        <div class="icon_tag1"><img src="icon1.png" alt="icon">
+            <p> Best Seller </p>
+        </div>
+        <div class="icon_tag2"><img src="icon2.png" alt="icon">
+            <p> Award Winners </p>
+        </div>
+        <div class="icon_tag3"><img src="icon3.png" alt="icon">
+            <p> Box Sets</p>
+        </div>
+        <div class="icon_tag4"><img src="icon4.png" alt="icon">
+            <p> Internation <br> Best Sellers</p>
+        </div>
+        <div class="icon_tag5"><img src="icon5.png" alt="icon">
+            <p> New Arrivals </p>
+        </div>
+        <div class="icon_tag6"><img src="icon6.png" alt="icon">
+            <p>Fictions Books</p>
+        </div>
+    </div>
+    </div>
+    <div class="author-title" id="author">
+        <p>
+           <br> Featured Author
+        </p><br>
+    </div>
+    <div class="author_tag">
+        <div><img src="author1.jpg" alt="">
+            <p>Stephen King</p>
+        </div>
+        <div><img src="author2.jpg" alt="">
+            <p>John Green</p>
+        </div>
+        <div><img src="author3.jpg" alt="">
+            <p>Gillian Flynn</p>
+        </div>
+        <div><img src="author4.jpg" alt="">
+            <p>Gayle Forman</p>
+        </div>
+        <div><img src="author5.jpg" alt="">
+            <p>Erich Segal</p>
+        </div>
+        <div><img src="author6.jpg" alt="">
+            <p>Sylvia Plath</p>
+        </div>
+        <div><img src="author7.jpg" alt="">
+            <p>Shashi Tharoor</p>
+        </div>
+        <div><img src="author8.jpg" alt="">
+            <p>Arundhati Roy</p>
+        </div>
+        <div><img src="author9.jpg" alt="">
+            <p>Stephen Coons</p>
+        </div>
+        <div><img src="author10.jpg" alt="">
+            <p>William Words..</p>
+        </div>
+        <div><img src="author11.jpg" alt="">
+            <p>Clive Cussler</p>
+        </div>
+        <div><img src="author12.jpg" alt="">
+            <p>Lewis Carroll</p>
+        </div>
+        <div><img src="author13.jpg" alt="">
+            <p>Ken Follett</p>
+        </div>
+        <div><img src="author14.jpg" alt="">
+            <p>Virginia Woolf</p>
+        </div>
+        <br>
+    </div> 
+    <footer>
+        <div class="footer-content1">
+          <br>  <h3><span style="font-family:'Passions Conflict', cursive ;">Online </span> Book Store </h3><br>
+           <div class="footercontent">
+           <div class="footercontent1">
+            <p id="foot-title">
+                COMPANY <br>
+            --------------
+            </p>
+                
+                   <li>About Us</li>  
+                   <li>Publisher Partnership</li>   
+                    <li> Contact Us</li> 
+                   <li>Privacy Policy</li>  
+                   <li>Disclaimer</li> 
+            </div>
+            <div class="footercontent2">
+                <p id="foot-title">
+                    MY ACCOUNT <br>
+                    --------------
+                </p>
+                
+                   <li>My Orders </li> 
+                   <li>My Addresses</li>  
+                   <li>My Personal Info</li> 
+            </div>
+            <div class="footercontent3">
+                <p id="foot-title">
+                    SUPPORT  <br>
+                    --------------
+                </p>
+                
+                    
+                   <li>Terms of Use </li> 
+                   <li>How to Order </li> 
+                   <li>Shipping Policy</li>  
+                   <li> Return Policy</li>
+                
+            </div> 
+                <div class="footercontent4">
+                    <p id="foot-title">
+                        MORE BOOKS <br>
+                        --------------
+                    </p>
+                    
+                       <li>Indian Languages</li>  
+                       <li>International Languages</li>  
+                       <li>Award Winning Books </li> 
+                       <li>Frontlist Picks Books</li>  
+                       <li>Used Books </li> 
+                       <li>Exams & Age</li> 
+                </div>
+            </div>
+            
+           
+            <div class="footer-bottom">
+               
+                <p>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”
+                    ― Jane Austen, Northanger Abbey</p>
+                <p>copyright &copy;2020 Online book Store. designed by Sree Ganesh</p>
+                <div class="foot-image">
+                    <img src="foot1.png" alt="" id="footimg"> 
+                    <img src="foot2.png" alt="" id="footimg">
+                    <img src="foot3.png" alt="" id="footimg">
+                    <img src="foot4.png" alt="" id="footimg">
+                    <img src="foot5.png" alt="" id="footimg">
+                    <img src="foot6.png" alt="" id="footimg">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const moveleft = document.querySelector("#slidebuttonleft");
+        const moveright = document.querySelector("#slidebuttonright");
+        moveleft.addEventListener("click", function (event) {
+            const moveleft1 = document.querySelector("#grid-container");
+            moveleft1.scrollLeft -= 1000;
+            event.preventDefault();
+        });
+        moveright.addEventListener("click", function (event) {
+            const moveright1 = document.querySelector("#grid-container");
+            moveright1.scrollLeft += 1000;
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

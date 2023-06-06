@@ -1,0 +1,14 @@
+<div class="books" *ngFor="let eachData of products">
+  <div class="thumbnail">
+    <img
+      [src]="eachData.authorpic"
+    />
+  </div>
+  <div class="title">
+    <a routerLink="/product/{{ eachData.title }}">{{ eachData.name }}</a>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+
