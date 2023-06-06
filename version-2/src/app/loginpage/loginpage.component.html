@@ -1,0 +1,29 @@
+<app-Header></app-Header>
+<div class="login-page">
+  <div class="form">
+    <h2>Login</h2>
+    <form class="login-form" [formGroup]="loginForm" (submit)="submitLoginForm(registernumber.value)" >
+      <label for="username">Register No.</label>
+      <input type="text" id="username" name="username" placeholder="Enter RegisterNo" autocomplete="off" formControlName="registernovalue" #registernumber pattern="^1\d{0,6}$"/>
+      <div *ngIf="loginForm.controls['registernovalue'].dirty" class="alert">
+        <p *ngIf="loginForm.controls['registernovalue'].errors?.['required']">User Register No should not be Empty</p>
+        <p *ngIf="loginForm.controls['registernovalue'].errors?.['pattern']">Enter proper Register No</p>
+      </div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" formControlName="passwordvalue" autocomplete="off" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+      <div *ngIf="loginForm.controls['passwordvalue'].dirty" class="alert">
+        <p *ngIf="loginForm.controls['passwordvalue'].errors?.['required']" >Password should not be Empty</p>
+        <p *ngIf="loginForm.controls['passwordvalue'].errors?.['pattern']" >Enter a valid password</p>
+      </div>
+
+      <div class="button">
+        <button  [disabled]="!this.loginForm.valid" type="submit" > Submit </button>
+      </div>
+      <div class="forgot-password">
+        <a routerLink="/Forgetpasswordpage">Forgot Password?</a>
+      </div><br>
+      <div class="new-user">
+       <p> Not registered?<a routerLink="/Registerpage" style="color: rgb(220, 134, 134);">Create account </a></p></div>
+    </form>
+  </div>
+</div>

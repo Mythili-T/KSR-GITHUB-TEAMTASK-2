@@ -1,0 +1,44 @@
+<!-- {{getUser|json}} -->
+
+<!-- <div class="edit">
+  <div class="container">
+    <div class="register1">
+        <p>Register </p>
+        <p>Name </p>
+        <p>Phone Number </p>
+        <p>Department </p>
+        <p>Email Id </p>
+        <p>Year of Studying </p>
+
+    </div>
+    <div class="register2" *ngFor="let user Of getUser">
+      <p>: {{user.registernovalue}}</p>
+      <p>: {{user.namevalue}}</p>
+      <p>: {{user.mobilevalue}}</p>
+      <p>: {{user.department}}</p>
+      <p>: {{user.emailvalue}}</p>
+      <p>: {{user.year}}</p>
+    </div>
+    </div>
+</div> -->
+<app-admin-header></app-admin-header>
+<h2>Student  Details</h2>
+<table>
+  <tr>
+    <th>Register No</th>
+    <th>Student Name </th>
+    <th>Phone Number</th>
+    <th>Department </th>
+    <th>Email Id </th>
+    <th>Year of Studying </th>
+  </tr><br>
+
+  <tr style="text-align: center;" *ngFor="let user Of getUser">
+    <td>{{user.registernovalue}}</td>
+    <td> {{user.namevalue}}</td>
+    <td> {{user.mobilevalue}}</td>
+    <td> {{user.department}}</td>
+    <td> {{user.emailvalue}}</td>
+    <td> {{user.year}}</td>
+  </tr><br>
+  </table>

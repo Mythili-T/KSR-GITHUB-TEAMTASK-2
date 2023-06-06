@@ -1,0 +1,21 @@
+<header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <nav class="menu-bar">
+    <ul>
+      <li><a routerLink="/Homepage"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a routerLink="/Aboutpage"><i class="fa-solid fa-users"></i>About</a></li>
+      <li><a routerLink="/Materialspage"><i class="fa-solid fa-book"></i>Materials</a></li>
+      <li><a routerLink="/Classpage"><i class="fa-solid fa-file-lines"></i>Class</a></li>
+      <li><a  routerLink="/Contactpage"><i class="fa-solid fa-phone"></i>Contact</a></li>
+      <li><a routerLink="/Profilepage"><i class="fa-solid fa-user"></i>Profile</a></li>
+      <div class="subnav" id="logout">
+        <a *ngIf="usersuccess" style="margin-left: 25px!important" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+      </div>
+      <div class="subnav" id="logout" >
+        <a routerLink="/Loginpage"  *ngIf="!usersuccess" ><i class="fa-solid fa-right-from-bracket"></i>Login</a>
+        </div>
+
+    </ul>
+  </nav>
+</header>
+<!-- menu-bar ends -->

@@ -1,0 +1,143 @@
+.body {
+  text-align: center;
+  border: 2px solid;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 5%;
+  padding-bottom: 50px;
+  margin-top: 60px;
+  box-shadow: 5px 5px 1px 1px;
+  border-radius: 5px;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 30px;
+}
+.register {
+  display: flex;
+  text-align: center;
+}
+
+.formreg {
+  margin-left: 50px;
+}
+
+.register span {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.teacherBox1 input {
+  margin-left: 15px;
+  width: 243px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+
+.teacherBox2 span {
+  margin-left: 100px;
+}
+
+.teacherBox2 input {
+  margin-left: 44px;
+  width: 250px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+
+#Depart1 {
+  margin-left: 60px;
+  height: 40px;
+  width: 260px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+  outline: none;
+}
+
+.teacherBox3 span {
+  margin-left: 60px;
+}
+
+#Depart2 {
+  margin-left: 25px;
+  height: 40px;
+  width: 265px;
+  /* border-radius: 5px; */
+  padding-left: 20px;
+}
+
+.teacherBox4 input {
+  margin-left: 110px;
+  width: 245px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+
+.teacherBox5 span {
+  margin-left: 50px;
+}
+
+.teacherBox5 input {
+  margin-left: 15px;
+  width: 250px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+
+.teacherBox6 input {
+  margin-left: 70px;
+  width: 250px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+
+.teacherBox7 span {
+  margin-left: 20px;
+}
+
+.teacherBox7 input {
+  margin-left: 15px;
+  width: 250px;
+  height: 35px;
+  /* border-radius: 5px; */
+  padding-left: 10px;
+}
+.button{
+  margin-top:50px;
+
+}
+.button button{
+  width: 120px;
+  height: 33px;
+  /* border-radius: 5px; */
+  font-size: 17px;
+}
+button:hover{
+  background-color: rgb(214, 206, 206);
+}
+.back{
+  margin-top: 3%;
+  margin-left: 10%;
+
+}
+.back i{
+ font-size: 40px;
+ color: black;
+}
+.alert p{
+  color: red;
+  font-size: 1rem;
+}
+.alert{
+  /* margin-top: 10rem; */
+  margin-left: 13rem;
+  display: flex;
+  position: absolute;
+}

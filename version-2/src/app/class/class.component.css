@@ -1,0 +1,138 @@
+.edit h2 {
+  text-align: center;
+  color: rgba(165, 42, 42, 0.53);
+  margin-bottom: 5%;
+}
+
+.edit2 h1 {
+  text-align: center;
+  color: rgba(165, 42, 42, 0.53);
+}
+
+.edit {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  margin-top: 50px;
+  padding: 5px;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: 1.4rem;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5% 5% 5%;
+  font-weight: bold;
+}
+
+
+.edit button {
+  margin-left: 40%;
+  padding: 1.9%;
+  border-radius: 3px;
+  margin-bottom: 5%;
+  font-size: 15px;
+}
+
+
+
+h3,
+a {
+  text-align: center;
+  font-size: 28px;
+  color: #055615;
+}
+
+table,
+td,
+tr,
+th {
+  border: 2px solid rgba(227, 185, 151, 0.926);
+  border-collapse: collapse;
+  padding: 6px;
+}
+
+table {
+  width: 75%;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  background: rgba(214, 203, 200, 0.405);
+  ;
+}
+
+.course-image {
+  width: 25%;
+  background-color: rgb(211, 196, 199);
+  border-radius: 5px;
+  margin: 70px;
+  margin-left: 200px;
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+}
+
+.images img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.subject-title {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.current-year {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.images-flex {
+  display: flex;
+  padding-left: 90px;
+}
+
+/* images starts */
+
+
+.notes .videos h3 {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  margin-left: 220px;
+  margin-top: 150px;
+  color: rgba(203, 154, 154, 0.53);
+
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: -10px !important;
+
+}
+
+.notes .videos a {
+  text-decoration: none;
+  font-size: 20px !important ;
+  color: rgba(232, 134, 134, 0.925);
+}
+
+.notes .videos a:hover {
+  text-decoration: underline;
+}

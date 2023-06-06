@@ -1,0 +1,32 @@
+{
+  "registeruser": [
+    {
+      "namevalue": "Mythili T",
+      "registernovalue": "1913057",
+      "emailvalue": "mythilithambi1210@gmail.com",
+      "mobilevalue": "9360865812",
+      "passwordvalue": "Mythili@1210",
+      "confirmpasswordvalue": "Mythili@1210",
+      "department": "CSE",
+      "year": "4",
+      "id": 1
+    },
+    {
+      "namevalue": "Subramani",
+      "registernovalue": "1913092",
+      "emailvalue": "crazysanty007@gmail.com",
+      "mobilevalue": "8610209535",
+      "passwordvalue": "Mani@123",
+      "confirmpasswordvalue": "Mani@123",
+      "department":"ECE",
+      "year": "3",
+      "id": 2
+    }
+  ],
+  "Admin":[
+    {
+      "registernovalue": "1913107",
+      "passwordvalue": "Yavamyth@123"
+    }
+  ]
+}
