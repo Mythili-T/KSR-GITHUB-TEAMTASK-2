@@ -1,0 +1,90 @@
+/* <!-- student admin teacher section ends --> */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.index-footer {
+  background-color: rgba(168, 157, 157, 0.886);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.copyrights{
+  padding-left: 7%;
+  color:rgba(240, 229, 229, 0.953);
+}
+
+.footer-content{
+  display:inline-flex;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.foot-division{
+  justify-content: space-between;
+  background-color: rgba(232, 221, 221, 0.418);
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 20px;
+
+}
+.division1 h1{
+  font-size: 35px;
+  /* color:#055615; */
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.division1 p{
+  font-size:25px;
+  color:rgba(83, 73, 73, 0.953);
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.division2 h3{
+  font-size: 25px;
+  /* color:#055615; */
+  font-family: 'Times New Roman', Times, serif;
+}
+.division2 ul li{
+list-style: none;
+ color: #055615;
+}
+.ul-division li{
+  padding: 5px;
+}
+.ul-division li a:hover{
+  color: #052c0de6;
+  margin-left:8px ;
+  text-decoration: underline;
+  transition: .2s ease;
+}
+.division2 ul li a{
+  text-decoration: none;
+  color:rgba(83, 73, 73, 0.953);
+  padding-left: 20px;
+}
+.division3 h3{
+  font-size: 25px;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.division3{
+  color:rgba(83, 73, 73, 0.953);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icon{
+  padding-right: 10px;
+}
+.footer-content .division3 .icon i{
+  padding: 10px;
+
+}
+.footer-content .division3 .icon:hover{
+  color: #055615;
+  margin-left: 8px;
+  transition: .2s ease;
+}
+/* footer section */

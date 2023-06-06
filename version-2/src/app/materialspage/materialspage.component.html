@@ -1,0 +1,1059 @@
+<app-Header></app-Header>
+<!-- {{getUser|json}} -->
+<div class="CSE" *ngIf="getUser.department=='CSE'">
+  <div class="CSE-first" *ngIf="getUser.year=='1'">
+    <div class="department">
+      <h1 class="heading">Computer Science and Engineering</h1>
+      <h2>First Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/Professional-Ethicspic.jpg" alt="image" id="peImg">
+        </div>
+        <div class="subject-title">
+          18CS021
+          Professional-Ethics
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csefirstpevideo()">video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" csefirstpenotes()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefirstpeqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefirstpesb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/computernetwrokpic.jpg" alt="image" id="peImg">
+        </div>
+        <div class="subject-title">
+          18CS057
+          Computer Netwroks
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csefirstcnvideo()">video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefirstcnnotes()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefirstcnqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefirstcnsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CSE-second" *ngIf="getUser.year=='2'">
+    <div class="department">
+      <h1 class="heading">Computer Science and Engineering</h1>
+      <h2>Second Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/Entrepreneurship-Developmentpic.jpg" alt="image" id="edImg">
+        </div>
+        <div class="subject-title">
+          18ED022
+          Entrepreneurship-Development
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csesecondEDv()">Video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondEDn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondEDqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondEDsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/cloudcomputingpic.jpg" alt="image" id="edImg">
+        </div>
+        <div class="subject-title">
+          18CS081
+          Cloud Computing
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csesecondccv()">Video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondccn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondccqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csesecondccsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CSE-third" *ngIf="getUser.year=='3'">
+    <div class="department">
+      <h1 class="heading">Computer Science and Engineering</h1>
+      <h2>Third Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/mobilecomputingpic.jpg" alt="image" onclick="opentab()" id="mlImg">
+        </div>
+        <div class="subject-title">
+          18CS096
+          Machine Learning
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csethirdmcv()">Video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdmcn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdmcqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdmcsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/javalanguagepic.jpg" alt="image" onclick="opentab()" id="mlImg">
+        </div>
+        <div class="subject-title">
+          18CS089
+          Java Programming
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <h2><button (click)="csethirdjv()">Video</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdjn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdjqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csethirdjsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CSE-four" *ngIf="getUser.year=='4'">
+
+    <div class="department">
+      <h1 class="heading">Computer Science and Engineering</h1>
+      <h2>Final Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/operating system.jpg" alt="image" id="osImg">
+        </div>
+        <div class="subject-title">
+          18CS098
+          Operating Systems
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <!-- <h2><a routerLink="/CSENotespage">Videos</a></h2> -->
+          <button (click)="csefinalosvideo()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalosn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalosqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalossb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/cryptography.png" alt="image" id="osImg">
+        </div>
+        <div class="subject-title">
+          18CS009
+          Cryptography
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="csefinalcgvideo()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalcgn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalcgqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="csefinalcgsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ECE" *ngIf="getUser.department=='ECE'">
+
+  <div class="ECE-First" *ngIf="getUser.year=='1'">
+    <div class="department">
+      <h1 class="heading"> Electronics and Communication Engineering</h1>
+      <h2>First Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/algebra.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE077
+          Linear Algebra
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecefirstlav()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstlan()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstlaqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstlasb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/Microprocessor.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE067
+          Microprocessor
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecefirstmpv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstmpn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstmpqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefirstmpsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ECE-Second" *ngIf="getUser.year=='2'">
+    <div class="department">
+      <h1 class="heading"> Electronics and Communication Engineering</h1>
+      <h2>Second Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/VLSI.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE012
+          VLSI
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecesecondviv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondvin()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondviqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondvisb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/analog.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE065
+          Analog and Digital Electronics
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecesecondadv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondadn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondadqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecesecondadsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ECE-Third" *ngIf="getUser.year=='3'">
+    <div class="department">
+      <h1 class="heading"> Electronics and Communication Engineering</h1>
+      <h2>Third Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/circuit.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE013
+          Integrated Circuits
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecethirdicv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdicn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdicqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdicsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/antenna.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE015
+          Antenna and Wave Propagation
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecethirdawv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdawn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdawqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecethirdawsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ECE-Four" *ngIf="getUser.year=='4'">
+    <div class="department">
+      <h1 class="heading"> Electronics and Communication Engineering</h1>
+      <h2>Final Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/python.jpeg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE051
+          Python Programming
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecefinalphv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalphn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalphqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalphsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/embedded System.jpeg" alt="image">
+        </div>
+        <div class="subject-title">
+          18ECE070
+          Embedded System
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ecefinalesv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalesn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalesqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)="ecefinalessb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="EEE" *ngIf="getUser.department=='EEE'">
+  <div class="EEE-First" *ngIf="getUser.year=='1'">
+    <div class="department">
+      <h1 class="heading">Electric and Electronical Engineering</h1>
+      <h2>First Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/electric-circuit-analysis.webp" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE055
+          Electical circuit and Analysis
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+            <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeefirstecav()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstecan()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstecaqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstecasb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/analog-electronics.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE012
+          Analog Electronics
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeefirstaev()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstaen()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstaeqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefirstaesb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="EEE-Second" *ngIf="getUser.year=='2'">
+    <div class="department">
+      <h1 class="heading">Electric and Electronical Engineering</h1>
+      <h2>Second Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/circuit and systems.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE107
+          Circuits and Systems
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeesecondcsv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondcsn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondcsqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondcssb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/Microcontroller.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE106
+          Microcontroller
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeesecondmcrv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondmcrn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondmcrqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeesecondmcrsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="EEE-Third" *ngIf="getUser.year=='3'">
+    <div class="department">
+      <h1 class="heading">Electric and Electronical Engineering</h1>
+      <h2>Third Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/power electronics.jpeg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE01
+          Power Electronics
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeethirdpesv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdpesn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdpesqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdpessb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/transmission.jpeg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE10
+          Transmission and Distribution
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeethirdtmv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdtmn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdtmqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeethirdtmsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="EEE-Final" *ngIf="getUser.year=='4'">
+    <div class="department">
+      <h1 class="heading">Electric and Electronical Engineering</h1>
+      <h2>Final Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/instruments.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE14
+          Electrical measurements and instrumentation
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeefinalemiv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalemin()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalemiqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalemisb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/hybird vehicles.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18EEE10
+          Electric and hybrid vehicles
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" eeefinalehvv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalehvn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalehvqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" eeefinalehvsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="IT" *ngIf="getUser.department=='IT'">
+
+  <div class="IT-First" *ngIf="getUser.year=='1'">
+    <div class="department">
+      <h1 class="heading">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information
+        Technology
+      </h1>
+      <h2>First Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/C programpic.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT088
+          C Programming
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITfirstcpv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcpn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcpqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcpsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/c++languagepic.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT090
+          C++ Programming
+        </div>
+        <div class="current-year">
+          First Year
+        </div>
+      </div>
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITfirstcplusv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcplusn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcplusqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfirstcplussb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="IT-Second" *ngIf="getUser.year=='2'">
+    <div class="department">
+        <h1 class="heading">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information
+          Technology
+        </h1>
+      <h2>Second Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/Data structure.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT075
+          Data Structures and Algorithms
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+         <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITseconddsv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITseconddsn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITseconddsqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITseconddssb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/agilemethodologypic.png" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT066
+          Agile Methodology
+        </div>
+        <div class="current-year">
+          Second Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITsecondamv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITsecondamn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITsecondamqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITsecondamsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="IT-Third" *ngIf="getUser.year=='3'">
+      <div class="department">
+        <h1 class="heading">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information
+          Technology
+        </h1>
+      <h2>Third Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/telecommunication.webp" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT095
+          Telecommunications
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITthirdtcv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdtcn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdtcqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdtcsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/system and analysis.webp" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT046
+          System Analysis and Design
+        </div>
+        <div class="current-year">
+          Third Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITthirdsadv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdsadn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdsadqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITthirdsadsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="IT-Third" *ngIf="getUser.year=='4'">
+      <div class="department">
+        <h1 class="heading">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information
+          Technology
+        </h1>
+      <h2>Final Year Subjects</h2>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/software engineering.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT055
+          Software Engineering
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)="ITfinalsev()"> video </button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalsen()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalseqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalsesb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+    <div class="images-flex">
+      <div class="course-image">
+        <div class="images">
+          <img src="../../assets/computer_multimedia.jpg" alt="image">
+        </div>
+        <div class="subject-title">
+          18IT046
+          Graphics and Multi-Media
+        </div>
+        <div class="current-year">
+          Final Year
+        </div>
+      </div>
+
+
+      <div id="display" class="notes"><br><br>
+        <div class="videos">
+          <button (click)=" ITfinalgmv()">video</button>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalgmn()">Notes</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalgmqp()">Questions</button></h2>
+        </div>
+        <div class="videos">
+          <h2><button (click)=" ITfinalgmsb()">syllabus</button></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
