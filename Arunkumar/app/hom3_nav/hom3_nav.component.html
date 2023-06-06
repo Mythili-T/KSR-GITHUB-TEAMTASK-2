@@ -1,0 +1,86 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+  <!-- Boxicons CDN Link -->
+  <link
+  href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="top">
+  <div class="top-right">
+      <h1> <span> AKS</span> HOSTEL </h1>
+  </div>
+  <!-- top right -->
+  <div class="top-left">
+      <a routerLink="/Home" routerLinkActive="activebtn">
+        <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a routerLink="/facilities"  routerLinkActive="activebtn"> <i class="fa fa-cogs" aria-hidden="true"></i> Facilities</a>
+      <a routerLink="/about"  routerLinkActive="activebtn"> <i class="fa fa-users" aria-hidden="true"></i> About-us</a>
+
+
+      <a routerLink="/contactus" routerLinkActive="activebtn"> <i class="fa fa-envelope" aria-hidden="true"></i> contact us</a>
+
+      <a routerLink="/login" (click)="authService.login()" *ngIf="!usersuccess" routerLinkActive="activebtn"  > <i class="fa fa-sign-in" aria-hidden="true"></i> log-in</a>
+      <a  (click)="authService.logout()" *ngIf="usersuccess"   > <i class="fa fa-sign-in" aria-hidden="true"></i> log-out</a>
+  </div>
+</div>
+
+<!-- <dialog class="modal" id="modal">
+
+  <div class="login">
+    <div class="grid two-columns">
+
+        <div class="content">
+            <div class="text">
+                <h1>AKS <br> HOSTELS</h1>
+                <P>WELCOMING YOU TO LOGIN</P>
+                <img src="../../assets/login.png" alt="">
+            </div>
+        </div>
+
+        <div class="login-form" >
+          <p>
+            <i
+              class="fa fa-times fa-2x"
+              aria-hidden="true"
+              id="close_show" (click)="closeModal()"
+            ></i>
+          </p>
+            <h1>Login</h1>
+
+            <form  [formGroup]="LoginForm">
+                <input type="text" placeholder="Email Id" #username  id="username" formControlName="username" pattern="^[a-zA-Z]+$"><br>
+                <div *ngIf="LoginForm.controls['namevalue'].dirty" class="alert">
+                  <p *ngIf="LoginForm.controls['namevalue'].errors?.['required']">User name should not be Empty</p>
+                  <p *ngIf="LoginForm.controls['namevalue'].errors?.['pattern']">Enter proper User Name</p>
+                </div>
+                <br>
+               <br>
+                <input type="password" placeholder="Password"  id="Password" #password formControlName="passwordvalue" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                <div *ngIf="LoginForm.controls['passwordvalue'].dirty" class="alert">
+                  <p *ngIf="LoginForm.controls['passwordvalue'].errors?.['required']" >Password should not be Empty</p>
+                  <p *ngIf="LoginForm.controls['passwordvalue'].errors?.['pattern']" >Password Must Contain 1Caps(A)-Num(1)-Symbol(@)</p>
+                </div>
+                <br>
+                <a href="#" id="forget">Forgot Password?</a>
+
+                <button type="submit" id="submit">submit</button><br><br>
+
+
+            </form>
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+</dialog> -->

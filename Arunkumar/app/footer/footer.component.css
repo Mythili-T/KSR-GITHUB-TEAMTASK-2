@@ -1,0 +1,183 @@
+
+*{margin: 0;
+  padding: 0;}
+  /* top page  */
+  .top{
+      height: 100px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color:rgb(10, 10, 10);
+
+
+  }
+  .top-left{
+
+   margin-top: 5%;
+   display:inline;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+  .top-left a{
+      color:rgb(18, 18, 18);
+      text-decoration: none;
+      border: solid white 1px;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+     margin: 6%;
+      border-radius: 15%;
+      padding: 1%;
+
+  }
+  .top-left a.activebtn{
+      background-color: rgb(78, 78, 226);
+     height: 10%;
+     width: 10%;
+
+  }
+  .top-left a:hover{
+      background-color: rgb(66, 66, 193);
+      height: fit-content;
+      width: fit-content;
+
+  }
+
+  .top-right{
+  margin-left: 30%;
+  margin-top: 5%;
+  }
+  .top-left a{
+
+  }
+  #welcome{
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 18%;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      -webkit-text-stroke: 0.7px  rgb(0, 0, 0) ;
+      color: transparent;
+
+  }
+  /* bootom page */
+  .about-us{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 200px;
+      width: 100%;
+      margin-top: 5px ;
+  }
+  .about-para .para{
+      margin-left: 180px;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 30px;
+
+  }
+  .about-para button{
+      margin-left: 180px;
+      height: 40px;
+      width: 150px;
+      border-radius: 30px;
+      background-color: rgb(66, 66, 193);
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      color: white;
+      border: none;
+
+  }
+  .about-para button:hover{
+      opacity: 0.9;
+  }
+  .para-imag{
+      margin-top: 50px;
+  }
+
+  .para-imag img{
+      border-radius: 50%;
+       margin-left: 50px;
+      padding: 5px;
+
+      justify-content: center;
+  }
+  .more-text{
+      display: none;
+  }
+  .show-more .more-text{
+      display: inline;
+  }
+  .show-more .Dots{
+      display: none;
+  }
+  .footer{
+      margin-top: 70px;
+      position:absolute;
+     left:0;
+     bottom:0;
+     width: 100%;
+     background-color: rgb(22, 21, 21);
+     color:white;
+     text-align:center;
+     }
+     .Footer-top{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+     }
+     .Footer-top h3{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 2%;
+        color: rgb(255, 253, 253);
+        text-decoration: underline rgb(66, 66, 193) 3px;
+  }
+     .contactfooter{
+
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+     }
+     .socialmedia{
+      display: inline-block;
+      margin-top: 2%;
+     }
+     .socialmedia i{
+      margin-top: 5%;
+      margin: 3%;
+
+     }
+     .contactfooter{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+     }
+  #linefooder{
+      width: 50%;
+    color:  rgb(66, 66, 193);
+      margin:1%;
+      margin-left: 25%;
+  }
+
+
+  .address p span{
+      margin: 2%;
+      font-size: medium;
+
+  }
+  .call p{
+      margin-top: 2%;
+  }
+  .call-number{
+      margin-top: 6%;
+  }
+
+
+  /* homelinks */
+  .homelinks ul li a span{
+ list-style: none;
+ text-decoration: none;
+
+  }

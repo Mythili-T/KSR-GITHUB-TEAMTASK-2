@@ -1,0 +1,22 @@
+<app-user-sidebar></app-user-sidebar>
+<div class="home_content">
+  <div class="text">Leave Deatils</div>
+  <table id="table_view">
+    <tr>
+      <th>name</th>
+      <th>phone</th>
+      <th>Room no</th>
+      <th>Date</th>
+      <th>status</th>
+    </tr>
+    <!-- data 1 -->
+    <tr *ngFor="let eachData of attenance">
+      <td>{{ eachData.Name }}</td>
+      <td>{{ eachData.phone }}</td>
+      <td>{{ eachData.roomno }}</td>
+      <td>{{ eachData.date }}</td>
+
+      <td>{{ eachData.status }}</td>
+    </tr>
+  </table>
+</div>

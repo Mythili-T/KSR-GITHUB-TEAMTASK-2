@@ -1,0 +1,72 @@
+<app-SideBar></app-SideBar>
+<div class="home_content">
+  <div class="text">Mess</div>
+  <!-- manageDetails -->
+  <div class="manageDetails">
+    <div class="viewDetails">
+      <h1>view mess status</h1>
+      <i class="bx bx-user bx-md"></i>
+      <p>Here you can see feedback Details of the student</p>
+
+      <button id="viewbtn" (click)="viewbtn()">view</button>
+    </div>
+    <div class="updates">
+      <h1>updates menu status</h1>
+      <i class="bx bx-cloud-upload bx-md"></i>
+      <p>Here you can see the update menu details</p>
+
+      <button id="update_btn" (click)="update_btn()">updates</button>
+    </div>
+  </div>
+  <!-- table_view -->
+  <div class="table_view">
+    <table id="table_view">
+      <tr>
+        <th>s.no</th>
+        <th>Name</th>
+        <th>Email id</th>
+        <th>Phone number</th>
+
+        <th>Register number</th>
+        <th>feedback</th>
+
+      </tr>
+      <!-- data 1 -->
+      <tr *ngFor="let filled of feesstatus">
+        <td>{{ filled.id }}</td>
+        <td>{{ filled.Name }}</td>
+        <td>{{ filled.email }}</td>
+        <td>{{ filled.phone }}</td>
+        <td>{{ filled.register }}</td>
+       
+        <td>{{ filled.feesStatus }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- fees_container -->
+  <div class="fees_container">
+    <div class="fees_container_head"><h2>Fees</h2></div>
+    <form [formGroup]="feesgrp" (submit)="feesform()">
+      <div class="rightForm">
+        <label for="">Morning</label> <br />
+        <input type="text" name="" id="" formControlName="Name" /> <br />
+
+        <label for="">Afternoon</label> <br />
+        <input type="text" name="" id="" formControlName="email" /> <br />
+      </div>
+      <div class="lesftForm">
+        <label for="">Evening Snack</label> <br />
+        <input type="text" name="" id="" formControlName="phone" /> <br />
+
+        <label for="">night</label> <br />
+        <input type="text" name="" id="" formControlName="register" /> <br />
+      </div>
+      <div class="login-box">
+        <button>submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+<br />
+<br />

@@ -1,0 +1,101 @@
+<app-SideBar></app-SideBar>
+<div class="home_content">
+  <div class="text"> <p>Attendance</p></div>
+  <!-- manageDetails -->
+  <div class="manageDetails">
+    <div class="viewDetails">
+     <h1>view  Attendance list</h1>
+     <i class='bx bx-user bx-md'></i>
+     <p>Here you can see Attendance Details of the student </p>
+
+     <button id="viewbtn" (click)="viewbtn()" >view </button>
+
+    </div>
+    <div class="updates">
+        <h1>updates Attendance list</h1>
+        <i class='bx bx-cloud-upload bx-md' ></i>
+        <p>Here you can see the update Attendance datails </p>
+
+        <button id="update_btn" (click)="update_btn()"  >updates </button>
+    </div>
+ </div>
+ <!-- table_view -->
+ <div class="table_view">
+
+
+
+  <table id="table_view" >
+    <tr>
+     <th>s.no</th>
+     <th>Name</th>
+     <th>Email id</th>
+     <th>Phone number</th>
+
+     <th>Register number</th>
+     <th>Room Number</th>
+
+
+     <th>staus</th>
+    </tr>
+    <!-- data 1 -->
+    <tr *ngFor="let filled of feesstatus">
+      <td >{{ filled.id}} </td>
+      <td>{{ filled.Name}}</td>
+      <td>{{ filled.email}}</td>
+      <td>{{ filled.phone}}</td>
+      <td>{{ filled.register}}</td>
+      <td>{{ filled.roomno}}</td>
+      <td>{{ filled.status}}</td>
+
+
+
+     </tr>
+
+
+
+   </table> </div>
+
+
+   <!-- fees_container -->
+  <div class="fees_container" >
+     <div class="fees_container_head">  <h2>Attendance</h2> </div>
+     <form [formGroup]="feesgrp" (submit)="attendance()">
+      <div class="rightForm">
+    <label for="">Name</label> <br>
+    <input type="text" name="" id="" formControlName="Name"> <br>
+
+
+
+    <label for="">Phone No</label> <br>
+    <input type="text" name="" id=""  formControlName="phone">  <br>
+  </div>
+  <div class="lesftForm">
+
+
+    <label for="">Room no</label> <br>
+    <input type="text" name="" id=""  formControlName="roomno"> <br>
+
+    <div class="Fees status" >
+
+    <label for="">Status</label> <br>
+      <select name="" type="text" id="" formControlName="status">
+      <option value=""disabled selected>status</option>
+      <option value="present">present</option>
+      <option value="Absent">Absent</option></select>
+
+    </div>    </div>
+
+          <div class="login-box">
+            <button >submit</button>
+          </div>
+        </form>
+
+      </div>
+
+
+
+
+  </div>
+  <br>
+  <br>
+

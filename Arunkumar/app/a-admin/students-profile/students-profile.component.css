@@ -1,0 +1,272 @@
+.home_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  background: var(--sky-color);
+  padding: 20px;
+
+  transition: all 0.5s ease;
+
+}
+
+
+
+.home_content .text {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--light-black);
+  margin-bottom: 15px;
+}
+
+.home_content p {
+  margin-bottom: 15px;
+}
+.manageDetails{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.viewDetails{
+height: 250px;
+width: 500px;
+border: 1px solid white;
+margin: 5px;
+margin-left: 10%;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+border-radius: 5%;
+}
+
+.viewDetails h1{
+text-align: center;
+margin: 5%;
+}
+.viewDetails p{
+  text-align: center;
+  margin-top: -1px;
+}
+.updates{
+height: 250px;
+width:  500px;
+border: 1px solid white;
+margin: 5px;
+margin-left: 10%;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+border-radius: 5%;
+
+
+}
+.updates p{
+  text-align: center;
+  margin-top: -1px;
+
+  }
+.updates h1{
+text-align: center;
+margin: 5%;
+}
+button{
+padding: 5px;
+background: blue;
+color: white;
+text-align: center;
+margin-left: 40%;
+padding: 2%;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+}
+.Table_Info{
+color: red;
+margin-top: 5%;
+margin-left: 2%;
+}
+#table_view{
+color: blue;
+}
+.table_updates{
+color: rgb(230, 0, 255);
+
+}
+
+.table_view{
+display: none;
+}
+.table_updates{
+color: rgb(0, 255, 26);
+display: none;
+
+
+}
+.show_view{
+display: block;
+
+}
+.show_update{
+display: block;
+}
+
+table{
+
+border-collapse:collapse ;
+width: 70%;
+}
+th,td{
+border: 2px solid white;
+padding: 15px;
+}
+.table_updates{
+display: none;
+border: 1px solid white;
+}
+
+.show_update{
+display: block;
+
+}
+
+i{
+  text-align: center;
+  margin-left: 40%;
+  padding: 1%;
+}
+#table_view {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table_view td, #table_view th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table_view tr:nth-child(even){background-color: #f2f2f2;}
+
+#table_view tr:hover {background-color: #ddd;}
+
+#table_view th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0420aa;
+  color: white;
+}
+.table_updates{
+  background:  aliceblue;
+}
+form
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+
+}
+
+ label{
+
+  font-size: large;
+color: rgb(25, 24, 24);
+  padding-top: 10%;
+
+
+}
+ input{
+  padding: 10px;
+  width: 80%;
+  font-size: large;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: rgb(9, 9, 9);
+  background-color: white;
+border: none;
+}
+select{
+   padding: 10px;
+  width: 80%;
+  font-size: large;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: rgb(9, 9, 9);
+  background-color: white;
+border: none;
+
+}
+.table_1{
+  margin: 10px;
+margin-left: 50px;
+}
+.table_2{
+  margin: 10px;
+  margin-right: 50px;
+}
+.profilebtn{
+  display: flex;
+  margin-top: 20px;
+}
+.profilebtn button{
+ background: white;
+ color: black;
+padding: 9px;
+border-radius: 3px;
+}
+.update_container_head{
+  margin: 10px;
+  font-size: x-large;
+  color: white;
+}
+p
+{
+  font-size: 20px;
+
+}
+.update_container_head{
+  background-color: blue;
+}
+#Save{
+  padding: 10px;
+  width: 150px;
+  margin: 10px;
+}
+#update{
+  padding: 10px;
+  width: 150px;
+  margin: 10px;
+
+}
+#delete{
+  padding: 10px;
+  width: 150px;
+  margin: 10px;
+
+}
+.butn_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 50%;
+}
+.search
+{
+  display: grid;
+  grid-template-columns: 20% 3.5%;
+  margin-bottom: 10px;
+
+}
+#searchBox{
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 100%;
+
+}
+#BtnSerach{
+
+  padding: 5px;
+  height: 40px;
+  width: 50px;
+  margin-top: 10px;
+
+}
+.search button i{
+text-align: center;
+
+}
+

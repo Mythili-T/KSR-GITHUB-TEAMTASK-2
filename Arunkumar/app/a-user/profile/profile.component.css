@@ -1,0 +1,91 @@
+
+.home_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  background: var(--sky-color);
+  padding: 20px;
+
+  transition: all 0.5s ease;
+} */
+
+.sidebar.active~.home_content {
+  z-index: 100;
+
+  left: 200px;
+}
+
+
+
+.home_content .text {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--light-black);
+  margin-bottom: 15px;
+}
+
+
+form
+{
+  margin-left: 20%;
+}
+input
+{
+  width: 20%;
+  height: 40%;
+}
+.form_grid
+{
+display: grid;
+grid-template-columns: 20%  50%;
+padding: 1%;
+}
+.form_grid input{
+  padding: 3%;
+  width: 50%;
+  margin-right: 80%;
+  background: rgb(89, 89, 249);
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 70%;
+}
+.form_grid p{
+  padding: 3%;
+font-size: 20px;
+  margin-left: 30%;
+}
+button
+{
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 30%;
+padding: 10px;
+background: blue;
+color: white;
+border: none;
+
+
+}
+.Showcontent{
+  width:700px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.modal{
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+
+ }
+ .modalcontainer input{
+  margin-left: 70px;
+ }
+ .modal::-webkit-scrollbar{
+  width: 1em;
+ }

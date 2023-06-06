@@ -1,0 +1,89 @@
+<app-SideBar></app-SideBar>
+<div class="home_content">
+  <div class="text">Vacating details</div> <div class="manageDetails">
+    <div class="viewDetails">
+      <h1>updates  status</h1>
+      <i class="bx bx-user bx-md"></i>
+      <p>Here you can see feedback Details of the student</p>
+
+      <button id="viewbtn" (click)="viewbtn()">view</button>
+    </div>
+    <div class="updates">
+      <h1>view list</h1>
+      <i class="bx bx-cloud-upload bx-md"></i>
+      <p>Here you can see the update menu details</p>
+
+      <button id="update_btn" (click)="update_btn()">updates</button>
+    </div>
+  </div>
+  <!-- table_view -->
+  <div class="table_view">
+    <table id="table_view">
+      <tr>
+
+        <th>Name</th>
+        <th>Room number</th>
+        <th>Phone number</th>
+
+        <th> status</th>
+
+
+        <th>Reason</th>
+
+        <th>Date</th>
+        <th>Accept</th>
+
+        <th>Reject</th>
+      </tr>
+      <!-- data 1 -->
+      <tr *ngFor="let filled of feesstatus">
+        <td>{{ filled.namevalue }}</td>
+        <td>{{ filled.Status }}</td>
+        <td>{{ filled.mobilevalue }}</td>
+        <td>{{ filled.RoomNo}}</td>
+        <td>{{ filled.Reason }}</td>
+        <td>{{ filled.date }}</td>
+        <td> <button id="Accept"  > Accept</button></td>
+        <td> <button id="Reject"  >Reject</button></td>
+      </tr>
+    </table>
+  </div>
+  <!-- (click)="accpting(filled)" -->
+  <!-- (click)="rejecting(filled)" -->
+  <!-- fees_container -->
+  <div class="fees_container">
+
+    <table id="table_view">
+      <tr>
+
+        <th>Name</th>
+        <th>Room number</th>
+        <th>Phone number</th>
+
+        <th> status</th>
+
+
+        <th>Reason</th>
+
+        <th>Date</th>
+
+
+
+      </tr>
+      <!-- data 1 -->
+      <tr *ngFor="let filled of feesstatus">
+        <td>{{ filled.namevalue }}</td>
+        <td>{{ filled.Status }}</td>
+        <td>{{ filled.mobilevalue }}</td>
+        <td>{{ filled.RoomNo}}</td>
+        <td>{{ filled.Reason }}</td>
+        <td>{{ filled.date }}</td>
+
+
+
+      </tr>
+    </table>
+
+
+  </div>
+</div>

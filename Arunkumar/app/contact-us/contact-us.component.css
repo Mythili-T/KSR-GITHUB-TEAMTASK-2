@@ -1,0 +1,115 @@
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60%;
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 15%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.contact-details {
+  display: flex;
+  margin-top: 8%;
+}
+.leftContact {
+  color: white;
+  background-color: rgb(64, 67, 199);
+}
+.contact-symbol {
+  background: white;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.leftContact h2 {
+  margin-top: 17%;
+  margin-left: 5%;
+}
+
+.contact-symbol i {
+  color: rgb(13, 13, 16);
+  padding: 8px;
+  margin-left: 3%;
+
+
+}
+.info{
+  margin-left: 5%;
+}
+.info h2 {
+  color: rgb(224, 224, 244);
+  margin: 5px;
+  font-size: X-large;
+}
+.info p {
+  color: white;
+  margin: 5px;
+  font-size: large;
+}
+
+.rightContact input {
+  width: 75%;
+  height: 50px;
+  margin-top: 10%;
+  margin-left: 5%;
+  border: none;
+  border-bottom: 1px rgb(152, 149, 149) solid;
+
+  background-color: none;
+
+  outline: none;
+  background: none;
+  font-size: large;
+}
+#textarea{
+  margin-top: 18%;
+
+}
+.rightContact #submit-btn {
+  margin: 10%;
+  margin-top: 65px;
+  float: right;
+  background:rgb(65, 19, 95);
+  padding: 8px;
+  color: white;
+  border: none;
+}
+
+
+#close_show {
+  display: block;
+  float: right;
+  margin: 5%;
+}
+.rightContact h2 {
+  margin-top: 15%;
+  font-size:xx-large;
+}
+.rightContact_TEXT {
+  margin-left: 8px;
+}
+.info p{
+  line-height: 1.6;
+}
+.contact-details{
+  margin-left: 25px;
+}
+#leftContact_h2{
+  font-size:xx-large;
+}
+
+button{
+  height: 40px;
+  width: 140px;
+  border-radius:20px;
+  color: azure;
+  background-color:rgb(65, 19, 95);
+  margin-left: 70px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+

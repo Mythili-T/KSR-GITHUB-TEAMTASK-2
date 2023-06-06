@@ -1,0 +1,79 @@
+<app-user-sidebar></app-user-sidebar>
+<div class="home_content">
+  <div class="text">fees</div>
+  <div class="fees">
+      <div class="profile-user">
+          <div class="left"><p><span>Reg no:</span> 1915003</p>
+              <p><span>Name:</span> Arunkumar</p>
+
+          </div>
+          <div class="right">
+              <p><span>Fees:</span>Hostel Fees</p>
+              <p><span>Duration:</span>Monthly</p>
+              <button id="serach">Search</button>
+          </div>
+      </div>
+    <div class="totalfees">
+      <h2>Total Hostel fees <span>Mr Arun</span> </h2>
+      <h3>Rs 55,000</h3>
+  <button id="menu_show" (click)="menu_show()">pay</button>
+
+    </div>
+    <div class="pending">
+      <h2> Hostel fees status <span>Mr Arun</span> </h2>
+      <h3>paid</h3>
+
+    </div>
+  </div>
+  <dialog class="modal" id="modal">
+    <div class="dialoge-grid">
+    <div class="left">
+  <img  class="payment-img" src="../../../assets/payment.png"alt="">
+    </div>
+
+     <div class="right">
+
+    <div class="selction">	&nbsp;
+      <div class="top-payment"> <h2>payment method  </h2><i class="fa fa-times fa-2x" aria-hidden="true" id="close_show" (click)="close_show()"></i></div>
+        <div class="grid-paymentOption">
+        <div><i class='bx bxs-credit-card-alt' ></i><br>
+            <input type="radio">
+        <label for="">credit card</label></div>
+
+     <div>
+     <i class='bx bxl-paypal' ></i><br>
+     <input type="radio">
+        <label for="">paypal</label>
+      </div>
+      <div>
+      <i class='bx bxs-credit-card-alt' ></i><br>
+      <input type="radio">
+        <label for="">debit card</label>
+
+      </div></div>
+    </div>
+    <div class="paymethod">
+
+    <p>
+        <label for="">cardholder's Name</label><br>
+        <input type="text">
+    </p>
+   <p>
+    <label for="">card Number</label><br>
+    <input type="text">
+   </p>
+   <p>
+    <label for=""> card valid</label><br>
+    <input type="text">
+   </p>
+   <p>
+    <label for="">cvv/cvc</label><br>
+    <input type="text">
+   </p>
+
+
+    <button type="submit"> paynow</button></div></div></div>
+
+</dialog>
+
+</div>

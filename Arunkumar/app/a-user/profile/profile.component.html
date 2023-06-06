@@ -1,0 +1,117 @@
+  <app-user-sidebar></app-user-sidebar>
+<div class="home_content">
+
+  <div class="text">Profile</div>
+
+  <form action="" >
+
+    <div class="container Showcontent">
+      <br><br>
+      <div class="form_grid">
+   <p> <strong>Name:</strong>   </p>
+   <p id="rightvalue">{{Name}}</p>
+  </div>
+  <div class="form_grid">
+   <p> <strong>Register number:</strong></p>
+   <p id="rightvalue">{{Register}}</p>
+  </div>
+   <div class="form_grid">
+   <p><strong>Age:</strong></p>
+   <p id="rightvalue">{{Age}}</p>
+  </div>
+   <div class="form_grid">
+   <p><strong>Email Id:</strong> </p>
+   <p id="rightvalue">{{email}}</p>
+  </div>
+   <div class="form_grid">
+   <p><strong>phone no:</strong>  </p>
+   <p id="rightvalue">{{Name}}</p>
+  </div>
+   <div class="form_grid">
+   <p> <strong>Father Name:</strong>  </p>
+   <p id="rightvalue">{{Father}}</p>
+  </div>
+   <div class="form_grid">
+   <p> <strong>Mother Name:</strong>  </p>
+   <p id="rightvalue">{{Mother}}</p>
+  </div>
+   <div class="form_grid">
+   <p> <strong>Address:</strong>  </p>
+   <p id="rightvalue">{{Address}}</p>
+  </div>
+   <div class="form_grid">
+   <p> <strong>college Name:</strong>  </p>
+   <p id="rightvalue">{{college}}</p>
+  </div>
+   <div class="form_grid">
+   <p> <strong>Adharnumber:</strong>  </p>
+   <p id="rightvalue">{{Adharnumber}}</p>
+  </div>
+   <div class="form_grid">
+   <p>  <strong>Room no:</strong> </p>
+   <p id="rightvalue">{{Room}}</p>
+
+
+  </div>
+   <button  id="menu_show" (click)="menu_show()">edit</button>
+
+
+  <!-- ......... -->
+  <dialog class="modal Showcontent" id="modal" >
+  <form action="" [formGroup]="update">
+  <div class="container modalcontainer ">
+    <br><br>
+    <div class="form_grid">
+
+ <p> <strong>Name:</strong>   </p>
+ <input type="text" formControlName="name">
+</div>
+<div class="form_grid">
+ <p> <strong>Register number:</strong></p>
+ <input type="text" formControlName="regNo">
+</div>
+ <div class="form_grid">
+ <p><strong>Age:</strong></p>
+ <input type="text" formControlName="age">
+</div>
+ <div class="form_grid">
+ <p><strong>Email Id:</strong> </p>
+ <input type="text" formControlName="email" >
+</div>
+ <div class="form_grid">
+ <p><strong>phone no:</strong>  </p>
+ <input type="text" formControlName="phoneno" >
+</div>
+ <div class="form_grid">
+ <p> <strong>Father Name:</strong>  </p>
+ <input type="text" formControlName="father" >
+</div>
+ <div class="form_grid">
+ <p> <strong>Mother Name:</strong>  </p>
+ <input type="text" formControlName="mother" >
+</div>
+ <div class="form_grid">
+ <p> <strong>Address:</strong>  </p>
+ <input type="text" formControlName="address">
+</div>
+ <div class="form_grid">
+ <p> <strong>college Name:</strong>  </p>
+ <input type="text" formControlName="college">
+</div>
+ <div class="form_grid">
+ <p> <strong>Adharnumber:</strong>  </p>
+ <input type="text" formControlName="Adharnumber">
+</div>
+ <div class="form_grid">
+ <p>  <strong>Room no:</strong> </p>
+ <input type="text" formControlName="room"></div>
+
+
+</div>
+ <button (click)="updateProfile(update.value)">update</button>
+ <button  id="close_show" (click)="close_show()">close</button>
+</form></dialog>
+<br><br>
+</div>
+
+

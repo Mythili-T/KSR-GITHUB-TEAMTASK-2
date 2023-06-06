@@ -1,0 +1,155 @@
+h2,h1{
+  color: blue;
+
+}
+.text_content {
+  margin-top: 3%;
+  margin-right: 5%;
+
+}
+.text_content p{
+
+
+  font-size: larger;
+  margin-left: 8%;
+font-size: 20px;
+line-height: 30px;
+  text-align: justify;
+  margin-right: 5%;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+.img_container img{
+  height: 400px;
+  width: 800px;
+  border-radius: 5%;
+  margin-left: 18%;
+  margin-top: 5%;
+}
+ .grid-incharge {
+  margin-top: 3.5%;
+  height: 45%;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 15%;
+}
+h1{
+  margin-left: 25%;
+}
+
+
+
+
+
+.security-head {
+  width: 300px;
+  background-color: white;
+  height: fit-content;
+  text-align: center;
+  box-shadow: 0, 0, 0, 1;
+}
+
+.profilecard {
+  height: 280px;
+  width: 300px;
+  box-shadow: 1px 1px 1px 0.3px;
+  border-radius: 1%;
+
+}
+
+.topcard {
+  height: 45%;
+  width: 100%;
+
+}
+
+.topcard img {
+
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  background-color: rgb(246, 241, 236);
+  height: 55%;
+}
+
+.buttomcard img {
+  height: 20%;
+  width: 25%;
+  margin-top: -20px;
+  border-radius: 50%;
+
+}
+
+.buttomcard p {
+  margin-top: -1.5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+#name {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.buttomcard {
+
+  text-align: center;
+}
+.buttomcard p{
+padding: 2%;
+}
+
+
+.endcard {
+  height: 35%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 3%;
+
+}
+
+.on_dash{
+  background: var(--white-color); ;
+  color:black;
+}.on_dash span {
+ background: var(--white-color); ;
+  color:black;
+}
+.on_dash i{
+  background: var(--white-color); ;
+  color:black;
+}
+.room{
+  margin-left: 35%;
+}
+.mess-manager{
+  margin-left: 85%;
+}
+.security-head{
+  margin-left: 125%;
+}
+#incharge_heading{
+  margin-left:25%;
+  margin-top: 10%;
+}
+.para {
+  font-size: larger;
+  margin-left: 20%;
+  line-height: 30px;
+
+  text-align: justify;
+  margin-right: 5%;font-size: 20px;;
+
+}
+
+

@@ -1,0 +1,109 @@
+
+<div class="Nav" id="Nav1">
+  <div class="NavbarContainer">
+    <img src="download.jfif" alt="" class="NavLogo"  />
+
+    <ul class="NavMenu">
+      <li class="NavItem">
+        <a id="linkcolor" class="NavLinks" routerLink="/home">Home</a>
+      </li>
+      <li class="NavItem">
+        <a id="linkcolor1" class="NavLinks" routerLink="/aboutus">About</a>
+      </li>
+      <li class="NavItem">
+        <a id="linkcolor2" class="NavLinks" routerLink="/facilities">Facilities</a>
+      </li>
+      <li class="NavItem" (click)="contactModal()" >
+        <a id="linkcolor3" class="NavLinks">Contact Us</a>
+      </li>
+    </ul>
+    <div class="NavBtn">
+      <button id="SignupBtn" type="button" name="button" class="NavBtnLink" routerLink="/login">
+        Signup
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<dialog class="modal" id="modal">
+  <div class="container-contact">
+    <div class="leftContact">
+      <h2>contact us</h2>
+      <div class="contact-details">
+        <div class="contact-symbol">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h2>Address</h2>
+          <p>
+            4/11,AKS Hostel,sugura road, <br />
+            Trichencode, Erode. <br />
+            5566001.
+          </p>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-symbol">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h2>Phone</h2>
+          <p>150-123-1234-6789</p>
+        </div>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-symbol">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="info">
+          <h2>Email</h2>
+          <p>akshostel@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightContact">
+      <div class="rightContact_TEXT">
+        <p>
+          <i
+            class="fa fa-times fa-2x"
+            aria-hidden="true"
+            id="close_show" (click)="closeModal()"
+          ></i>
+        </p>
+        <br />
+        <h2 id="send-msg">Send message</h2>
+        <input type="text" placeholder="Full Name" /><br />
+        <input type="email" placeholder="Email id" /><br />
+
+        <input
+          id="textarea"
+          type="textarea"
+          placeholder="Type Your Message"
+        />
+        <br />
+        <button id="submit-btn" type="submit">submit</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script>
+  window.onscroll = function () {
+    var top = window.scrollY;
+    if (top >= 50) {
+      document.getElementById("Nav1").style.backgroundColor = "white";
+      document.getElementById("linkcolor").style.color = "black";
+      document.getElementById("linkcolor1").style.color = "black";
+      document.getElementById("linkcolor2").style.color = "black";
+      document.getElementById("linkcolor3").style.color = "black";
+    } else {
+      document.getElementById("Nav1").style.backgroundColor = "transparent";
+      document.getElementById("linkcolor").style.color = "white";
+      document.getElementById("linkcolor1").style.color = "white";
+      document.getElementById("linkcolor2").style.color = "white";
+      document.getElementById("linkcolor3").style.color = "white";
+    }
+  };
+</script>
+

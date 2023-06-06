@@ -1,0 +1,136 @@
+<app-SideBar></app-SideBar>
+<div class="home_content">
+  <div class="text">Room</div>
+  <div class="manageDetails">
+    <div class="viewDetails">
+      <h1>manage room</h1>
+      <i class="bx bx-home bx-md"></i>
+      <p>Here you can manage room status</p>
+
+      <button id="viewbtn" (click)="show_quries()">Modify</button>
+    </div>
+    <div class="updates">
+      <h1>Room Queries</h1>
+      <i class="bx bx-user-voice bx-md"></i>
+      <p>Here you can see the quries of the room</p>
+
+      <button id="update_btn" (click)="show_view()">view</button>
+    </div>
+  </div>
+  <div class="Table_Info">
+    <div class="table_view">
+      <table id="table_view">
+        <tr>
+          <th>s.no</th>
+          <th>Name</th>
+          <th>Phone number</th>
+          <th>Email id</th>
+
+          <th>Room Number</th>
+
+          <th>Subject</th>
+          <th>Reason</th>
+          <th>Status</th>
+        </tr>
+        <!-- data 1 -->
+        <tr>
+          <td>1</td>
+          <td>Arunkumar s</td>
+          <td>9597374379</td>
+          <td>arun@gmai.com</td>
+
+          <td>001</td>
+          <td>Fan issue</td>
+
+          <td>fan is not working properly</td>
+          <td>solved</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ashokkumar a</td>
+          <td>9678374379</td>
+          <td>ashok@gmai.com</td>
+
+          <td>001</td>
+
+          <td>Fan issue</td>
+
+          <td>fan is not working properly</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>selva m</td>
+          <td>8673337437</td>
+          <td>selvak@gmai.com</td>
+
+          <td>003</td>
+
+          <td>power board issue</td>
+          <td>power board is not working properly</td>
+        </tr>
+      </table>
+    </div>
+    <div class="table_updates">
+      <div class="update_container_head">Room updation</div>
+      <!-- addRoom -->
+      <div class="addRoom">
+        <form id="available_room" [formGroup]="addRoom" (ngSubmit)="addroominfo()">
+          <label for="">Add New Room:</label> &nbsp;
+          <input type="text" formControlName="RoomNo" name="" id="" />
+
+
+          <button>submit</button>
+          <button >delete</button>
+        </form>
+      </div>
+
+      <table id="roomTable">
+        <tr>
+          <th>s.no</th>
+          <th>Room Number</th>
+
+        </tr>
+        <tr *ngFor="let eachData of userdata">
+          <td >{{eachData.id}} </td>
+          <td>{{eachData.RoomNo}}</td>
+
+
+         </tr>
+      </table>
+      <div class="UpdateRoom">
+
+        <form action="" [formGroup]="removeroom" >
+          <!-- (ngSubmit)="roominfo()" -->
+        <h2></h2>
+
+          <label for="">Room Number :</label>&nbsp;
+          <input type="text" formControlName="RoomNo" name="" id="" />   <label for="">status :</label>&nbsp;
+          <input type="text" formControlName="RoomStatus" name="" id="" />
+
+          <button (click)="roominfo()">submit</button>
+          <button (click)="deleteData()">delete</button>
+        </form>
+
+      <table id="DeactiveRoom">
+        <tr>
+          <th>s.no</th>
+          <th>Room Number</th>
+          <th>Room Status</th>
+          </tr>
+          <tr *ngFor="let filled of roomdata">
+            <td >{{ filled.id}} </td>
+            <td>{{ filled.RoomNo}}</td>
+            <td>{{ filled.RoomStatus}}</td>
+
+
+
+           </tr>
+
+      </table> </div>
+
+
+    </div>
+  </div>
+  <br><br><br>
+</div>
