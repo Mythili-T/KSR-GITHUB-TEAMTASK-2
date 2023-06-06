@@ -1,0 +1,103 @@
+<app-Admin_Header></app-Admin_Header>
+
+<div class="dark">
+<div class="add">
+  <button mat-raised-button color="primary">Add Employee</button>
+</div>
+<div class="content" *ngIf="status">
+
+
+
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>Employee Details</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form class="form" [formGroup]="addForm">
+        <label>Name </label>
+        <input type="text" style="background-color: darkgray;" formControlName="username" class="form-content" pattern="^[A-Z][a-z]*[' ']*[A-Z]*[' ']*[A-Z]*$">
+        <div class="form-border"></div>
+        <div *ngIf="addForm.controls['username'].invalid&&addForm.controls['username'].touched">
+          <small *ngIf="addForm.controls['username'].errors?.['required']">Please enter username</small>
+          <small *ngIf="addForm.controls['username'].errors?.['minlength']">User name should be atleast 3 letters</small>
+          <small *ngIf="addForm.controls['username'].errors?.['pattern']">First letter should be capital</small>
+        </div>
+
+<br>
+        <label>Email ID</label>
+        <input type="text" style="background-color: darkgray;" formControlName="mail" class="form-content">
+        <div class="form-border"></div>
+        <div *ngIf="addForm.controls['mail'].invalid&&addForm.controls['mail'].touched">
+          <small *ngIf="addForm.controls['mail'].errors?.['required']">Please enter Mail ID</small>
+          <small *ngIf="addForm.controls['mail'].errors?.['pattern']">Enter Valid Mail ID</small>
+          </div>
+          <br>
+          <label>Mobile Number </label>
+        <input type="text" style="background-color: darkgray;" formControlName="mobile" class="form-content"  pattern="^[6789][0-9]{9}$" >
+        <div class="form-border"></div>
+         <div *ngIf="addForm.controls['mobile'].invalid&&addForm.controls['mobile'].touched">
+        <small *ngIf="addForm.controls['mobile'].errors?.['required']">Please enter mobile number</small>
+        <small *ngIf="addForm.controls['mobile'].errors?.['maxlength']">Password should be 10 letters</small>
+        <small *ngIf="addForm.controls['mobile'].errors?.['pattern']">Enter Valid Mobile Number</small>
+        </div>
+        <br>
+
+
+         <label>Salary</label>
+        <input type="text" style="background-color: darkgray;" formControlName="salary" class="form-content">
+        <div class="form-border"></div>
+        <div *ngIf="addForm.controls['salary'].invalid&&addForm.controls['salary'].touched">
+       <small *ngIf="addForm.controls['salary'].errors?.['required']">Please enter mobile number</small>
+        <br>
+
+        </div>
+        <br>
+        <div class="mat-dialog-action">
+
+
+        <button mat-raised-button color="accent" style="width: 50px;" [disabled]="addForm.invalid" (click)="addDetails()">Add</button>
+        <button mat-raised-button color="warn" style="width: 50px; margin-left: 150px; margin-top: 0px;">Close</button>
+
+</div>
+      </form>
+      <div class="side">
+
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="col">Employee ID</th>
+      <th class="col">Employee Name</th>
+      <th class="col">Email ID</th>
+      <th class="col">Mobile No.</th>
+      <th class="col">Salary</th>
+      <th class="col">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of getDetails">
+      <td>{{item.id}}</td>
+      <td>{{item.username}}</td>
+      <td>{{item.mail}}</td>
+      <td>{{item.mobile}}</td>
+      <td>{{item.salary}}</td>
+      <td class="action">
+        <button mat-icon-button color="primary" (click)="show(item)"> <mat-icon>edit</mat-icon></button>
+        <button mat-icon-button color="warn" (click)="delEmp(item.id)"><mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>

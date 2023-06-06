@@ -1,0 +1,18 @@
+.dark{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+   top: 0;
+   margin-left: 200px;
+   background-color: rebeccapurple;
+}
+
+.dark img{
+  margin-left:20%;
+  width: 500px;
+  margin-top: 80px;
+}
+.dark h3{
+  margin-left: 50%;
+}
+

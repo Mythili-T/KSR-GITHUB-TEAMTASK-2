@@ -1,0 +1,29 @@
+<app-Header></app-Header>
+<div class="container">
+  <div class="content">
+   <table>
+    <tr>
+    <th *ngFor="let column of headers">
+       {{column}}
+    </th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let value of rows">
+        <td>{{value.Role}}</td>
+        <td>{{value.Skills}}</td>
+        <td>{{value.Experience}}</td>
+        <td>{{value.Salary}}</td>
+
+        <td><input type="button" value="Apply" (click)="onApply(value)"></td>
+      </tr>
+    </tbody>
+   </table>
+   </div>
+   <div class="dark">
+    <h3>These are the Job openings we offer and, are a measure of demand that takes into account actual growth of the individual and the company.</h3>
+    <img src="../../assets/Images/openings.avif" width="250px">
+   </div>
+
+</div>
+<app-Footer></app-Footer>
+

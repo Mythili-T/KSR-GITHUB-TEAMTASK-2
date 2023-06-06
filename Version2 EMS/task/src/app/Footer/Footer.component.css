@@ -1,0 +1,49 @@
+footer{
+  background: #D2DAFF;
+  width: 100%;
+  height: 200px;
+
+}
+
+.foot .content{
+  display: flex;
+}
+.foot .content .box h2{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.foot .content .box{
+  padding-left: 200px;
+}
+.foot .content .box a{
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  padding: 2px;
+  text-decoration: none;
+}
+.foot .content .box a:hover{
+  color:dimgray;
+}
+
+/* .foot .content .box a img{
+  padding-right: 1px;
+  font-size: 20px;
+}
+.foot .content .box a:hover img{
+  padding-right:  15px;
+  color: mediumslateblue;
+} */
+.foot .copy{
+  padding: 5px;
+  padding-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 2px solid black;
+  font-size: large;
+  font-weight: bold;
+  background-color: #fff;
+}

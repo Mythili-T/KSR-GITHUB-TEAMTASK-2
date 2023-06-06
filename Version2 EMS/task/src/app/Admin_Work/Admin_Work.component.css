@@ -1,0 +1,62 @@
+.dark{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+     top: 0;
+     margin-left: 200px;
+
+
+}
+.proName{
+  text-align: center;
+  color: burlywood;
+  font-size: larger;
+}
+.moduleName{
+  text-align: center;
+  color: cornflowerblue;
+  font-size: larger;
+  font-family: sans-serif;
+}
+table,
+th,
+td,
+tr {
+border: 20px solid transparent;
+border-radius: 5px;
+text-align: center;
+padding: 0px;
+
+margin-top:0%;
+
+}
+td,
+th {
+border: 1px solid #DFD3C3;
+border-collapse: separate;
+padding: 10px;
+}
+.top{
+background-color:rgba(248, 215, 173, 0.5) ;
+}
+
+
+.bottom {
+background-color: rgba(243, 240, 240, 0.5);
+}
+.txt{
+width: 50%;
+}
+h5{
+  margin-left: 20%;
+}
+/* .action button{
+  padding: 5px 10px;
+} */
+.edit{
+  background-color: skyblue;
+}
+.del{
+  background-color: red;
+}
