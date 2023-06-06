@@ -1,0 +1,111 @@
+<app-patientHeader></app-patientHeader>
+<form action="" class="form" #appointmentForm="ngForm">
+  <div class="field1">
+    <label for="">Your name</label>
+    <div class="input">{{loggedInUser.patientName}} {{loggedInUser.fatherName}}</div>
+  </div>
+  <div class="field4">
+    <label for="">Choose medical field</label>
+    <div class="input">
+      <select name="" id=""  name="appointmentField" #field="ngModel" [(ngModel)]="appointmentField" (change)="changeValue()" [disabled]="Attempt">
+        <option value="" disabled selected>Medical fields</option>
+        <option value="General doctor" >General doctor</option>
+        <option value="Pediatrician">Pediatrician</option>
+        <option value="Gynecologist">Gynecologist</option>
+        <option value="Dentist" >Dentist</option>
+        <option value="Cardiologist" >Cardiologist</option>
+        <option value="Cosmic" >Cosmic</option>
+        <option value="Otolaryngologist" >Otolaryngologist</option>
+        <option value="Psychiatrist" >Psychiatrist</option>
+      </select>
+    </div>
+  </div>
+  <div *ngIf="field.errors && (field.dirty)" class="error">
+    <div [hidden]="!field.errors['required']">Please choose the field</div>
+    <!-- <div [hidden]="!field.errors['pattern']">Enter Only Alphabets </div> -->
+  </div>
+  <div class="field2">
+    <label for="">Choose doctor name</label>
+<div class="input" >
+      <select   name="appointmentDocName" #dname="ngModel"
+      [(ngModel)]="appointmentDocName" [disabled]="Attempt">
+      <option value="" disabled selected>Doctors Name</option>
+        <option *ngFor="let docName of storedField" value="{{docName.doctorName}}">{{docName.doctorName}}</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="field7" (change)="note()">
+      <label for="">Choose date</label>
+      <!-- <div class="input"><input type="date" [disabled]="!filterDates()" class="inputfield" #ddate="ngModel" required name="appointmentDate" [(ngModel)]="appointmentDate" /></div> -->
+      <div class="input"><input type="date" class="inputfield" #ddate="ngModel" required name="appointmentDate" [(ngModel)]="appointmentDate" [disabled]="Attempt"/></div>
+    </div>
+
+  <div class="field3">
+    <label for="">Choose your timing</label>
+    <div class="input">
+    <!-- <select class="inputfield" #dtime="ngModel" required name="appointmentTime" [(ngModel)]="appointmentTime" > -->
+    <select  #dtime="ngModel" required name="appointmentTime" [(ngModel)]="appointmentTime" (change)="chageFormat()" [disabled]="Attempt">
+      <option value="" disabled selected>hrs</option>
+      <option value="09" >09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+
+    </select>
+    <span>
+    <select  #dminute="ngModel" required name="appointmentMinute" [(ngModel)]="appointmentMinute" [disabled]="Attempt">
+      <option value="" disabled selected >min</option>
+      <option value="00">00</option>
+      <option value="15">15</option>
+      <option value="30">30</option>
+      <option value="45">45</option>
+    </select>
+    <select  #dAmPm="ngModel" required name="appointmentAMPM" [(ngModel)]="appointmetnAmPM" [disabled]="Attempt" (change)="note2()">
+      <!-- <option value="" disabled selected >AM/PM</option> -->
+      <option value="AM" [hidden]="amStatus">AM</option>
+      <option value="PM" [hidden]="pmStatus">PM</option>
+
+    </select>
+  </span><span>
+
+  </span>
+</div>
+  </div>
+
+  <div class="field4">
+    <label for="">Anything to say</label>
+    *if any
+    <div class="input"><textarea name="" id="" cols="20" rows="3" name="appointmentSpecific" [(ngModel)]="appointmentSpecific" [disabled]="Attempt"></textarea></div>
+  </div>
+
+  <div class="field5">
+    <button class="makeaAppointment" [disabled]="!appointmentForm.valid" (click)="appointmentSubmit()" [disabled]="Attempt">MAKE APPOINTMENT</button>
+  </div>
+</form>
+<div class="notice" *ngIf="notice" style="width: 100%; color: green; font-weight: bolder;">
+  <p >Check the working hours details of the doctor below and select the time</p>
+</div>
+<div class="doctor">
+  <div *ngFor="let det of storedField" id="ref">
+    <div class="box">
+      <img src="{{ det.image }}" alt="" />
+      <p>Name: {{ det.doctorName }}</p>
+      <p>Specialist: {{ det.field }}</p>
+      <p>Experiance: {{ det.experiance }}</p>
+      <p>Licence no: {{ det.licenseNo }}</p>
+      <p>Available time: {{ det.available }}</p>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="message" [hidden]="!field.disabled">
+    <p style="color:red; font-size: 20px;">** You will not permitted to make another appointment until your previous appointment status as completed or cancelled.</p>
+  </div>
+<!-- <app-footer></app-footer> -->

@@ -1,0 +1,34 @@
+<app-doctorHeader></app-doctorHeader>
+<!-- {{getQuery|json}} -->
+{{slotAllocated.name}}
+<form class="form">
+  <table>
+    <thead>
+      <th>S.No</th>
+      <th>Patient name</th>
+      <th>Contact no</th>
+      <th>Doctor Name</th>
+      <th>Appointment date</th>
+      <th>Appointment time</th>
+      <th>Health issue</th>
+      <th>Reporting Status</th>
+      <th>Select</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of slotAllocated let i =index">
+        <td>{{i+1}}</td>
+        <td>{{appointment.name}}</td>
+        <td>{{appointment.mobileNo}}</td>
+        <td>{{appointment.doctorName}}</td>
+        <td>{{appointment.date| date: 'dd/MM/yyyy'}}</td>
+        <td>{{appointment.timeing}}</td>
+        <td>{{appointment.problem}}</td>
+        <td>{{appointment.reporingStatus}}</td>
+        <td>
+          <button [disabled]="appointment.reporingStatus=='Reported to admin' " id="refchange" (click)="AddToBill(appointment,appointment.id)">ADD</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- <app-footer></app-footer> -->
