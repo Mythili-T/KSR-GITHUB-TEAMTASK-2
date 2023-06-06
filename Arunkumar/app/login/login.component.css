@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  background: #e4e9f7;
+  font-family: sans-serif;
+}
+body{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #e4e9f7;
+
+
+
+}
+.login{
+  margin-top: 20px;
+}
+
+.grid{
+  display:grid;
+}
+.two-columns{
+  grid-template-columns: 50% 30%;
+  padding: 20px;
+  justify-content: center;
+}
+img{
+  height: 300px;
+  width: 300px;
+
+}
+.text{
+background-color: rgb(58, 37, 221);
+margin-left: 20px;
+padding: 40px;
+height: 580px;
+
+}
+.content{
+
+}
+
+
+.login-form{
+background-color:rgb(255, 255, 255) ;
+padding: 40px;
+position: relative;
+
+border-radius: 0 0 2px 0;
+height: 580px;
+}
+#text{
+  height: 30px;
+  width: 250px;
+  margin: 20px;
+}
+.text h1{
+  font-size: 50px;
+  margin-top: 5px;
+
+  color: white;
+  background: transparent;
+}
+.text p{
+  font-size: 30px;
+margin-top: 30px;
+background: transparent;
+color: white;
+font-weight: 700;
+}
+.text img{
+  background: transparent;
+}
+.login-form input{
+
+  font-size: 20px;
+  letter-spacing: 3px;
+ width: 70%;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 20px;
+  background: none;
+  background: transparent;
+}
+#username{
+  margin-top: 20px;
+  margin-bottom:10px;
+  background: transparent;
+}
+#Password{
+  margin-top: 20px;
+  margin-bottom:10px;
+  background: transparent;
+}
+
+
+button{
+  height: 40px;
+  width: 140px;
+  border-radius:20px;
+  color: azure;
+  background-color:rgb(65, 19, 95);
+  margin-left: 70px;
+  margin-top: 20px;
+  cursor: pointer;
+
+
+}
+
+.login-form h1{
+  margin-top: 2px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+}
+.login-form form {
+  background: transparent;
+
+}
+
+#forget{
+  text-decoration: none;
+  background: transparent;
+margin-top: 20px;
+
+
+}
+#submit{
+  margin-top: 50px;
+
+}
+#newUser{
+
+  position: relative;
+
+}
+.login-form span {
+color: red;
+}
+.login-form p{
+  position: absolute;
+  color: red;
+  background: white;
+}
+input{
+  background-color: white;
+}
+.login-form p i{
+  float: right;
+  margin: 5px;
+  width: 100%;
+}
+

@@ -1,0 +1,46 @@
+
+<app-hom3_nav></app-hom3_nav>
+<body>
+  <div class="login">
+      <div class="grid two-columns">
+
+          <div class="content">
+              <div class="text">
+                  <h1>AKS <br> HOSTELS</h1>
+                  <P>WELCOMING YOU TO LOGIN</P>
+                  <img src="../../assets/login.png" alt="">
+              </div>
+          </div>
+
+          <div class="login-form">
+              <h1>Login</h1>
+              <form  [formGroup]="LoginForm"  (submit)="loginform(email.value)">
+                  <input type="text" placeholder="Email id"   id="username"  formControlName="emailvalue" pattern= "^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$" #email/><br>
+                  <div *ngIf="LoginForm.controls['emailvalue'].dirty" class="alert">
+                    <p *ngIf="LoginForm.controls['emailvalue'].errors?.['required']">Email should not be Empty</p>
+                    <p *ngIf="LoginForm.controls['emailvalue'].errors?.['pattern']">Enter a valid Email</p>
+                  </div>
+                  <br>
+                 <br>
+                  <input type="password" placeholder="Password"  id="Password"  formControlName="passwordvalue" #password pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                  <div *ngIf="LoginForm.controls['passwordvalue'].dirty" class="alert">
+                    <p *ngIf="LoginForm.controls['passwordvalue'].errors?.['required']" >Password should not be Empty</p>
+                    <p *ngIf="LoginForm.controls['passwordvalue'].errors?.['pattern']" >Password Must Contain 1Caps(A)-Num(1)-Symbol(@)</p>
+                  </div>
+                  <br>
+                  <a href="#" id="forget">Forgot Password?</a>
+
+                  <button type="submit" id="submit">submit</button><br><br>
+
+
+              </form>
+          </div>
+
+
+
+
+
+      </div>
+
+  </div>
+</body>

@@ -1,0 +1,87 @@
+.home_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  background: var(--sky-color);
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  overflow-y: scroll;
+}
+.home_content .text {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--light-black);
+  margin-bottom: 15px;
+}
+ul li
+{
+  list-style: none;
+}
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container img{
+  height: 500px;
+  width: 500px;
+}
+.left
+{
+  height: fit-content;
+  width: fit-content;
+
+}
+.box
+{
+  height: fit-content;
+  width: 400px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+
+}
+.box p
+{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+padding: 10px;
+}
+.box2{  height: fit-content;
+  width: 400px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}
+.box2 p
+{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}
+.box3
+{ width: 400px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}
+.box3 p
+{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}
+.box4
+{ width: 400px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}
+.box4 p
+{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 5px;
+}

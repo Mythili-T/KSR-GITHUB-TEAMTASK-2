@@ -1,0 +1,126 @@
+<app-user-sidebar></app-user-sidebar>
+<div class="login">
+
+
+    <div class="login-form">
+      <h1>Vacating Form</h1>
+      <form [formGroup]="ExchangeForm" (submit)="exchange()">
+        <div class="user-name">
+          <input
+            type="text"
+            placeholder="Name"
+            [(ngModel)]="name"
+            #name1
+            formControlName="namevalue"
+            pattern="^[a-zA-Z]+$"
+          />
+          <div *ngIf="ExchangeForm.controls['namevalue'].dirty" class="alert">
+            <p *ngIf="ExchangeForm.controls['namevalue'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <p *ngIf="ExchangeForm.controls['namevalue'].errors?.['pattern']">
+              Enter proper User Name
+            </p>
+          </div>
+        </div>
+        <div class="room_no">
+          <input
+            type="number"
+            placeholder="Room No"
+            #mobil1
+
+            formControlName="RoomNo"
+            pattern="^[0-9]\d{3}$"
+          />
+          <div *ngIf="ExchangeForm.controls['RoomNo'].dirty" class="alert">
+            <p
+              *ngIf="ExchangeForm.controls['RoomNo'].errors?.['required']"
+            >
+          should not be Empty
+            </p>
+            <p *ngIf="ExchangeForm.controls['RoomNo'].errors?.['pattern']">
+             valid Room Number
+            </p>
+          </div>
+        </div>
+
+        <div class="mobile">
+          <input
+            type="number"
+            placeholder="Mobil-number"
+            #mobil1
+            [(ngModel)]="mobil"
+            formControlName="mobilevalue"
+            pattern="^[6-9]\d{9}$"
+          />
+          <div *ngIf="ExchangeForm.controls['mobilevalue'].dirty" class="alert">
+            <p
+              *ngIf="ExchangeForm.controls['mobilevalue'].errors?.['required']"
+            >
+              Mobile Number should not be Empty
+            </p>
+            <p *ngIf="ExchangeForm.controls['mobilevalue'].errors?.['pattern']">
+              Enter a valid Mobile Number
+            </p>
+          </div>
+        </div>
+        <div class="room-status">
+        <select name="" type="text" id="" formControlName="Status">
+          <option value="" disabled selected>status</option>
+
+
+
+          <option>vacate</option>
+        </select>
+        <div *ngIf="ExchangeForm.controls['Status'].dirty" class="alert">
+          <p
+            *ngIf="ExchangeForm.controls['Status'].errors?.['required']"
+          >
+            Status should not be Empty
+          </p>
+
+        </div></div>
+        <div class="user-reason">
+          <input
+            type="text"
+            placeholder="Reason"
+            [(ngModel)]="descrip"
+            #name1
+            formControlName="Reason"
+            id="user-reason"
+          />
+          <div *ngIf="ExchangeForm.controls['Reason'].dirty" class="alert">
+            <p *ngIf="ExchangeForm.controls['Reason'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <!-- <p *ngIf="ExchangeForm.controls['namevalue'].errors?.['pattern']">
+              Enter proper User Name
+            </p> -->
+          </div>
+          <br>
+        </div>
+
+          <div class="date">
+            <input
+              type="date"
+
+             
+              formControlName="date"
+              id=""
+            />
+            <div *ngIf="ExchangeForm.controls['date'].dirty" class="alert">
+              <p *ngIf="ExchangeForm.controls['date'].errors?.['required']">
+                User name should not be Empty
+              </p>
+
+            </div>
+
+        </div>
+
+        <button type="submit" id="submit">submit</button><br /><br />
+
+      </form>
+    </div>
+
+  </div>
+

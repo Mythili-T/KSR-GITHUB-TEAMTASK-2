@@ -1,0 +1,97 @@
+.home_content {
+  position: relative;
+  height: 100%;
+
+  width: calc(100% - 78px);
+  left: 78px;
+
+
+}
+.top-set{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-left: 5px;
+}
+.main_img img{
+  width: 98%;
+  height: 500px;
+  border-radius: 10px;
+  margin: 10px ;
+
+}
+.tex{
+  position: absolute;
+  top:70%;
+  left:5%;
+
+}
+.tex h1{
+  font-size: 50px;
+  color: rgb(23, 22, 22);
+
+}
+.tex p{
+  font-size: 25px;
+  color: rgb(6, 6, 6);
+
+}
+.dash_container_1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+
+
+}
+.dash_container_1 img{
+
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.dash_container_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+
+
+}
+.dash_container_2 img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+
+}
+.dash_container_1 p,h2{
+  padding: 7px;
+  padding-top:4px ;
+  margin-left: 7px;
+  color:rgb(120, 38, 236);
+}
+.dash_container_2 p,h2 {
+padding: 7px;
+padding-top:4px ;
+color:rgb(120, 38, 236);
+
+margin-left: 7px;
+}
+.room{
+  margin: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.room_available{
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.student{
+  margin: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.empolye{
+  margin: 20px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+}

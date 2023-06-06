@@ -1,0 +1,269 @@
+<app-SideBar></app-SideBar>
+<div class="home_content">
+  <div class="text">Students Profile</div>
+  <div class="manageDetails">
+    <div class="viewDetails">
+      <h1>view Profiles</h1>
+      <i class="bx bx-user bx-md"></i>
+      <p>Here you can see the Student Profile Details</p>
+
+      <button id="viewbtn" (click)="show_view()">view</button>
+    </div>
+    <div class="updates">
+      <h1>updates</h1>
+
+      <i class="bx bx-cloud-upload bx-md"></i>
+      <p>Here you can see the update</p>
+
+      <button id="update_btn" (click)="show_update()">updates</button>
+    </div>
+  </div>
+  <div class="Table_Info">
+    <div class="table_view">
+      <div class="search">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="search"
+          [(ngModel)]="sort"
+        />
+        <button id="BtnSerach" (click)="search()">
+          <i class="bx bx-search-alt-2 bx-sm"></i>
+        </button>
+
+      </div>
+
+
+      <table id="table_view">
+        <tr>
+          <th>Name</th>
+          <th>Register number</th>
+          <th>Phone number</th>
+
+          <th>Age</th>
+
+          <th>Father name</th>
+          <th>Mother name</th>
+          <th>Email id</th>
+          <th>Address</th>
+          <th>College Name</th>
+          <th>Aadhar Number</th>
+          <th>Room Number</th>
+        </tr>
+        <!-- data 1 -->
+       <tbody *ngIf="hide1">
+        <tr  *ngFor="let eachData of userdata">
+          <td>{{ eachData.name }}</td>
+          <td>{{ eachData.regNo }}</td>
+          <td>{{ eachData.mobile }}</td>
+          <td>{{ eachData.age }}</td>
+          <td>{{ eachData.Fathername }}</td>
+          <td>{{ eachData.mothername }}</td>
+          <td>{{ eachData.Email }}</td>
+          <td>{{ eachData.permentaddress }}</td>
+          <td>{{ eachData.collegename }}</td>
+          <td>{{ eachData.Adharnumber }}</td>
+          <td>{{ eachData.roomnumber }}</td>
+        </tr>
+        <tbody *ngIf="hide">
+          <tr *ngFor="let item of data">
+            <td>{{ item.name }}</td>
+            <td>{{ item.regNo }}</td>
+            <td>{{ item.mobile }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.Fathername }}</td>
+            <td>{{ item.mothername }}</td>
+            <td>{{ item.Email }}</td>
+            <td>{{ item.permentaddress }}</td>
+            <td>{{ item.collegename }}</td>
+            <td>{{ item.Adharnumber }}</td>
+            <td>{{ item.roomnumber }}</td>
+          </tr>
+        </tbody>
+        <div class="error"  *ngIf="error">
+     <h1> No Information Founded</h1>
+        </div>
+
+      </table>
+
+     
+    </div>
+
+    <div class="table_updates">
+      <div class="update_container_head">Profile updation</div>
+
+      <form action="" [formGroup]="newstudent">
+        <div class="table_1">
+          <label for="">Name</label><br />
+          <input
+            type="text"
+            placeholder="name"
+            formControlName="name"
+            pattern="^[a-zA-Z]+$"
+          />
+          <div *ngIf="newstudent.controls['name'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['name'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['name'].errors?.['pattern']">
+              Enter proper User Name
+            </p>
+          </div>
+          <br />
+          <label for="">Register Nomber</label> <br />
+          <input
+            type="text"
+            placeholder="Register Nomber"
+            formControlName="regNo"
+            pattern="^[0-9]\d{6}$"
+          />
+          <div *ngIf="newstudent.controls['regNo'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['regNo'].errors?.['required']">
+              Mobile Number should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['regNo'].errors?.['pattern']">
+              Enter a valid Mobile Number
+            </p>
+          </div>
+          <br />
+          <label for="">Mobile</label> <br />
+          <input
+            type="text"
+            placeholder="mobile"
+            formControlName="mobile"
+            pattern="^[6-9]\d{9}$"
+          />
+          <div *ngIf="newstudent.controls['mobile'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['mobile'].errors?.['required']">
+              Mobile Number should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['mobile'].errors?.['pattern']">
+              Enter a valid Mobile Number
+            </p>
+          </div>
+          <br />
+
+          <label for="">Age</label><br />
+          <input
+            type="text"
+            placeholder="age"
+            formControlName="age"
+            pattern="^[0-9]\d{1}$"
+          />
+          <div *ngIf="newstudent.controls['age'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['age'].errors?.['required']">
+              should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['age'].errors?.['pattern']">
+              valid Age
+            </p>
+          </div>
+          <br />
+          <label for="">Father Name</label><br />
+          <input
+            type="text"
+            placeholder="Father name"
+            formControlName="Fathername"
+          />
+          <div *ngIf="newstudent.controls['Fathername'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['Fathername'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['Fathername'].errors?.['pattern']">
+              Enter proper User Name
+            </p>
+          </div>
+          <br />
+          <label for="">Mother Name</label><br />
+          <input
+            type="text"
+            placeholder="mother name"
+            formControlName="mothername"
+          />
+          <div *ngIf="newstudent.controls['mothername'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['mothername'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['mothername'].errors?.['pattern']">
+              Enter proper User Name
+            </p>
+          </div>
+        </div>
+        <div class="table_2">
+          <label for="">Email Id</label><br />
+          <input
+            type="text"
+            placeholder="Email"
+            formControlName="Email"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          />
+          <div *ngIf="newstudent.controls['Email'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['Email'].errors?.['required']">
+              Email should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['Email'].errors?.['pattern']">
+              Enter a valid Email
+            </p>
+          </div>
+          <br />
+          <label for="">Address</label><br />
+          <input
+            type="text"
+            placeholder="perment address"
+            formControlName="permentaddress"
+          />
+          <div
+            *ngIf="newstudent.controls['permentaddress'].dirty"
+            class="alert"
+          >
+            <p
+              *ngIf="newstudent.controls['permentaddress'].errors?.['required']"
+            >
+              User name should not be Empty
+            </p>
+          </div>
+          <br />
+
+          <label for="">College Name</label><br />
+          <input
+            type="text"
+            placeholder="college name"
+            formControlName="collegename"
+            pattern="^[a-zA-Z]+$"
+          />
+          <div *ngIf="newstudent.controls['collegename'].dirty" class="alert">
+            <p *ngIf="newstudent.controls['collegename'].errors?.['required']">
+              User name should not be Empty
+            </p>
+            <p *ngIf="newstudent.controls['collegename'].errors?.['pattern']">
+              Enter proper User Name
+            </p>
+          </div>
+          <br />
+          <label for="">Adhar Number</label><br />
+          <input
+            type="text"
+            placeholder="Adhar number "
+            formControlName="Adharnumber"
+          /><br />
+          <label for="">Room Number</label><br />
+          <select name="" type="text" id="" formControlName="feesStatus">
+            <option value="" disabled selected>status</option>
+
+            <option value="unpaid" *ngFor="let roomupdate of room">
+              {{ roomupdate.RoomNo }}
+            </option></select
+          ><br />
+        </div>
+        <div class="butn_grid">
+          <button id="Save" (click)="studentinfo()">Save</button>
+
+          <button id="delete" (click)="deleteData()">delete</button>
+        </div>
+
+        <br /><br />
+      </form>
+      <br /><br />
+    </div>
+  </div>
+</div>
