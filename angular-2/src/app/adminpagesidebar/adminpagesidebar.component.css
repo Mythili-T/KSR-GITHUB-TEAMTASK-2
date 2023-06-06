@@ -1,0 +1,135 @@
+
+.side-toggle{
+  /* position: fixed; */
+  margin-left: 50px;
+  z-index: 2;
+  margin-top: -40px;
+  font-size: 20px;
+
+ cursor: pointer;
+}
+#toggle{
+  display: none;
+}
+.whole{
+  display: grid;
+  grid-template-columns: 22% 70%;
+
+}
+.sidebar{
+
+  margin-top: 20px;
+  width: 300px;
+  left: 0;
+  height: 582px;
+  padding: 80px 0 20px 0;
+  color: #fff;
+  background-color: rgb(72, 140, 228);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  /* border-radius: 10% 0% 10% 0%; */
+  border-radius: 5px;
+}
+.side-menu{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: 20px;
+
+}
+.side-menu > i{
+  font-size: 25px;
+  padding-right: 40px;
+}
+.sidebar .side-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family:poppins;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.sidebar .side-menu:hover{
+  color: rgb(68, 191, 225);
+  background:#f8f8fb;
+  border-radius: 5px;
+}
+.sidebar .side-menu:hover a{
+  color: rgb(68, 191, 225);
+  
+}
+
+
+
+
+#toggle:checked ~ .whole .sidebar {
+  width: 96px;
+
+}
+#toggle:checked ~ .whole .main{
+  margin-left: -163px;
+  width: 1300px;
+}
+
+#toggle:checked ~ .whole .sidebar .side-menu > a{
+ display: none;
+}
+#logout{
+  margin-left: 18px;
+}
+.main{
+  height: 200px;
+  width: 1128px;
+  margin-top: 20px;
+  left: 0;
+
+}
+.container{
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  padding:0 30px;
+  height: 100%;
+  gap: 1rem;
+
+
+}
+.card-total1{
+  background-color: transparent;
+  border-radius: 15px;
+  color: #0b0a0a;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card-total2{
+  background-color: transparent;
+  border-radius: 15px;
+  color: #0b0a0a;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card-total3{
+  background-color: transparent;
+  border-radius: 15px;
+  color: #0b0a0a;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+h3{
+  font-size: 23px;
+  font-family: poppins;
+  font-weight: 600;
+
+}
+.container i{
+  color: rgb(80, 170, 226);
+  margin-top: 20px;
+  font-size: 40px;
+  margin-left: 30%;
+}
+
+.container #c3{
+  margin-top: 30px;
+}

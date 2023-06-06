@@ -1,0 +1,48 @@
+
+<app-header></app-header>
+<body>
+<div class="container">
+  <div class="forms">
+      <div class="form login">
+          <span class="title">Login</span>
+          <form action="#" id="formcontainer" autocomplete="off" [formGroup]="loginForms" (ngSubmit)="login()">
+              <div class="input-field">
+                  <input type="text" id="Loginemail" placeholder="Enter your email" formControlName="username">
+                  <i class="uil uil-envelope icon" id="correctEmail"></i>
+
+
+              </div>
+              <div class="validateError" *ngIf="loginForms.controls['username'].dirty">
+                <p class="error" *ngIf="loginForms.controls['username'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
+                <p class="error" *ngIf="loginForms.controls['username'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id</p>
+             </div>
+              <div class="input-field">
+                  <input type="password" class="Loginpassword" id="password" placeholder="Enter your password" formControlName="password">
+                  <i class="uil uil-lock icon" id="correctNew"></i>
+                  <i class="uil uil-eye-slash showHidePw"></i>
+              </div>
+              <div class="validateError" *ngIf="loginForms.controls['password'].dirty">
+                <p class="error" *ngIf="loginForms.controls['password'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Password can't be blank</p>
+                <p class="error" *ngIf="loginForms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password </p>
+             </div>
+              <div class="checkbox-text">
+                  <div class="checkbox-content">
+                      <input type="checkbox" id="logCheck">
+                      <label for="logCheck" class="text">Remember me</label>
+                  </div>
+                  <a href="#" class="text">Forgot password?</a>
+              </div>
+              <div class="input-field button">
+                  <button class="btn2" >Login</button>
+              </div>
+          </form>
+          <div class="login-signup">
+              <span class="text">Not a member?
+                  <a [routerLink]="'/AngularRegister'" class="text signup-link" >Signup Now</a>
+              </span>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+<app-footer></app-footer>

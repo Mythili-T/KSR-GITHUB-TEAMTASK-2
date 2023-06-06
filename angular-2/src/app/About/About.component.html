@@ -1,0 +1,157 @@
+<app-header></app-header>
+<div class="slider">
+  <div class="contents-left">
+    <img src="../../assets/car11.jpg" id="subDivImg1" width="70%">
+    <img src="../../assets/car12.jpg" id="subDivImg2" width="30%" style="margin-left: -3%; margin-top: -3%;">
+  </div>
+  <div class="contents-right">
+    <h2 style="font-family: poppins;">THE HISTORY <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;OF <br><br>ROLLS-ROYCE</h2>
+  </div>
+</div>
+<h2 style="font-family: poppins;font-weight: 800;">Rolls-Royce Motor Cars</h2>
+
+<div class="container">
+  <div class="image">
+    <img src="../../assets/Rolls Royce Logo.png">
+  </div>
+  <div class="content1">
+    <p style="font-family: poppins;font-size: 18px;"><b>Rolls-Royce </b>Motor Cars Limited is a British luxury automobile maker which has operated as a wholly owned
+      subsidiary of BMW AG since 2003
+      as the exclusive manufacturer of Rolls-Royce-branded motor cars.
+      The company's line of vehicles includes the Phantom, a four-door saloon first offered in 2003 as well as its
+      extended wheelbase two-door coupé and convertible variants; the smaller Ghost four-door saloon; Wraith two-door
+      coupe; Dawn convertible; the Cullinan SUV, and the forthcoming 2023 Spectre,
+      <br><br>he first all-electric Rolls-Royce. In 1998, Vickers decided to sell Rolls-Royce Motors. The most likely
+      buyer was BMW, which already supplied engines and other components for Rolls-Royce and Bentley cars, but BMW's
+      final offer of £340 million was beaten by Volkswagen's £430 million ($703 million).
+    </p>
+  </div>
+</div>
+<div class="container2">
+  <div class="content2">
+
+    <p style="font-family: poppins;font-size: 18px;">
+      For over a century, Rolls-Royce has been synonymous with the ultimate in automotive luxury. From our earliest days
+      crafting cars for the world's most discerning customers, to our current lineup of exceptional models that combine
+      cutting-edge technology with traditional hand-crafted techniques, we have always been committed to delivering an
+      unparalleled driving experience.
+      <br><br>
+      At Rolls-Royce, we believe that luxury is about more than just the materials and features that go into our cars.
+      It's about the experience of owning a Rolls-Royce, and the sense of pride and connection that comes with being
+      part of our exclusive community of owners.
+
+      From the iconic Spirit of Ecstasy hood ornament to the sumptuous leather interiors and hand-polished wood veneers,
+      every Rolls-Royce is a masterpiece of design and engineering. We use only the finest materials and the most
+      advanced technology to create cars that are both breathtakingly beautiful and remarkably powerful.
+
+      But at Rolls-Royce, we also understand that luxury is about service as well as style.<br><br> That's why we offer
+      our customers a range of personalized services and exclusive experiences, from bespoke customization options to
+      private tours of our factory in Goodwood, England.
+    </p>
+    </div>
+    <div class="image1">
+      <img src="../../assets/image2.jpg">
+    </div>
+</div>
+<table>
+  <tr>
+    <th>Calender year</th>
+    <th>Total sales</th>
+  </tr><br>
+  <tr style="text-align: center;">
+
+    <td>2005</td>
+    <td>796</td>
+  </tr><br>
+  <tr style="text-align: center;">
+
+    <td>2006</td>
+    <td>805</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2007</td>
+    <td>1010</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2008</td>
+    <td>1212</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2009</td>
+    <td>1002</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2010</td>
+    <td>2711</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2011</td>
+    <td>3538</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2012</td>
+    <td>3575</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2013</td>
+    <td>3630</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2014</td>
+    <td>4063</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2015</td>
+    <td>3785</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2016</td>
+    <td>4011</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2017</td>
+    <td>3362</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2018</td>
+    <td>4017</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2019</td>
+    <td>5152</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2020</td>
+    <td>3756</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2021</td>
+    <td>5586</td>
+  </tr><br>
+  <tr style="text-align: center;">
+    <td>2022</td>
+    <td>6021</td>
+  </tr>
+</table>
+<div class="btn" style="font-family: poppins;">
+ Do you want more datails
+ <button style="font-size: 20px;"><a  class="btn" style="text-decoration: none;" (click)="openpop()" >&raquo;</a></button>
+</div>
+
+<div class="overlay" *ngIf="show" (click)="overlay($event)" id="popup">
+
+  <div class="content">
+    <div class="buttons">
+    <button class="btn1" (click)="image()">Images</button>
+    <button class="btn1" (click)="news()">News</button>
+    <button class="btn3" (click)="review()">Reviews</button>
+    <button class="btn3" (click)="access()">Accessories</button>
+  </div>
+    <div class="close" (click)="closepopup()" >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+
+
+</div>
+<app-footer></app-footer>

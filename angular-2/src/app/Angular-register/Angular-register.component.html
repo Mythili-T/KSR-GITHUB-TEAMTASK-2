@@ -1,0 +1,49 @@
+<body>
+  <div class="container">
+    <div class="forms">
+        <div class="form signup">
+          <span class="title">Registration</span>
+          <form [formGroup]="Registerforms" (ngSubmit)="formRegister()" >
+              <div class="input-field">
+                  <input type="text" placeholder="Enter your name" id="validateName" formControlName="username" name="username" >
+              </div>
+              <div class="validateError" *ngIf="Registerforms.controls['username'].dirty">
+                <p class="error" *ngIf="Registerforms.controls['username'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Username can't be blank</p>
+                <p class="error" *ngIf="Registerforms.controls['username'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Username contain only alphabets</p>
+             </div>
+              <div class="input-field">
+                  <input type="email" placeholder="Enter your email" id="validateEmail" formControlName="email" name="email" >
+              </div>
+              <div class="validateError" *ngIf="Registerforms.controls['email'].dirty">
+                <p class="error" *ngIf="Registerforms.controls['email'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
+                <p class="error" *ngIf="Registerforms.controls['email'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p>
+              </div>
+              <div class="input-field">
+                  <input type="password"  placeholder="Enter a new password" id="valNewpass" formControlName="password" name="password" >
+              </div>
+              <div class="validateError" *ngIf="Registerforms.controls['password'].dirty">
+                <p class="error" *ngIf="Registerforms.controls['password'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Password can't be blank</p>
+                <p class="error" *ngIf="Registerforms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password </p>
+              </div>
+              <div class="input-field">
+                <input type="password"  placeholder="Enter a new password" id="valNewpass" formControlName="confirmPassword" name="password" >
+            </div>
+            <div class="validateError" *ngIf="Registerforms.controls['confirmPassword'].dirty">
+              <p class="error" *ngIf="Registerforms.controls['confirmPassword'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Password can't be blank</p>
+              <p class="error" *ngIf="Registerforms.controls['confirmPassword'].errors?.['confirmedValidator']"><i class="fas fa-exclamation-circle"></i>Enter valid password </p>
+            </div>
+
+              <div class="input-field button" >
+                  <button [disabled]="!Registerforms" type="submit" >Sign-up </button>
+              </div>
+          </form>
+          <div class="login-signup">
+              <span class="text">Already a member?
+                  <a [routerLink]="'/loginnew'" class="text login-link">Login now</a>
+              </span>
+          </div>
+      </div>
+      </div>
+      </div>
+      
+</body>

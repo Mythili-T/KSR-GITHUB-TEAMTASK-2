@@ -1,0 +1,210 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image:url("images/slide5.webp"); */
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.container {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  background: rgba(226, 246, 246, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgb(61, 75, 79);
+  overflow: hidden;
+  margin: 0 20px;
+  margin-top: -7%;
+}
+
+.container .forms {
+  display: flex;
+  align-items: center;
+  height: 440px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  width: 50%;
+  padding: 30px;
+  transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+  opacity: 0;
+  transition: opacity 0.09s ease;
+}
+
+.container.active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.container.active .forms {
+  height: 600px;
+}
+
+.container .form .title {
+  position: relative;
+  font-size: 36px;
+  font-weight: 600;
+  /* color: #ccc;*/
+}
+
+.form .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 30px;
+  background-color: #38acea;
+  border-radius: 25px;
+}
+
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.input-field small {
+  color: red;
+  position: relative;
+  top: 50px;
+  visibility: hidden;
+}
+
+.input-field .error small {
+  visibility: visible;
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #38acea;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid)~i {
+  color: #53bef7;
+}
+
+.input-field i.icon {
+  left: 0;
+}
+
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form .checkbox-text {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+/* .checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+} */
+
+.checkbox-content input {
+  margin-right: 10px;
+  accent-color: #53bef7;
+}
+
+.form .text {
+  color: rgb(14, 1, 1);
+  font-size: 14px;
+  margin-right: 38px;
+}
+
+.form a.text {
+  color: #53bef7;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #53bef7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.button input:hover {
+  background-color: #53bef7;
+}
+
+.form .login-signup {
+  margin-top: 30px;
+  text-align: center;
+}
+.error{
+  color: red;
+  margin-top: 4px;
+}
+.btn2{
+  width: 86%;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #53bef7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

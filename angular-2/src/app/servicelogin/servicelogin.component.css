@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  /* border: 2px solid; */
+}
+input[type=text],select, input[type=number]{
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  float: left;
+  width: 75%;
+
+  /* resize:vertical; */
+}
+
+label, input[type=radio]{
+
+  padding: 12px 12px 0px 12px;
+  display: inline-block;
+
+  width: 25%;
+}
+input[type=submit]{
+width: 20%;
+ margin-left: 35%;
+  background-color: rgb(63, 63, 244);
+  cursor: pointer;
+  border: none;
+  margin-top: 50px;
+  height: 40px;
+  border-radius: 4px;
+}
+input[type=submit]:hover{
+  background-color: rgb(165, 165, 217);
+}
+label{
+  float:left;
+
+}
+.container{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.row{
+  padding: 20px;
+}
+#btn2{
+ margin-left: 25%;
+}
+#service{
+  margin-left: -20px;
+  margin-top: 2%;
+}
+#services{
+  margin-left: 1.3%;
+  margin-top: 20px;
+  width:603px;
+}
+.error{
+  color: red;
+  margin-top: 4px;
+  margin-left:25%;
+}
+#validateEmail{
+  width: 75%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

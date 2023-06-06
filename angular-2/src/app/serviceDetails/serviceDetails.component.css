@@ -1,0 +1,32 @@
+.totalcontent{
+  display: flex;
+}
+/* p{
+  margin-top: 260px;
+  padding: 30px;
+  margin-left: 28%;
+  background-color: blueviolet;
+  width: 1130px;
+} */
+table {
+  height: 200px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 5%;
+}
+.main-body{
+ margin-top: 260px;
+ margin-left: -77%;
+  padding: 20px;
+  width: 90%;
+  /* background-color: blue; */
+}
+mat-form-field{
+  width:100%;
+}

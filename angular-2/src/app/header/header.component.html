@@ -1,0 +1,34 @@
+<div class="body">
+  <div class="container">
+    <div class="main">
+
+      <div class="logo">
+        <img src="../../assets/Rolls Royce Logo.png" width="160px" height="80px" alt="img" />
+      </div>
+
+
+      <div class="navbar">
+
+        <ul>
+
+          <li><a routerLink="/home" routerLinkActive="active"> Home</a></li>
+          <li><a routerLink="/About" routerLinkActive="active">About Us</a></li>
+          <li class="/drop" routerLinkActive="active"><a routerLink="/Service">Service</a></li>
+          <li class="/dropdown" routerLinkActive="active"><a routerLink="/Models" id="carDropdown">Models</a></li>
+
+        </ul>
+        <div class="subnav">
+          <a routerLink="/loginnew" *ngIf="!usersuccess">Login </a>
+        </div>
+        <div class="subnav" id="logout" style="cursor: pointer;">
+          <a *ngIf="usersuccess" (click)="logout()">Logout</a>
+        </div>
+        <div class="subnav" id="logout" style="cursor: pointer;">
+          <a *ngIf="usersuccess" routerLink="/viewdetails">View Update</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>

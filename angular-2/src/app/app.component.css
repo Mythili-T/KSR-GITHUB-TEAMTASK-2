@@ -1,0 +1,179 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(88, 129, 190);
+  padding: 80px;
+
+}
+
+
+
+h2 {
+  color: rgb(11, 19, 26);
+
+  text-align: center;
+
+}
+
+.container{
+  background-color:white;
+  border-radius: 20px;
+}
+.main {
+
+  align-items: center;
+  display:  grid;
+  width: 100%;
+
+
+}
+
+.logo {
+  margin-top: 2px;
+ margin-right:30%;
+
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  margin-right: 0;
+}
+
+.navbar i {
+  padding-right: 10px;
+}
+
+
+.navbar a {
+  float: left;
+  font-weight: 800;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+.navbar a:hover{
+  background-color: #fff;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+
+
+.submenu ul li{
+ list-style:none;
+
+}
+
+.submenu{
+  display: none;
+  z-index: 10000;
+}
+
+#carDropdown:hover .submenu{
+       display: block;
+}
+
+.navbar a,
+.subnav>.subnavbtn {
+  font-size: 25px;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  transition: all 0.4s linear;
+  z-index: 100000000000000;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgba(242, 237, 237, 0.825);
+  width: 100%;
+  z-index: 100000000000;
+}
+
+.navbar ul li{
+  display: inline;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #000000;
+  z-index: -5;
+}
+
+footer p {
+  color: rgb(8, 8, 8);
+  text-align: center;
+}
+
+
+.main {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: inline-flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.grid-three-columns1 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+
+.company1 {
+  width: 99%;
+  height: 300px;
+  border-radius: 7px;
+  background-color: #e4eef5;
+  margin-left: 0;
+}
+
+.companyLogo1 h2 {
+  font-size: 30px;
+  padding-top: 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.companyLogo1 p a {
+  font-size: 20px;
+  color: #171515;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  text-decoration: none;
+}
+
+.companyLogo1 p a:hover{
+  color: white;
+}
+
+
+
+ */
