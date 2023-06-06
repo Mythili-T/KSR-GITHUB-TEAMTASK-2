@@ -1,0 +1,20 @@
+.grid{
+margin-left: 7%;
+}
+.gridcontent-first button{
+  width: fit-content;
+  background-color: white;
+  padding: 1% 5% 1% 5%;
+  border: none;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.gridcontent-first button:hover{
+  border-bottom: 1px solid black;
+  background-color: aliceblue;
+}
+
+
+.actived{
+  background-color: aliceblue;
+}

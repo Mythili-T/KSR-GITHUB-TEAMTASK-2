@@ -1,0 +1,131 @@
+.grid{
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+}
+
+.gridFirst h1{
+  margin-left: 35%;
+}
+
+.details label{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+button{
+  margin-left: 6%;
+  margin-top: 5%;
+  padding: 2% 5% 2% 5% ;
+  font-weight: bolder;
+  background-color: rgb(28, 131, 234);
+  border: none;
+  border-radius: 15px;
+}
+button:hover{
+  background-color: aquamarine;
+}
+.gridSecond{
+  padding: 5%;
+  margin-top: 6%;
+  margin-right: 15%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: rgb(193, 226, 245);
+  border-radius: 25px;
+}
+.gridSecond h1{
+  text-align: center;
+}
+.gridSecond p
+{
+  font-size: 12px;
+ text-align: left;
+}
+.profile{
+  margin-top: 15%;
+}
+.profile img{
+
+  margin-left: 10%;
+}
+.details{
+  display: flex;
+  margin-top: 2%;
+}
+
+.account{
+  margin-left: 35%;
+  margin-top: 10%;
+  padding: 3%;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  2px 3px 62px -12px rgba(0,0,0,0.75);
+  background-color: azure;
+}
+.account::backdrop{
+  background-color: rgb(77, 74, 74);
+  opacity: 0.6;
+}
+.account button{
+  padding: 2% 30% 2% 30%;
+  margin-left: 15%;
+}
+.account button:hover{
+  background-color: rgb(143, 199, 247);
+}
+.account h1{
+  text-align: center;
+}
+.account .form{
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+}
+.account.form label{
+  text-align: end;
+  /* margin-right: 13%; */
+}
+.update{
+  margin-left: 35%;
+  margin-top: 10%;
+  padding: 3%;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  2px 3px 62px -12px rgba(0,0,0,0.75);
+  background-color: azure;
+
+}
+.update::backdrop{
+  background-color: rgb(77, 74, 74);
+  opacity: 0.6;
+}
+.update button{
+  margin-left: 5%;
+}
+.butt{
+  margin-left: 27%;
+  display: flex;
+}
+.update button:hover{
+  background-color: rgb(143, 199, 247);
+}
+.update h1{
+  text-align: center;
+}
+
+.form{
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+
+}
+.form label{
+  text-align: end;
+  margin-right: 13%;
+}
+.back button{
+  padding: 2% 32% 2% 32%;
+}
+

@@ -1,0 +1,59 @@
+<app-adminHeader></app-adminHeader>
+
+
+<div class="grid">
+  <div class="gridFirst">
+      <button id="button"><a routerLink="/users">User details</a></button><br>
+      <button><a> Account    &nbsp; &nbsp;  &nbsp;  </a></button><br>
+      <button><a> Loan Status </a></button>
+  </div>
+
+<div class="gridSecond">
+  <div class="searchBar">
+    <div class="search">
+      <!-- <p>Enter the Name :</p> -->
+      <input type="search" name="" id="" placeholder="Enter name">
+      <button>Search</button>
+    </div>
+    <div class="title">
+      <h1>User Details</h1>
+    </div>
+    <div class="search">
+      <!-- <p>Enter the PhoneNo :</p> -->
+      <input type="search" name="" id="" placeholder="Enter phoneno">
+      <button>Search</button>
+    </div>
+
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Reg no</th>
+        <th>User Name</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Address</th>
+        <th>Loan Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Bank account</th>
+        <th>Close account</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detail of details">
+        <td>{{detail.id}}</td>
+        <td>{{detail.firstname}}</td>
+        <td>{{detail.Phoneno}}</td>
+        <td> {{detail.email}}</td>
+        <td> {{detail.password}}</td>
+        <td>{{detail.address}}</td>
+        <td> <button><a routerLink="/loan">view</a></button></td>
+        <td><button ><a routerLink="/account">view</a></button></td>
+        <td><button>Close</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+

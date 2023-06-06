@@ -1,0 +1,131 @@
+<app-header></app-header>
+<div class="grid">
+  <div class="gridFirst"  >
+   <h1>Account</h1>
+   <div class="click" *ngIf="status">
+    <span> Do not have an account...?  <a (click)="bankaccount()" style="cursor: pointer;">Click here</a> </span>
+   </div>
+   <p>{{val.bankname}}</p>
+   <p>{{val.branch}}</p>
+   <p>{{val.accountnumber}}</p>
+   <p>{{val.ifsccode}}</p>
+   <p>{{val.micrcode}}</p>
+   <p>{{val.email}}</p>
+  </div>
+  <div class="gridSecond">
+   <div class="profile">
+    <img src="..\assets\Images\User-Profile-PNG-High-Quality-Image.png" alt="" width="80px" height="80px">
+    <button (click)="profileUpdate()">Update profile</button>
+   </div>
+   <div class="profileDetails">
+    <div class="details">
+      <p style="font-size: 23px;font-weight: bolder;color: blue; margin-bottom: 3%;">{{firstname}}</p>
+    </div>
+    <div class="details">
+      <i class="fa-solid fa-envelope"></i>
+      <p>&nbsp;&nbsp;&nbsp;{{email}}</p>
+    </div>
+    <div class="details">
+      <i class="fa-solid fa-phone-volume"></i>
+      <p>&nbsp;&nbsp;&nbsp;{{phoneno}}</p>
+    </div>
+    <div class="details">
+      <i class="fa-solid fa-key"></i>
+      <p>&nbsp;&nbsp;&nbsp;{{password}}</p>
+    </div>
+    <div class="details">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>&nbsp;&nbsp;&nbsp;{{address}}</p>
+    </div>
+   </div>
+  </div>
+</div>
+
+<dialog class="update">
+    <h1>Profile</h1>
+    <form action="" [formGroup]="update">
+      <div class="form">
+        <label for="firstname">Name:</label>
+        <input type="text" formControlName="firstname" [name]="firstname" >
+      </div>
+     <div class="form">
+      <label for="email">EmailId:</label>
+      <input type="text" formControlName="email" [name]="email">
+     </div>
+     <div class="form">
+      <label for="phoneno">Phoneno:</label>
+      <input type="text" formControlName="phoneno" [name]="phoneno">
+     </div>
+<div class="form">
+  <label for="password">Password:</label>
+  <input type="text" formControlName="password" [name]="password">
+</div>
+<div class="form">
+  <label for="password">Re-enter Password:</label>
+  <input type="text" formControlName="confirm" [name]="confirm">
+</div>
+<div class="form">
+  <label for="address">Address:</label>
+  <textarea formControlName="address" [name]="address" id="" cols="30" rows="3"></textarea>
+  <!-- <textarea type="text" formControlName="address" [name]="address"> -->
+</div>
+
+    </form>
+    <div class="butt">
+      <button (click)="updateProfile(update.value)">Update</button>
+      <button (click)="closeProfile()">back</button>
+    </div>
+
+<!-- </div> -->
+</dialog>
+<div class="loanStatus">
+  <h1>loan Status</h1>
+  <p>Your loan request under checking in our bank side...</p>
+  <p>Your loan status will be updated with in 72 hours...</p>
+  <p>Please wait...</p>
+
+</div>
+
+ <dialog class="account">
+ <h1>Create Account</h1>
+ <div class="form" >
+  <label for="Name">Name:</label>
+  <!-- <input type="text" formControlName="name"  > -->
+  {{firstname}}
+</div>
+<div class="form">
+  <label for="phone"> PhoneNo:</label>
+  <!-- <input type="text" formControlName="phone" > -->
+  {{phoneno}}
+</div>
+<div class="form">
+  <label for="email">EmailID:</label>
+  <!-- <input type="email" formControlName="email" > -->
+  {{email}}
+</div>
+ <form action=""(ngSubmit)="accountSubmit()" [formGroup]="Account">
+
+  <div class="form">
+    <label for="Pname">Parent name:</label>
+    <input type="text"  formControlName="Pname"  >
+  </div>
+
+  <div class="form">
+    <label for="pan">PAN no:</label>
+    <input type="text" formControlName="pan">
+  </div>
+  <div class="form">
+    <label for="aadhar">Aadhar no:</label>
+    <input type="text" formControlName="aadhar">
+  </div>
+  <br>
+
+
+   <button  [disabled]="!Account.valid">Create</button>
+
+ </form>
+<div class="back">
+  <button  class="button" (click)="closeAccount()">back</button>
+</div>
+
+  </dialog>

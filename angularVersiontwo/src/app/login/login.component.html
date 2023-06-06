@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="loginDiv">
+  <div class="loginmodel">
+    <form [formGroup]="loginform" (submit)="loginForm(username.value)">
+      <div class="head-content">
+        <img
+          src="../assets/Images/userlogo2.png"
+          alt=""
+          width="140px"
+          height="90px"
+        />
+      </div>
+      <div class="loginusername">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" placeholder="Username" id="username" formControlName="username" name="username" #username />
+      </div>
+      <div class="errorContainer" *ngIf="loginform.controls['username'].dirty">
+        <p class="error" *ngIf="loginform.controls['username'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>First Name can't be blank</p>
+        <p class="error" *ngIf="loginform.controls['username'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>First Name contain only alphabets</p>
+      </div>
+      <div class="loginusername">
+        <i class="fa fa-key" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" id="password" formControlName="password" name="password" />
+      </div>
+      <div class="errorContainer" *ngIf="loginform.controls['password'].dirty">
+        <p class="error" *ngIf="loginform.controls['password'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>password can't be blank</p>
+        <!-- <p class="error" *ngIf="loginform.controls['password'].errors?.['minlength']"><i class="fas fa-exclamation-circle"></i>Password should contain 8 characters</p> -->
+        <p class="error" *ngIf="loginform.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password</p>
+      </div>
+      <br>
+      <div class="forget">
+        <p>Forgot Password?</p>
+      </div>
+
+      <div class="butt">
+        <button class="login">Login</button>
+
+
+      </div>
+      <div class="acc-register">
+        <p>Don't have an account..?<a routerLink="/register" routerLinkActive="active">Register</a></p>
+        <!-- <p style="color: red; font-size: 15px; cursor: pointer;" >Go Home</p> -->
+      </div>
+
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

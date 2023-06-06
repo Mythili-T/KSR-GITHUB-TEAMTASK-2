@@ -1,0 +1,131 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "admin": [
+    {
+      "username": "santhosh",
+      "password1": "Santy@007"
+    }
+  ],
+  "users": [
+    {
+      "firstname": "Subramani",
+      "Phoneno": "8610209535",
+      "email": "subramani007@gmail.com",
+      "password": "Mani@123",
+      "confirm": "Mani@123",
+      "address": "14/254.srini press 1st cross ,chellakuttykaadu,salem-636015",
+      "id": 1
+    },
+    {
+      "firstname": "Shivaraja",
+      "Phoneno": "7904029565",
+      "email": "shivarajamurugan2000@gmail.com",
+      "password": "Siva@2000",
+      "confirm": "Siva@2000",
+      "address": "352/612,kandhappa colony,annathanapatty,salem-636002",
+      "id": 2
+    },
+    {
+      "firstname": "Aathmiga",
+      "Phoneno": "6380426608",
+      "email": "aathmiga24@gmail.com",
+      "password": "Aathmiga@123",
+      "confirm": "Aathmiga@123",
+      "address": "Tiruchengode",
+      "id": 3
+    },
+    {
+      "firstname": "Harigokul",
+      "Phoneno": "9489922628",
+      "email": "harigokul476@gmail.com",
+      "password": "Aadvik@2229",
+      "confirm": "Aadvik@2229",
+      "address": "13/72-1,Thirunanam nagar -5,Dadagapatti,salem -636006",
+      "id": 4
+    }
+  ],
+  "account": [
+    {
+      "Pname": "Palanisamy",
+      "pan": "6360159874",
+      "aadhar": "987654321987",
+      "id": 1
+    },
+    {
+      "Pname": "murugan",
+      "pan": "98555555412",
+      "aadhar": "121213131414",
+      "id": 2
+    },
+    {
+      "Pname": "Muruganand",
+      "pan": "8956748585",
+      "aadhar": "123564789589",
+      "id": 3
+    },
+    {
+      "Pname": "Srinivasan",
+      "pan": "DCRPG9980B",
+      "aadhar": "265011843858",
+      "id": 4
+    }
+  ],
+  "bankaccount": [
+    {
+      "bankname": "ELMS Bank",
+      "branch": "Salem",
+      "accountnumber": "6360150001",
+      "ifsccode": "ELMS0000ES1",
+      "micrcode": "636006001",
+      "email": "subramani007@gmail.com",
+      "status": "false",
+      "id": 1
+    },
+    {
+      "bankname": "ELMS Bank",
+      "branch": "Salem",
+      "accountnumber": "6360150002",
+      "ifsccode": "ELMS0000ES1",
+      "micrcode": "636006001",
+      "email": "shivarajamurugan2000@gmail.com",
+      "status": "false",
+      "id": 2
+    },
+    {
+      "bankname": "ELMS Bank",
+      "branch": "Salem",
+      "accountnumber": "6360150003",
+      "ifsccode": "ELMS0000ES1",
+      "micrcode": "636006001",
+      "email": "aathmiga24@gmail.com",
+      "status": "false",
+      "id": 3
+    },
+    {
+      "bankname": "ELMS Bank",
+      "branch": "Salem",
+      "accountnumber": "6360150004",
+      "ifsccode": "ELMS0000ES1",
+      "micrcode": "636006001",
+      "email": "harigokul476@gmail.com",
+      "status": "false",
+      "id": 4
+    }
+  ]
+}

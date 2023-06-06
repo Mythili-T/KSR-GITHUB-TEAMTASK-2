@@ -1,0 +1,133 @@
+.registerDiv {
+  height: 100%;
+  width: 100%;
+}
+
+.registerModel {
+  display: flex;
+  margin: 2% 40%;
+  padding: 3%;
+  width: fit-content;
+  box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.75);
+}
+
+.Registerusername {
+  margin-top: 15%;
+  display: flex;
+}
+
+.head-content {
+  margin-left: 30%;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid black;
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+.registerconfirm {
+  margin-left: 33%;
+  margin-top: 10%;
+}
+
+button {
+  padding: 5%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  border-bottom: 2px solid rgb(51, 147, 237);
+  font-weight: bold;
+}
+
+.error {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  padding-left: 1.5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.photo {
+  margin-top: 3%;
+  display: flex;
+}
+
+textarea {
+  outline: 0;
+  padding-left: 3%;
+}
+
+p {
+  color: rgb(89, 90, 91);
+}
+
+/* Responsive styles using @media queries */
+
+@media (max-width: 768px) {
+  .registerModel {
+    margin-left: 30%;
+    padding: 5%;
+  }
+
+  .head-content {
+    margin-left: 0;
+    text-align: center;
+  }
+  button{
+    align-items: center;
+  }
+  .Registerusername {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .Registerusername input {
+    margin-left: 0;
+  }
+
+  .registerconfirm {
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .address {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .registerModel {
+    margin-left: 20%;
+    padding: 5%;
+  }
+
+  .head-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Registerusername {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .Registerusername input {
+    margin-left: 0;
+    margin-top: 5%;
+  }
+
+  .registerconfirm {
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .address {
+    text-align: center;
+  }
+}
