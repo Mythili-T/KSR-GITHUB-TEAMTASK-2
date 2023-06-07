@@ -1,0 +1,25 @@
+<app-header></app-header>
+<app-menubar></app-menubar>
+<table>
+    <thead>
+      <th>ID</th>
+      <th>Showcase</th>
+      <th>Brand Name</th>
+      <th>Device name</th>
+      <th>Discription</th>
+      <th>Price</th>
+      <th>Buy</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let eachData of getdetails">
+        <td>{{eachData.id}}</td>
+        <td><img [src] = eachData.thumbnail /></td>
+        <td>{{eachData.brand}}</td>
+        <td>{{eachData.title}}</td>
+        <td>{{eachData.description}}</td>
+        <td>${{eachData.price}}</td>
+        <td><button>Buy Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+<app-footer></app-footer>

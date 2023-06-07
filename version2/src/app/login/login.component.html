@@ -1,0 +1,29 @@
+
+<body>
+  <form  class="form" [formGroup]="loginForm">
+
+  <h1>Name please..😁</h1>
+  <label for="name">Username</label>
+  <input autocomplete="off" type="text" formControlName="username"required >
+  <div *ngIf="loginForm.controls['username'].invalid&&loginForm.controls['username'].touched">
+    <small *ngIf="loginForm.controls['username'].errors?.['required']">Please enter username</small>
+    <small *ngIf="loginForm.controls['username'].errors?.['minlength']">User name should be atleast 3 letters</small>
+    <small *ngIf="loginForm.controls['username'].errors?.['pattern']">First letter should be capital letter</small>
+  </div>
+
+  <label for="pass">Password</label>
+  
+  <input type="password" formControlName="password" required pattern="">
+  <div *ngIf="loginForm.controls['password'].invalid&&loginForm.controls['password'].touched">
+    <small *ngIf="loginForm.controls['password'].errors?.['required']">Please enter Password</small>
+    <small *ngIf="loginForm.controls['password'].errors?.['minlength']">Password should be atleast 6 letters</small>
+    </div>
+
+  <button type="submit" (click)="submit()">Let me in</button>
+  <a>Forgot password..?</a>
+  <a>New member..?</a>
+  <a routerLink="/register">
+      Be one of us..😁
+  </a>
+</form>
+</body>

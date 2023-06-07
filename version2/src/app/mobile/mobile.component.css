@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+table{
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    align-items: center;
+}
+
+table img{
+    border-radius: 20px;
+    max-width: 50vh;
+    max-height: 35vh;
+}
+
+table button{
+    padding: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
+
+th{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
