@@ -1,0 +1,142 @@
+<header>Register</header>
+  <body>
+  <div class="container">
+  <form div class="form" [formGroup]="Register" (ngSubmit)="registrr()">
+    <br>
+    <div class="header"> <h1>Join us😁</h1></div>
+    <div class="container">
+    <div class="split1">
+      <h4 class="title">Personal Details</h4>
+      
+      <div class="form-control">
+      <label>Name:</label><br />
+      <input type="text" placeholder="Name" class="inp-box" formControlName="Name" pattern="^[A-Za-z ]+$"
+        minlength="3" oninput="this.value = this.value.toUpperCase()" />
+  
+      <div class="error" *ngIf=" Register.controls['Name'].dirty" >
+        <p *ngIf="Register.controls['Name'].errors?.['required']">
+          Enter the field
+        </p>
+        <p *ngIf="Register.controls['Name'].errors?.['pattern']">
+          Enter alphabets only
+        </p>
+        <p *ngIf="Register.controls['Name'].errors?.['minlength']">
+          Enter valid name
+        </p>
+      </div>
+    </div>
+      
+      <div class="form-control">
+      <label>Father Name:</label><br />
+      <input type="text" placeholder="Father Name" class="inp-box" formControlName="lastName" pattern="^[A-Za-z ]+$"
+        minlength="1" oninput="this.value = this.value.toUpperCase()"/>
+      <div class="error" *ngIf="Register.controls['lastName'].dirty">
+        <p *ngIf="Register.controls['lastName'].errors?.['required']">
+          Enter the field
+        </p>
+        <p *ngIf="Register.controls['lastName'].errors?.['pattern']">
+          Enter alphabets only
+        </p>
+        <p *ngIf="Register.controls['lastName'].errors?.['minlength']">
+          Enter valid name
+        </p>
+      </div>
+      </div>
+      <br />
+
+      <div class="container">
+      <label>Gender:</label>
+      <div class="gender-category">
+            <input type="radio" name="gender" formControlName="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="radio" name="gender" formControlName="gender" value="female" >
+            <label for="female">Female</label>
+            <input type="radio" name="gender" formControlName="gender" value="other" >
+            <label for="other">Other</label>
+      </div>
+    </div>
+      <br /><br />
+    
+
+    <div class="form-control">
+      <label>Date</label><br />
+      <input type="date" class="inp-box" placeholder="Date" required formControlName="date" />
+  <br>
+      <br>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email"
+          class="inp-box"
+          pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$"
+          formControlName="email" />
+  
+        <div class="error" *ngIf=" Register.controls['email'].dirty">
+          <p *ngIf=" Register.controls['email'].errors?.['required']">Please enter your Email Id</p>
+          <p *ngIf=" Register.controls['email'].errors?.['pattern']">Plese enter the valid mail id</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-control">
+    <div class="split2">
+      <br>
+
+      <label>Contact Number</label><br />
+      <input type="text" class="inp-box" name="phno" placeholder="Phone number" required formControlName="phone"
+        pattern="^[6789][0-9]{9}$" />
+      <div class="error" *ngIf=" Register.controls['phone'].dirty">
+        <p *ngIf=" Register.controls['phone'].errors?.['required']">
+          Enter the Phone Number
+        </p>
+        <p *ngIf=" Register.controls['phone'].errors?.['pattern']">
+          Enter valid number
+        </p>
+      </div>
+      <br />
+    </div>
+  </div>
+      
+      <div class="form-control">
+      <label>Address</label><br />
+  
+      <textarea type="text" class="inp-box" name="phno" placeholder="Address" required
+        formControlName="address" pattern="^[a-zA-Z0-9\s,.'-/]{3,}$" ></textarea>
+      <div class="error" *ngIf=" Register.controls['address'].dirty">
+        <p *ngIf=" Register.controls['address'].errors?.['required']">
+          Enter the address
+        </p>
+        <p *ngIf=" Register.controls['address'].errors?.['pattern']">
+          Enter the valid field
+        </p>
+      </div>
+    </div>
+      <br />
+      <div class="form-control">
+        <label>Password</label><br>
+        <small>*minimum 6 to 14 character, <br> *maximum 1 special character and number</small><br>
+        <input type="password" formControlName="password" class="inp-box"
+          pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,14}$" />
+  
+        <div class="error" *ngIf=" Register.controls['password'].dirty">
+          <p *ngIf=" Register.controls['password'].errors?.['required']">Please set your Password</p>
+          <p *ngIf=" Register.controls['password'].errors?.['pattern']">Password Invalid</p>
+        </div>
+      </div><br>
+      <div>
+      </div>
+      <div class="form-control">
+        <label>Confirm Password</label>
+        <input type="password" class="inp-box"
+          formControlName="cpassword" />
+        <div class="error" *ngIf="  Register.controls['cpassword'].dirty">
+          <p *ngIf="  Register.controls['cpassword'].errors?.['required']">Please enter the same password</p>
+          <p *ngIf="  Register.controls['cpassword'].errors?.['confirmedValidator']">Password not match</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <button type="submit" class="submit">Register</button>
+  </form>
+</div>
+</body>
+  
+  <app-footer></app-footer>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+header {
+    padding: 20px 75px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 25px;
+    background: linear-gradient(to right, #79c3f2, #f8f8fa);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap:10px;
+    place-items: center;
+}
+
+.type {
+    width: 10rem;
+    height: 8rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    
+}
+.type:hover{
+    transform: scale(1.1);
+}
+
+.type h4{
+    text-align: center;
+    font-style: bold;
+    margin-top: 0px;
+    font-style: normal;
+}
+.type img{
+    margin-top: 2px;
+    border-radius: 30px;
+    height: 60%;
+}
+
+
+.headphones {
+    width: 25rem;
+    height: 28rem;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    
+}
+
+.headphones h4{
+    text-align: center;
+    font-style: bold;
+}
+.headphones p{
+    margin: 10px;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 13px;
+}  
+.headphones ul{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left:  16px; 
+    max-height: 100px;
+    min-height: 100px;
+}
+ 
+img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+footer{
+    position: sticky;
+    margin-top: 15%;
+    margin-bottom: none;
+    padding: none;
+    background-color: black;
+    border-radius: 25px;
+    margin-left: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+footer i{
+    color: rgb(255, 255, 255);
+}
+.headphones:hover{
+    transform: scale(1.1);
+    
+}
+.headphones img{
+    max-height: 200px;
+}
+.audio button{
+    margin-left: 40%;
+    margin-top: 50px;
+    margin-bottom:none; 
+    border: none;
+    background-color: rgb(0, 0, 249);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    position: sticky; 
+}
