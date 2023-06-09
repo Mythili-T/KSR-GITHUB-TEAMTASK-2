@@ -1,0 +1,37 @@
+<div>
+  <h2>Set Your Availability Status</h2>
+  <p>
+    As a valued registered donor, it's important to keep your availability status up to date. This helps ensure a reliable and efficient blood donation system. Here are some reasons why you may need to update your availability status:
+  </p>
+  <ul>
+    <li>
+      <strong>Travel or Relocation:</strong> If you're planning to travel or have recently relocated to a different city or country, please update your availability status. This information allows potential recipients in your area to find suitable donors conveniently.
+    </li>
+    <li>
+      <strong>Medical Condition or Illness:</strong> If you're currently experiencing a medical condition or illness that temporarily prevents you from donating blood, please adjust your availability status accordingly. This ensures that potential recipients are aware of your temporary unavailability until you recover or receive medical clearance.
+    </li>
+    <li>
+      <strong>Personal Circumstances:</strong> Personal circumstances, such as pregnancy, recent surgery, or medication intake, can impact your ability to donate. Please update your availability status to reflect any changes in your eligibility. This helps provide accurate information to potential recipients and avoids any inconvenience or misunderstanding.
+    </li>
+    <li>
+      <strong>Temporary Unavailability:</strong> There might be occasions when you are temporarily unable to donate due to other commitments, work schedules, or personal reasons. Setting your availability status appropriately allows potential recipients to know when you'll be available for donation again.
+    </li>
+  </ul>
+  <p>
+    By keeping your availability status accurate and up to date, you contribute to the smooth operation of our blood donation system and help save lives. Thank you for your commitment to making a difference through blood donation!
+  </p>
+</div>
+
+
+
+
+
+
+<div class="center">
+  <label for="availability">Availability:</label>
+  <select id="availability" [(ngModel)]="selectedAvailability" (change)="updateAvailability()">
+    <option value="" selected disabled>Select your Availability</option>
+    <option value="Available">Available</option>
+    <option value="Unavailable">Unavailable</option>
+  </select>
+</div>

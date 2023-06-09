@@ -1,0 +1,33 @@
+.head{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.head h1{
+    font-size: 3rem;
+    color:crimson;
+    margin-bottom: 10px;
+}
+
+.head p{
+    font-size: 1.2rem;
+    color:#666;
+    margin-bottom: 50px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.about img{
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+.content{
+    padding: 35px;
+}

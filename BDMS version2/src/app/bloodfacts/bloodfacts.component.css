@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding:2rem;
+    margin: 2rem auto;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: #000000;
+    font-weight: 600;
+    background-color:#e4e4e4;
+    box-shadow: 1px 3px 14px 3px rgba(231,20,20,0.75);  }
+  
+  .container .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+    color: red;
+  }
+  
+  .container hr {
+    margin: 0 0 45px 0;
+    opacity:1;
+  }
+  
+ 
+
+  
+  .container p {
+    opacity: .8;
+  }
+  
+  .container ul,
+  .container ol {
+    padding: 40px;
+  }
+  
+  .container ul li,
+  .container ol li {
+    opacity: .75;
+    padding: 5px 0px;
+  }

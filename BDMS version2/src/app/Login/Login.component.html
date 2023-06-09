@@ -1,0 +1,41 @@
+<app-Header></app-Header>
+<div class="login_body">
+  <div class="center">
+    <a routerLink="/home"><img src="../../assets/Images/logo.png"></a>
+
+
+    <form [formGroup]="loginForm" (submit)="submitForm()">
+      <div class="user-input-box">
+        <label for="email">Email</label>
+        <input type="email" id="email"
+          pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$" name="email"
+          placeholder="Enter Email" formControlName="email" [(ngModel)]="email" />
+
+        <div class="error" *ngIf="loginForm.controls['email'].dirty&&loginForm.controls['email'].touched">
+          <p *ngIf="loginForm.controls['email'].errors?.['required']">Please enter your Email Id</p>
+          <p *ngIf="loginForm.controls['email'].errors?.['pattern']">Plese enter the valid mail id</p>
+        </div>
+      </div>
+      <div class="user-input-box">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" formControlName="pass"
+          pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" [(ngModel)]="password" />
+
+        <div class="error" *ngIf="loginForm.controls['pass'].dirty&&loginForm.controls['pass'].touched">
+          <p *ngIf="loginForm.controls['pass'].errors?.['required']">Please enter the password</p>
+          <p *ngIf="loginForm.controls['pass'].errors?.['pattern']">Enter Valid Password</p>
+        </div>
+      </div>
+      <div class="pass">
+        <p><a routerLink="/forgot"> Forgot Password?</a></p>
+      </div>
+      <button type="submit" value="Login:">Login</button>
+
+      <div class="signup_link">
+        Do not have an account? <a routerLink="/register">Register</a>
+      </div>
+    </form>
+
+  </div>
+</div>
+<app-Footer></app-Footer> 

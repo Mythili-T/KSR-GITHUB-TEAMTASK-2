@@ -1,0 +1,47 @@
+header {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.logo {
+  margin-left: 3%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item a {
+  font-family: 'Poppins', sans-serif;
+  padding: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--white);
+  transition: .4s ease-in-out;
+}
+
+
+
+
+.nav-item a:hover {
+
+  color: var(--red);
+}
+
+.active span,
+.active i {
+  color: rgb(252, 4, 4);
+}
