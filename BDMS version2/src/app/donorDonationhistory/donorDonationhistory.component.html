@@ -1,0 +1,22 @@
+<p>
+  donorDonationhistory works!
+</p>
+<div class="profile" >
+
+  <ul>
+    <li><strong>Name:</strong> {{ loggedInUser.uname }}</li>
+    <li><strong>Age:</strong> {{ loggedInUser.age }}</li>
+    <li><strong>Blood Group:</strong> {{ loggedInUser.bgroup }}</li>
+    <li><strong>Weight:</strong> {{ loggedInUser.weight }}</li>
+    <li><strong>Gender:</strong> {{ loggedInUser.gender }}</li>
+    <li><strong>Email:</strong> {{ loggedInUser.email }}</li>
+    <li><strong>Phone Number:</strong> {{ loggedInUser.phno }}</li>
+    <li><strong>City:</strong> {{ loggedInUser.city }}</li>
+    {{loggedInUser.donationHistory}}
+    <div class="" *ngfor="let donation of loggedInUser.donationHistory">
+      <li>{{donation.donationDate}}</li>
+      <li>{{donation.donationPlace}}</li>
+      <li>{{donation.donationMessage}}</li>
+    </div>
+  </ul>
+</div>

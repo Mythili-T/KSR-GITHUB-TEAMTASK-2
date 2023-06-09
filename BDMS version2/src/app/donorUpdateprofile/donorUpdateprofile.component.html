@@ -1,0 +1,403 @@
+<h2>Update Profile</h2>
+
+<form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+  <div class="content">
+    <div class="form-group">
+      <label for="uname">Name</label>
+      <input type="text" required formControlName="uname" class="form-control" id="uname" placeholder="Enter name"
+        pattern="^[A-Za-z ]+$">
+
+      <div class="error gap" *ngIf="updateForm.controls['uname'].dirty">
+        <p *ngIf="updateForm.controls['uname'].errors?.['required']">Please enter your name</p>
+        <p *ngIf="updateForm.controls['uname'].errors?.['pattern']"><br>Please enter only Alphabets</p>
+        <p *ngIf="updateForm.controls['uname'].errors?.['minlength']">Atleast 3 characters should be there</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" required formControlName="age" class="form-control" id="age" placeholder="Enter age">
+
+      <div class="error" *ngIf="updateForm.controls['age'].dirty">
+        <p *ngIf="updateForm.controls['age'].errors?.['required']">Please enter your age</p>
+        <p *ngIf="updateForm.controls['age'].errors?.['min']">Your age should be atleast 18</p>
+        <p *ngIf="updateForm.controls['age'].errors?.['max']">Your age should be Maximum 65</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="bgroup">Blood Group</label>
+      <select formControlName="bgroup" required class="form-control" id="bgroup">
+        <option value="" disabled selected>Select Blood Group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="weight">Weight (in kg)</label>
+      <input type="number" required formControlName="weight" class="form-control" id="weight" placeholder="Enter weight"
+        min="50">
+
+      <div class="error" *ngIf="updateForm.controls['weight'].dirty">
+        <p *ngIf="updateForm.controls['weight'].errors?.['required']">Please enter your weight</p>
+        <p *ngIf="updateForm.controls['weight'].errors?.['min']">Your age must be atleast 50 KG</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="weight">Gender</label>
+      <select name="gender" required id="gender" formControlName="gender">
+        <option value="default" disabled selected> Select your Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter email" pattern="^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$">
+      <div class="error" *ngIf="updateForm.controls['email'].dirty">
+        <p *ngIf="updateForm.controls['email'].errors?.['required']">Please enter your Email Id</p>
+        <p *ngIf="updateForm.controls['email'].errors?.['pattern']">Plese enter the valid mail id</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phno">Phone number</label>
+      <input type="tel" formControlName="phno" class="form-control" id="phno" placeholder="Enter phone number"
+        pattern="^[6-9]{1}[0-9]{9}$" minlength="10" maxlength="10">
+      <div class="error" *ngIf="updateForm.controls['phno'].dirty">
+        <p *ngIf="updateForm.controls['phno'].errors?.['required']">Please enter your Phonenumber</p>
+        <p *ngIf="updateForm.controls['phno'].errors?.['pattern']">Plese enter the valid Phonenumber</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City</label>
+
+      <input list="cities" type="text" id="city" name="city" formControlName="city" placeholder="Select Your city" />
+
+      <datalist id="cities">
+        <option value="Aanaimalai"> Aanaimalai </option>
+        <option value="Aandipatti"> Aandipatti </option>
+        <option value="Aanikattu"> Aanikattu </option>
+        <option value="Agasteeswaram"> Agasteeswaram </option>
+        <option value="Alandur"> Alandur </option>
+        <option value="Alangudi"> Alangudi </option>
+        <option value="Alangulam"> Alangulam </option>
+        <option value="Alathur"> Alathur </option>
+        <option value="Ambasamudram"> Ambasamudram </option>
+        <option value="Ambattur"> Ambattur </option>
+        <option value="Ambur"> Ambur </option>
+        <option value="Aminjikarai"> Aminjikarai </option>
+        <option value="Andimadam"> Andimadam </option>
+        <option value="Anjetty"> Anjetty </option>
+        <option value="Annur"> Annur </option>
+        <option value="Anthiyur"> Anthiyur </option>
+        <option value="Arakkonam"> Arakkonam </option>
+        <option value="Aranthangi"> Aranthangi </option>
+        <option value="Aravakurichi"> Aravakurichi </option>
+        <option value="Arcot"> Arcot </option>
+        <option value="Ariyalur"> Ariyalur </option>
+        <option value="Arni"> Arni </option>
+        <option value="Aruppukottai"> Aruppukottai </option>
+        <option value="Atthur"> Atthur </option>
+        <option value="Attur"> Attur </option>
+        <option value="Avadi"> Avadi </option>
+        <option value="Avinashi"> Avinashi </option>
+        <option value="Avudiyarkoil"> Avudiyarkoil </option>
+        <option value="Ayanavaram"> Ayanavaram </option>
+        <option value="Bargur"> Bargur </option>
+        <option value="Bhavani"> Bhavani </option>
+        <option value="Bhuvanagir"> Bhuvanagiri </option>
+        <option value="Bodinayakanur"> Bodinayakanur </option>
+        <option value="Boothalur"> Boothalur </option>
+        <option value="Chengalpattu"> Chengalpattu </option>
+        <option value="Chengam"> Chengam </option>
+        <option value="Cheranmahadevi"> Cheranmahadevi </option>
+        <option value="Chetpet"> Chetpet </option>
+        <option value="Cheyyar"> Cheyyar </option>
+        <option value="Cheyyur"> Cheyyur </option>
+        <option value="Chidambaram"> Chidambaram </option>
+        <option value="Chinnaselam"> Chinnaselam </option>
+        <option value="Coimbatore"> Coimbatore </option>
+        <option value="Coonoor"> Coonoor </option>
+        <option value="Cuddalore"> Cuddalore </option>
+        <option value="Devakottai"> Devakottai </option>
+        <option value="Dharapuram"> Dharapuram </option>
+        <option value="Dharmapuri"> Dharmapuri </option>
+        <option value="Dindigul "> Dindigul </option>
+        <option value="Dindigul "> Dindigul </option>
+        <option value="Edapadi"> Edapadi </option>
+        <option value="Egmore"> Egmore </option>
+        <option value="Eral"> Eral </option>
+        <option value="Erode"> Erode </option>
+        <option value="Ettayapuram"> Ettayapuram </option>
+        <option value="Gandarvakottai"> Gandarvakottai </option>
+        <option value="Gangavalli"> Gangavalli </option>
+        <option value="Gingee"> Gingee </option>
+        <option value="Gobichettipalayam"> Gobichettipalayam </option>
+        <option value="Gudalur"> Gudalur </option>
+        <option value="Gudiyatham"> Gudiyatham </option>
+        <option value="Guindy"> Guindy </option>
+        <option value="Gummidipoondi"> Gummidipoondi </option>
+        <option value="Guziliyamparai"> Guziliyamparai </option>
+        <option value="Harur"> Harur </option>
+        <option value="Ilayankudi"> Ilayankudi </option>
+        <option value="Iluppur"> Iluppur </option>
+        <option value="Jamunamarathur"> Jamunamarathur </option>
+        <option value="K V Kuppam"> K V Kuppam </option>
+        <option value="Kadaiyampatti"> Kadaiyampatti </option>
+        <option value="Kadaladi"> Kadaladi </option>
+        <option value="Kadavur"> Kadavur </option>
+        <option value="Kadayanallur"> Kadayanallur </option>
+        <option value="Kalaiyarkovil"> Kalaiyarkovil </option>
+        <option value="Kalasapakkam"> Kalasapakkam </option>
+        <option value="Kalavai"> Kalavai </option>
+        <option value="Kalkulam"> Kalkulam </option>
+        <option value="Kallakurichi"> Kallakurichi </option>
+        <option value="Kallikudi"> Kallikudi </option>
+        <option value="Kalvarayan Hills"> Kalvarayan Hills </option>
+        <option value="Kamuthi"> Kamuthi </option>
+        <option value="Kancheepuram"> Kancheepuram </option>
+        <option value="Kandachipuram"> Kandachipuram </option>
+        <option value="Kangeyam"> Kangeyam </option>
+        <option value="Karaikudi"> Karaikudi </option>
+        <option value="Karambakudi"> Karambakudi </option>
+        <option value="Karimangalam"> Karimangalam </option>
+        <option value="Kariyapatti"> Kariyapatti </option>
+        <option value="Karur"> Karur </option>
+        <option value="Katpadi"> Katpadi </option>
+        <option value="Kattumannarkoil"> Kattumannarkoil </option>
+        <option value="Kayathar"> Kayathar </option>
+        <option value="Kezhakarai"> Kezhakarai </option>
+        <option value="Kholli Hills"> Kholli Hills </option>
+        <option value="Killiyur"> Killiyur </option>
+        <option value="Kilpennathur"> Kilpennathur </option>
+        <option value="Kilvelur"> Kilvelur </option>
+        <option value="Kinathukadavu"> Kinathukadavu </option>
+        <option value="Kodaikanal"> Kodaikanal </option>
+        <option value="Kodavasal"> Kodavasal </option>
+        <option value="Kodumudi"> Kodumudi </option>
+        <option value="Koothanallur"> Koothanallur </option>
+        <option value="Kothagiri"> Kothagiri </option>
+        <option value="Kovilpatti"> Kovilpatti </option>
+        <option value="Krishnagiri"> Krishnagiri </option>
+        <option value="Krishnarayapuram"> Krishnarayapuram </option>
+        <option value="Kulathur"> Kulathur </option>
+        <option value="Kulithalai"> Kulithalai </option>
+        <option value="Kumarapalayam"> Kumarapalayam </option>
+        <option value="Kumbakonam"> Kumbakonam </option>
+        <option value="Kundah"> Kundah </option>
+        <option value="Kundrathur"> Kundrathur </option>
+        <option value="Kunnam"> Kunnam </option>
+        <option value="Kurinjipadi"> Kurinjipadi </option>
+        <option value="Kuthalam"> Kuthalam </option>
+        <option value="Lalgudi"> Lalgudi </option>
+        <option value="Madathukkulam"> Madathukkulam </option>
+        <option value="Madhavaram"> Madhavaram </option>
+        <option value="Madhuravoyal"> Madhuravoyal </option>
+        <option value="Madukarai"> Madukarai </option>
+        <option value="Madurai "> Madurai </option>
+        <option value="Maduranthakam"> Maduranthakam </option>
+        <option value="Mambalam"> Mambalam </option>
+        <option value="Manachanallur"> Manachanallur </option>
+        <option value="Manamadurai"> Manamadurai </option>
+        <option value="Manamelkudi"> Manamelkudi </option>
+        <option value="Manapparai"> Manapparai </option>
+        <option value="Manmangalam"> Manmangalam </option>
+        <option value="Mannargudi"> Mannargudi </option>
+        <option value="Manur"> Manur </option>
+        <option value="Marakanam"> Marakanam </option>
+        <option value="Marungapuri"> Marungapuri </option>
+        <option value="Mayiladuthurai"> Mayiladuthurai </option>
+        <option value="Melmalaiyanur"> Melmalaiyanur </option>
+        <option value="Melur"> Melur </option>
+        <option value="Mettupalayam"> Mettupalayam </option>
+        <option value="Mettur"> Mettur </option>
+        <option value="Modakurichi"> Modakurichi </option>
+        <option value="Mohanoor"> Mohanoor </option>
+        <option value="Mudukulathur"> Mudukulathur </option>
+        <option value="Musiri"> Musiri </option>
+        <option value="Mylapore"> Mylapore </option>
+        <option value="Nagapattinam"> Nagapattinam </option>
+        <option value="Nallampalli"> Nallampalli </option>
+        <option value="Namakkal"> Namakkal </option>
+        <option value="Nambiyur"> Nambiyur </option>
+        <option value="Nanguneri"> Nanguneri </option>
+        <option value="Nannilam"> Nannilam </option>
+        <option value="Natham"> Natham </option>
+        <option value="Natrampalli"> Natrampalli </option>
+        <option value="Needamangalam"> Needamangalam </option>
+        <option value="Nemili"> Nemili </option>
+        <option value="Nilakottai"> Nilakottai </option>
+        <option value="Oddanchatram"> Oddanchatram </option>
+        <option value="Omalur"> Omalur </option>
+        <option value="Oothukuli"> Oothukuli </option>
+        <option value="Orathanadu"> Orathanadu </option>
+        <option value="Ottapidaram"> Ottapidaram </option>
+        <option value="Palacode"> Palacode </option>
+        <option value="Palani"> Palani </option>
+        <option value="Palayamkottai"> Palayamkottai </option>
+        <option value="Palladam	"> Palladam </option>
+        <option value="Pallavaram"> Pallavaram </option>
+        <option value="Pallipattu"> Pallipattu </option>
+        <option value="Pandalur"> Pandalur </option>
+        <option value="Panruti"> Panruti </option>
+        <option value="Papanasam"> Papanasam </option>
+        <option value="Pappireddipatti"> Pappireddipatti </option>
+        <option value="Paramakudi"> Paramakudi </option>
+        <option value="Paramathi Velur"> Paramathi Velur </option>
+        <option value="Pattukottai"> Pattukottai </option>
+        <option value="Pennagaram"> Pennagaram </option>
+        <option value="Peraiyur"> Peraiyur </option>
+        <option value="Perambalur"> Perambalur </option>
+        <option value="Perambur"> Perambur </option>
+        <option value="Peravurani"> Peravurani </option>
+        <option value="Periyakulam"> Periyakulam </option>
+        <option value="Pernambut"> Pernambut </option>
+        <option value="Perundurai"> Perundurai </option>
+        <option value="Perur"> Perur </option>
+        <option value="Pethanayakanpalayam"> Pethanayakanpalayam </option>
+        <option value="Pochampalli"> Pochampalli </option>
+        <option value="Pollachi"> Pollachi </option>
+        <option value="Polur"> Polur </option>
+        <option value="Ponnamaravathi"> Ponnamaravathi </option>
+        <option value="Ponneri"> Ponneri </option>
+        <option value="Poonamallee"> Poonamallee </option>
+        <option value="Pudukottai"> Pudukottai </option>
+        <option value="Pugalur"> Pugalur </option>
+        <option value="Purasavakkam"> Purasavakkam </option>
+        <option value="R.K. Pet"> R.K. Pet </option>
+        <option value="Radhapuram"> Radhapuram </option>
+        <option value="Rajapalayam"> Rajapalayam </option>
+        <option value="Rajasingamangalam"> Rajasingamangalam </option>
+        <option value="Ramanathapuram"> Ramanathapuram </option>
+        <option value="Rameswaram"> Rameswaram </option>
+        <option value="Rasipuram"> Rasipuram </option>
+        <option value="Salem"> Salem </option>
+        <option value="Sankarankovil"> Sankarankovil </option>
+        <option value="Sankarapuram"> Sankarapuram </option>
+        <option value="Sankari"> Sankari </option>
+        <option value="Sathiyamangalam"> Sathiyamangalam </option>
+        <option value="Sathur"> Sathur </option>
+        <option value="Sattankulam"> Sattankulam </option>
+        <option value="Sendurai"> Sendurai </option>
+        <option value="Senthamangalam"> Senthamangalam </option>
+        <option value="Shenkottai"> Shenkottai </option>
+        <option value="Sholinganallur"> Sholinganallur </option>
+        <option value="Sholingur"> Sholingur </option>
+        <option value="Singampunari"> Singampunari </option>
+        <option value="Sirkali"> Sirkali </option>
+        <option value="Sivagangai"> Sivagangai </option>
+        <option value="Sivagiri"> Sivagiri </option>
+        <option value="Sivakasi"> Sivakasi </option>
+        <option value="Srimushnam"> Srimushnam </option>
+        <option value="Sriperumbudur"> Sriperumbudur </option>
+        <option value="Srirangam"> Srirangam </option>
+        <option value="Srivaikundam"> Srivaikundam </option>
+        <option value="Srivilliputhur"> Srivilliputhur </option>
+        <option value="Sulagiri"> Sulagiri </option>
+        <option value="Sulur"> Sulur </option>
+        <option value="Tambaram"> Tambaram </option>
+        <option value="Tenkasi"> Tenkasi </option>
+        <option value="Thalavadi"> Thalavadi </option>
+        <option value="Thandramet"> Thandramet </option>
+        <option value="Thanjavur"> Thanjavur </option>
+        <option value="Tharangambadi"> Tharangambadi </option>
+        <option value="Theni"> Theni </option>
+        <option value="Thenkanikottai"> Thenkanikottai </option>
+        <option value="Thirukalukundram"> Thirukalukundram </option>
+        <option value="Thirukkuvalai"> Thirukkuvalai </option>
+        <option value="Thirumangalam"> Thirumangalam </option>
+        <option value="Thirumayam"> Thirumayam </option>
+        <option value="Thiruparankundram"> Thiruparankundram </option>
+        <option value="Thirupuvanam"> Thirupuvanam </option>
+        <option value="Thiruthuraipoondi"> Thiruthuraipoondi </option>
+        <option value="Thiruvaiyaru"> Thiruvaiyaru </option>
+        <option value="Thiruvallur"> Thiruvallur </option>
+        <option value="Thiruvannamalai"> Thiruvannamalai </option>
+        <option value="Thiruvarur"> Thiruvarur </option>
+        <option value="Thiruvatar"> Thiruvatar </option>
+        <option value="Thiruvengadam"> Thiruvengadam </option>
+        <option value="Thiruvennainallur"> Thiruvennainallur </option>
+        <option value="Thiruvidaimaruthur"> Thiruvidaimaruthur </option>
+        <option value="Thiruvottriyur"> Thiruvottriyur </option>
+        <option value="Thisayanvilai"> Thisayanvilai </option>
+        <option value="Thittakudi"> Thittakudi </option>
+        <option value="Thoothukudi"> Thoothukudi </option>
+        <option value="Thottiam"> Thottiam </option>
+        <option value="Thovalai"> Thovalai </option>
+        <option value="Thuraiyur"> Thuraiyur </option>
+        <option value="Tindivanam"> Tindivanam </option>
+        <option value="Tiruchendur"> Tiruchendur </option>
+        <option value="Tiruchengode"> Tiruchengode </option>
+        <option value="Tiruchirapalli	"> Tiruchirapalli </option>
+        <option value="Tiruchirappalli	"> Tiruchirappalli </option>
+        <option value="Tiruchuli"> Tiruchuli </option>
+        <option value="Tirukoilur"> Tirukoilur </option>
+        <option value="Tirunelveli"> Tirunelveli </option>
+        <option value="Tirupathur"> Tirupathur </option>
+        <option value="Tirupathur"> Tirupathur </option>
+        <option value="Tiruporur"> Tiruporur </option>
+        <option value="Tiruppur "> Tiruppur </option>
+        <option value="Tiruthani"> Tiruthani </option>
+        <option value="Tiruvadanai"> Tiruvadanai </option>
+        <option value="Tiruverumbur"> Tiruverumbur </option>
+        <option value="Tondiarpet"> Tondiarpet </option>
+        <option value="Udagamandalam"> Udagamandalam </option>
+        <option value="Udaiyarpalayam"> Udaiyarpalayam </option>
+        <option value="Udumalaipettai"> Udumalaipettai </option>
+        <option value="Ulundurpet"> Ulundurpet </option>
+        <option value="Usilampatti"> Usilampatti </option>
+        <option value="Uthamapalayam"> Uthamapalayam </option>
+        <option value="Uthangarai"> Uthangarai </option>
+        <option value="Uthiramerur"> Uthiramerur </option>
+        <option value="Uthukottai"> Uthukottai </option>
+        <option value="Vadipatti"> Vadipatti </option>
+        <option value="Valangaiman"> Valangaiman </option>
+        <option value="Valparai"> Valparai </option>
+        <option value="Vandalur"> Vandalur </option>
+        <option value="Vandavasi"> Vandavasi </option>
+        <option value="Vaniyambadi"> Vaniyambadi </option>
+        <option value="Vanur"> Vanur </option>
+        <option value="Vazhapadi"> Vazhapadi </option>
+        <option value="Vedaranyam"> Vedaranyam </option>
+        <option value="Vedasandur"> Vedasandur </option>
+        <option value="Veerakeralampudur"> Veerakeralampudur </option>
+        <option value="Velacherry"> Velacherry </option>
+        <option value="Vellore"> Vellore </option>
+        <option value="Vembakkam"> Vembakkam </option>
+        <option value="Vembakottai"> Vembakottai </option>
+        <option value="Veppanthattai"> Veppanthattai </option>
+        <option value="Veppur"> Veppur </option>
+        <option value="Vikravandi"> Vikravandi </option>
+        <option value="Vilathikulam"> Vilathikulam </option>
+        <option value="Vilavankodu"> Vilavankodu </option>
+        <option value="Villupuram"> Villupuram </option>
+        <option value="Viralimalai"> Viralimalai </option>
+        <option value="Virudhachalam"> Virudhachalam </option>
+        <option value="Virudhunagar"> Virudhunagar </option>
+        <option value="Walajabad"> Walajabad </option>
+        <option value="Walajah"> Walajah </option>
+        <option value="Watrap"> Watrap </option>
+        <option value="Yercaud"> Yercaud </option>
+
+      </datalist>
+
+      <div class="error" *ngIf="updateForm.controls['city'].dirty">
+        <p *ngIf="updateForm.controls['city'].errors?.['required']">Please enter your City</p>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!updateForm.valid"  >Update</button>
+</form>
